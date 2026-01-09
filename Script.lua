@@ -1,12 +1,3201 @@
---[[
- .____                  ________ ___.    _____                           __                
- |    |    __ _______   \_____  \\_ |___/ ____\_ __  ______ ____ _____ _/  |_  ___________ 
- |    |   |  |  \__  \   /   |   \| __ \   __\  |  \/  ___// ___\\__  \\   __\/  _ \_  __ \
- |    |___|  |  // __ \_/    |    \ \_\ \  | |  |  /\___ \\  \___ / __ \|  | (  <_> )  | \/
- |_______ \____/(____  /\_______  /___  /__| |____//____  >\___  >____  /__|  \____/|__|   
-         \/          \/         \/    \/                \/     \/     \/                   
-          \_Welcome to LuaObfuscator.com   (Alpha 0.10.9) ~  Much Love, Ferib 
+-- CRACK BY LVZZ ULTRA OPTIMIZED + AI PEEK V6
 
-]]--
+-- ========== СЕРВИСЫ ==========
+local UIS = game:GetService("UserInputService")
+local RS = game:GetService("RunService")
+local Light = game:GetService("Lighting")
+local Plrs = game:GetService("Players")
+local WS = game:GetService("Workspace")
+local HTTP = game:GetService("HttpService")
+local TS = game:GetService("TextService")
+local TweenS = game:GetService("TweenService")
+local LP = Plrs.LocalPlayer
 
-local v0=game:GetService("UserInputService");local v1=game:GetService("RunService");local v2=game:GetService("Lighting");local v3=game:GetService("Players");local v4=game:GetService("Workspace");local v5=game:GetService("HttpService");local v6=game:GetService("TextService");local v7=game:GetService("TweenService");local v8=v3.LocalPlayer;local v9,v10,v11=math.floor,math.clamp,tick;local v12,v13=Vector3.new,Vector3.zero;local v14,v15,v16=math.cos,math.sin,math.rad;local v17,v18,v19=math.max,math.min,math.ceil;local v20,v21,v22=math.huge,math.abs,math.sqrt;local v23,v24=CFrame.new,CFrame.Angles;local v25,v26,v27=pairs,ipairs,typeof;local v28=math.random;local v29=table.insert;local v30=string.format;local v31=986 -786 ;local v32=0.15;local v33=1796.05 -(503 + 1293) ;local v34=1992.8 -(1282 + 708) ;local v35={Main=Color3.fromRGB(33 -21 ,9 + 3 ,1073 -(810 + 251) ),Group=Color3.fromRGB(14 + 5 ,6 + 13 ,9 + 10 ),Stroke=Color3.fromRGB(41 + 4 ,578 -(43 + 490) ,778 -(711 + 22) ),Accent=Color3.fromRGB(649 -481 ,1106 -(240 + 619) ,307 -(212 + 45) ),Text=Color3.fromRGB(54 + 166 ,735 -515 ,349 -129 ),Dim=Color3.fromRGB(2086 -(708 + 1238) ,12 + 128 ,46 + 94 ),Font=Enum.Font.Code,Dark=Color3.fromRGB(2 + 23 ,1769 -(1344 + 400) ,430 -(255 + 150) ),Darker=Color3.fromRGB(20,300 -(215 + 65) ,50 -30 ),Border=Color3.fromRGB(48 + 12 ,33 + 27 ,256 -196 )};local v36={Folder="Crack By Lvzz",List={},Selected="",FS=(writefile and readfile and isfile and listfiles and makefolder and isfolder)~=nil };local v37={menuKey=Enum.KeyCode.Delete,rbEnabled=false,rbResolver=false,rbPrediction=true,rbTeamCheck=true,rbAutoFire=true,rbHitbox="Head",rbMaxDist=1614 -1114 ,rbFireRate=0.1 + 0 ,rbPredMulti=1740 -(404 + 1335) ,rbNoAir=true,rbWallCheck=true,rbSmartAim=true,rbAirShoot=false,rbAirShootKey=Enum.KeyCode.H,btEnabled=true,btTime=906 -(183 + 223) ,dtEnabled=false,dtKey=Enum.KeyCode.E,dtDist=7 -1 ,dtMode="Defensive",fdEnabled=false,fdTeamCheck=true,fdKey=Enum.KeyCode.X,fdLockKey=Enum.KeyCode.V,epEnabled=false,epKey=Enum.KeyCode.C,epDist=3,ijEnabled=false,ijKey=Enum.KeyCode.Space,beEnabled=false,beKey=Enum.KeyCode.G,beMode="Hold",beDist=4 + 1 ,avEnabled=false,apEnabled=false,apKey=Enum.KeyCode.LeftAlt,apMode="Hold",apShowPoints=false,apTeamCheck=true,apESP=false,apHeight=1 + 1 ,apSpeed=837 -(10 + 327) ,apRange=80,apPeekDist=6 + 2 ,apRings=341 -(118 + 220) ,apPointsPerRing=4 + 8 ,apRingSpacing=452 -(108 + 341) ,apRandomOffset=0.3 + 0 ,apWeightDist=2 -1 ,apWeightEnemy=0.8 + 0 ,apWeightCover=8.5 -6 ,apWeightAngle=2,apWeightHeight=1.2 + 0 ,bhEnabled=false,bhKey=Enum.KeyCode.F,bhGroundSpeed=1528 -(711 + 782) ,bhAirSpeed=74 -35 ,wbEnabled=false,wmEnabled=false,rcEnabled=false,tpEnabled=false,tpCTKey=Enum.KeyCode.One,tpTKey=Enum.KeyCode.Two,wmVisible=true,hkVisible=true,timeVisible=true,hlEnabled=true,hlMaxLogs=477 -(270 + 199) ,killEffects=true,killParticleType="Binary",killScreenType="CS:GO",killScreenDuration=0.5 + 0 ,killScreenColor="Red",ghostEffectEnabled=true,ghostColor=Color3.fromRGB(1919 -(580 + 1239) ,594 -394 ,244 + 11 ),scopeEnabled=false,scopeColor=Color3.fromRGB(10 + 245 ,22 + 28 ,2 + 48 ),scopeSize=39 -24 ,scopeGap=4 + 1 ,scopeThickness=1168 -(645 + 522) ,scopeOffsetY= -(1826 -(1010 + 780)),bloomEnabled=false,bloomIntensity=1.5 + 0 ,bloomSize=190 -150 ,bloomThreshold=0.9,blurEnabled=false,blurSize=6 + 4 ,colorEnabled=false,ccBrightness=0 + 0 ,ccContrast=0.1 -0 ,ccSaturation=0.2 -0 ,ccTintColor=Color3.new(1837 -(1045 + 791) ,2 -1 ,1 -0 ),sunRaysEnabled=false,sunRaysIntensity=0.1,sunRaysSpread=505.5 -(351 + 154) ,fogEnabled=false,fogStart=1574 -(1281 + 293) ,fogEnd=766 -(28 + 238) ,fogColor=Color3.new(0.5 -0 ,1918.5 -(1177 + 741) ,1559.5 -(1381 + 178) ),selectedModel="None"};local v38={gui=nil,main=nil,hkFrame=nil,wmFrame=nil,timeFrame=nil,hlFrame=nil,visible=true,drag=false,dragStart=nil,startPos=nil,conns={},fx={},hotkeys={},hitLogs={},cfgDropdown=nil,cfgDropdownList=nil,fdTarget=nil,fdCrouch=false,fdLock=false,fdIdleAnim=nil,fdWalkAnim=nil,bloomEffect=nil,blurEffect=nil,colorEffect=nil,sunRaysEffect=nil,rbLast=0 -0 ,rbAirPart=nil,asCanJump=true,epDecoy=nil,epActive=false,epOriginalPos=nil,epOriginalNeckC0=nil,epHealthConn=nil,ijPart=nil,ijCanJump=true,beActive=false,beDecoy=nil,beUpdateConn=nil,avLine=nil,dtLastPeek=0,apActive=false,apTeleporting=false,apPoints={},apPointCount=0 + 0 ,mainConn=nil,running=true,sliderDrag=nil,bhOrigSpeed=13 + 3 ,bhInAir=false,bhLastReset=0,bhResetting=false,bhLastPos=nil,bhPosCheckTime=0 + 0 ,bhCircling=false,myChar=nil,myHRP=nil,myHead=nil,myHum=nil,fireShot=nil,fireShotTime=0 -0 ,playerData={},playerDataTime=0 + 0 ,cam=nil};local v39=RaycastParams.new();v39.FilterType=Enum.RaycastFilterType.Exclude;local v42=RaycastParams.new();v42.FilterType=Enum.RaycastFilterType.Exclude;local v44,v45,v46,v47,v48,v49;local v50,v51,v52={},{},{};local v53,v54={},470 -(381 + 89) ;local v55=0 + 0 ;local v56={{n="hamik",p=v12(2018.46 -(962 + 959) ,25.630000000000003 + 11 , -(1.8199999999999998 + 1))},{n="hamik",p=v12(97.46,1192.63 -(1074 + 82) ,0.46 -0 )},{n="hamik",p=v12(1881.46 -(214 + 1570) ,1491.65 -(990 + 465) , -(1.18 + 0))},{n="hamik",p=v12(95.2 + 2 ,149.47 -111 , -(1727.18 -(1668 + 58)))},{n="hamik",p=v12(250.51999999999998 -154 ,84.89 -43 , -(1.18 + 0))},{n="hamik",p=v12(201.34 -103 ,142.89 -101 , -(1.18 + 0))},{n="hamik",p=v12(249.45999999999998 -152 ,7.799999999999997 + 27 , -(1.18 + 0))},{n="hamik",p=v12(152.46,118.57 -83 , -(2000.88 -(109 + 1885)))},{n="hamik",p=v12(287.34000000000003 -137 ,848.86 -(98 + 717) ,960.91 -(802 + 24) )},{n="hamik",p=v12(367.05 -(32 + 182) ,25.909999999999997 + 8 ,230.9 -96 )},{n="hamik",p=v12(190.95 -39 ,115.74000000000001 -82 ,134.93)},{n="hamik",p=v12(226.36 -(39 + 26) ,184.47 -(54 + 90) ,23.080000000000013 + 130 )},{n="hamik",p=v12(18.230000000000004 + 90 ,586.15 -(457 + 95) ,21.53 + 73 )},{n="hamik",p=v12(108.73 + 0 ,126.13 -88 ,34.78 + 59 )},{n="hamik",p=v12(32.209999999999994 + 39 ,31.96 + 6 , -(54.739999999999995 -36))},{n="hamik",p=v12(819.21 -(485 + 263) ,21.090000000000003 + 22 , -(1451.96 -(797 + 636)))},{n="Part",p=v12(466.63 -370 ,41.21, -(1622.74 -(1427 + 192)))},{n="Part",p=v12(222.63 -126 ,351.21 -(189 + 121) ,1.38 + 0 )},{n="Part",p=v12(93.19 + 112 ,364.08 -(192 + 134) ,1463.8899999999999 -(316 + 960) )},{n="Part",p=v12(162.46 + 47 ,28.75 + 2 ,688.54 -508 )},{n="Part",p=v12(1959.66 -(1202 + 604) ,153.63 -120 ,224.62 -89 )},{n="Part",p=v12(9.039999999999992 + 140 ,358.90999999999997 -(45 + 280) ,131.6 + 4 )},{n="Part",p=v12(40.230000000000004 + 68 ,17.38 + 13 ,15.150000000000006 + 68 )},{n="Part",p=v12(91.23 + 17 ,69.33 -31 ,1983.24 -(340 + 1571) )},{n="Part",p=v12(108.23,43.15,88.36)},{n="Part",p=v12(986.74 -(827 + 51) ,100.13 -62 ,1844.24 -(1733 + 39) )},{n="Part",p=v12(1142.73 -(125 + 909) ,1990.61 -(1096 + 852) ,38.06999999999999 + 45 )},{n="Part",p=v12(153.73000000000002 -45 ,1041.48 -(334 + 677) ,81.07 + 2 )},{n="Part",p=v12(345.42 -(46 + 190) ,125.03999999999999 -(51 + 44) ,27.900000000000006 + 66 )},{n="Part",p=v12(814.31 -(228 + 498) ,8.68 + 26 ,68.17 + 54 )},{n="Part",p=v12(226.91 -139 ,31.8,1542.17 -(1004 + 416) )},{n="Part",p=v12(2044.28 -(1621 + 336) ,1938.18 -(830 + 1075) ,642.75 -(303 + 221) )},{n="Part",p=v12(1604.28 -(1014 + 503) ,28.18 + 5 ,120.63)},{n="Part",p=v12(362.31 -274 ,90.68 -56 ,244.91 -146 )},{n="Part",p=v12(70.91 + 17 ,32.32,350.28 -250 )},{n="Part",p=v12(104.08 -39 ,31.62,281.62 -190 )},{n="Part",p=v12(285.95 -(91 + 67) ,2.969999999999999 + 44 ,0.99 -0 )},{n="Part",p=v12(199.01999999999998 -132 ,10.96 + 27 , -(541.74 -(423 + 100)))},{n="paletka",p=v12(168.81 -107 ,19.08 + 16 ,90.42)},{n="paletka",p=v12(266.81 -205 ,86.58 -47 ,212.62 -121 )},{n="paletka",p=v12(1024.97 -(614 + 267) ,165.34 -(98 + 35) ,231.64 -(19 + 13) )},{n="paletka",p=v12(229.99 -88 ,74.43 -42 ,571.56 -371 )},{n="paletka",p=v12(243.4 -104 ,65.34 -33 ,198.31)},{n="paletka",p=v12(1954.04 -(1293 + 519) ,32.34,414.99 -211 )},{n="paletka",p=v12(277.88 -132 ,1180.43 -(701 + 447) ,853.74 -655 )},{n="paletka",p=v12(348.51 -200 ,17.340000000000003 + 15 ,41.97 + 159 )},{n="paletka",p=v12(34.860000000000014 + 111 ,86.34 -54 ,195.29)},{n="paletka",p=v12(90.96000000000001 + 53 ,36.87,1295.6399999999999 -(709 + 387) )},{n="paletka",p=v12(414.97 -271 ,86.64 -59 ,326.64 -127 )},{n="nowallbang1",p=v12(51.379999999999995 + 16 ,57.09 -14 , -(5.960000000000001 + 13))}};local function v57() local v171=0 -0 ;local v172;while true do if (v171==(1 -0)) then v38.cam=v4.CurrentCamera;break;end if (v171==0) then v172=v8.Character;if v172 then v38.myChar,v38.myHRP=v172,v172:FindFirstChild("HumanoidRootPart");v38.myHead,v38.myHum=v172:FindFirstChild("Head"),v172:FindFirstChildOfClass("Humanoid");else v38.myChar,v38.myHRP,v38.myHead,v38.myHum=nil,nil,nil,nil;end v171=1881 -(446 + 1434) ;end end end local function v58() local v173=v11();if (v38.fireShot and v38.fireShot.Parent and ((v173-v38.fireShotTime)<(1288 -(1040 + 243)))) then return v38.fireShot;end if  not v38.myChar then return nil;end for v680,v681 in v26(v38.myChar:GetChildren()) do if v681:IsA("Tool") then local v1123=0 -0 ;local v1124;while true do if (v1123==(1847 -(559 + 1288))) then v1124=v681:FindFirstChild("Remotes");if v1124 then local v2058=1931 -(609 + 1322) ;local v2059;while true do if (v2058==(454 -(13 + 441))) then v2059=v1124:FindFirstChild("FireShot") or v1124:FindFirstChild("fireShot") ;if v2059 then local v2227=0;while true do if (v2227==(0 + 0)) then v38.fireShot,v38.fireShotTime=v2059,v173;return v2059;end end end break;end end end break;end end end end return nil;end local function v59() local v174=v11();if ((v174-v38.playerDataTime)<v32) then return;end v38.playerDataTime=v174;local v176=0 -0 ;if  not v38.myHRP then local v990=0 -0 ;while true do if (v990==(0 -0)) then for v1805 in v25(v38.playerData) do v38.playerData[v1805]=nil;end return;end end end local v177,v178,v179=v38.myHRP.Position,v8.Team,v8.TeamColor;local v180=v3:GetPlayers();local v181= #v180;for v682=1,v181 do local v683=v180[v682];if (v683~=v8) then local v1125=v683.Character;if v1125 then local v1686=v1125:FindFirstChild("HumanoidRootPart");if v1686 then local v1958=0 + 0 ;local v1959;while true do if (v1958==(0 -0)) then v1959=v1125:FindFirstChildOfClass("Humanoid");if (v1959 and (v1959.Health>(0 -0))) then local v2212=0;local v2213;while true do if (v2212==(0 -0)) then v2213=(v177-v1686.Position).Magnitude;if (v2213<(178 + 322)) then local v2291=0 + 0 ;local v2292;while true do if (v2291==(568 -(237 + 329))) then v2292.torso=v1125:FindFirstChild("UpperTorso") or v1125:FindFirstChild("Torso") ;v2292.dist=v2213;v2292.team=v178 and ((v683.Team==v178) or (v683.TeamColor==v179)) ;break;end if (v2291==(3 -2)) then v2292.c=v1125;v2292.h=v1959;v2292.r=v1686;v2292.head=v1125:FindFirstChild("Head");v2291=2 + 0 ;end if (v2291==(0 -0)) then v176=v176 + 1 + 0 ;v2292=v38.playerData[v176];if  not v2292 then v2292={};v38.playerData[v176]=v2292;end v2292.p=v683;v2291=1 -0 ;end end end break;end end end break;end end end end end end for v684=v176 + 1 , #v38.playerData do v38.playerData[v684]=nil;end if (v176>(1 + 0)) then for v1126=1 + 0 ,v176-(1125 -(408 + 716))  do local v1127=v1126;for v1549=v1126 + 1 + 0 ,v176 do if (v38.playerData[v1549].dist<v38.playerData[v1127].dist) then v1127=v1549;end end if (v1127~=v1126) then v38.playerData[v1126],v38.playerData[v1127]=v38.playerData[v1127],v38.playerData[v1126];end end end end local function v60(v182,v183) local v184,v185=nil,v20;for v686,v687 in v26(v4:GetDescendants()) do if (v687:IsA("BasePart") and (v687.Name==v182)) then local v1128=0 + 0 ;local v1129;while true do if (v1128==(0 + 0)) then v1129=(v687.Position-v183).Magnitude;if (v1129<v185) then v185,v184=v1129,v687;end break;end end end end return (v184 and (v185<(438 -(153 + 280))) and v184) or nil ;end local function v61() local v186=0 -0 ;while true do if (v186==(0 + 0)) then v50={};for v1550,v1551 in v26(v56) do local v1552=v60(v1551.n,v1551.p);if v1552 then v50[v1550]={obj=v1552,orig=v1552.Transparency};v1552.Transparency=0.8 + 0 ;end end break;end end end local function v62() local v187=0 -0 ;while true do if (v187==(0 + 0)) then for v1553,v1554 in v25(v50) do if (v1554 and v1554.obj and v1554.obj.Parent) then pcall(function() v1554.obj.Transparency=v1554.orig;end);end end v50={};break;end end end local function v63() local v188=0 + 0 ;local v189;local v190;while true do if (v188==(4 -2)) then for v1555,v1556 in v26(v190) do if v1556 then for v1962,v1963 in v26(v1556:GetDescendants()) do if v1963:IsA("BasePart") then local v2118=1529 -(508 + 1021) ;while true do if (v2118==(0 + 0)) then v29(v51,{obj=v1963,col=v1963.CanCollide,tr=v1963.Transparency});v1963.CanCollide,v1963.Transparency=false,1 -0 ;break;end end end end end end break;end if (v188==(0 + 0)) then v51={};v189=v4:FindFirstChild("Map");v188=686 -(332 + 353) ;end if (v188==(668 -(89 + 578))) then if  not v189 then return;end v190={v189:FindFirstChild("Clips"),v189:FindFirstChild("Doors"),v189:FindFirstChild("Ignore")};v188=2 + 0 ;end end end local function v64() for v688,v689 in v25(v51) do if (v689 and v689.obj and v689.obj.Parent) then pcall(function() v689.obj.CanCollide,v689.obj.Transparency=v689.col,v689.tr;end);end end v51={};end local function v65() v52={};local v191=v4:FindFirstChild("Map");local v192=v191 and v191:FindFirstChild("Geometry") ;if  not v192 then return;end for v690,v691 in v26(v192:GetDescendants()) do if v691:IsA("BasePart") then v29(v52,{obj=v691,orig=v691.Transparency});v691.Transparency=0.5;end end end local function v66() for v692,v693 in v25(v52) do if (v693 and v693.obj and v693.obj.Parent) then pcall(function() v693.obj.Transparency=v693.orig;end);end end v52={};end local function v67() local v193=0 -0 ;local v194;while true do if (v193==(0 -0)) then v194=v37.apSpeed;if (v194<=333) then return (1049.6 -(572 + 477)) -((v194/333) * (0.3 + 0)) ;elseif (v194<=(90 + 576)) then return (0.3 + 0) -(((v194-(1311 -(194 + 784)))/333) * (0.18 + 0)) ;else return (86.12 -(84 + 2)) -(((v194-(1097 -431))/(2104 -(694 + 1076))) * (0.08 + 0)) ;end break;end end end local function v68() return v9(v67() * (1842 -(497 + 345)) );end local function v69() local v195=0 + 0 ;local v196;while true do if (v195==(0 + 0)) then v196=v37.apSpeed;if (v196<=(1666 -(605 + 728))) then return "Slow";elseif (v196<=(476 + 190)) then return "Medium";else return "Fast";end break;end end end local function v70() for v694,v695 in v25(v53) do pcall(function() v695:Destroy();end);end v53={};end local function v71(v197,v198,v199) local v200=0 -0 ;local v201;while true do if (v200==(1 + 0)) then return  not v201 or  not v201.Instance.CanCollide ;end if (v200==(0 -0)) then v42.FilterDescendantsInstances=v199;v201=v4:Raycast(v197,v198-v197 ,v42);v200=1 + 0 ;end end end local function v72(v202,v203,v204) local v205=0 + 0 ;local v206;while true do if (v205==(0 -0)) then v42.FilterDescendantsInstances={v203};v206=v4:Raycast(v202 + v12(1970 -(214 + 1756) ,495 -(457 + 32) ,0) ,v12(0 + 0 , -(1420 -(832 + 570)),585 -(217 + 368) ),v42);v205=1 + 0 ;end if (v205==(1 + 0)) then if v206 then local v1689=0;local v1690;local v1691;local v1692;while true do if (v1689==(1 + 0)) then v1692=v1690-v204 ;if (v1692>v1691) then v1690=v204 + v1691 ;elseif (v1692< -v1691) then v1690=v204-v1691 ;end v1689=6 -4 ;end if (v1689==(0 + 0)) then v1690=v206.Position.Y + (284.3 -(242 + 42)) ;v1691=v37.apHeight;v1689=797 -(588 + 208) ;end if (v1689==2) then return v1690,true;end end end return v204,false;end end end local function v73(v207,v208) local v209=0 -0 ;local v210;local v211;while true do if ((5 -3)==v209) then return v208;end if (v209==(1801 -(884 + 916))) then if (v211>v210) then return v207 + v210 ;end if (v211< -v210) then return v207-v210 ;end v209=3 -1 ;end if (v209==(0 -0)) then v210=v37.apHeight;v211=v208-v207 ;v209=1 + 0 ;end end end local function v74(v212,v213,v214) local v215=653 -(232 + 421) ;while true do if (v215==(1 + 0)) then return true;end if (v215==(1634 -(497 + 1137))) then v42.FilterDescendantsInstances={v214};for v1563,v1564 in v26({1890 -(1569 + 320) ,4 -2 ,1 + 2 }) do local v1565=0 -0 ;local v1566;local v1567;local v1568;while true do if (v1565==(606 -(316 + 289))) then v1568=v4:Raycast(v1566,v1567-v1566 ,v42);if (v1568 and v1568.Instance.CanCollide) then return false;end break;end if (v1565==(476 -(296 + 180))) then v1566=v212 + v12(0 -0 ,v1564,1265 -(1037 + 228) ) ;v1567=v213 + v12(0 + 0 ,v1564,1453 -(666 + 787) ) ;v1565=426 -(360 + 65) ;end end end v215=1 + 0 ;end end end local function v75(v216,v217,v218,v219) v42.FilterDescendantsInstances={v218,v219};local v221=v216.Position + v12(0 + 0 ,2.5 -1 ,0 -0 ) ;for v696,v697 in v26({182 -(92 + 89) ,4.5 -2 }) do local v698=0 + 0 ;local v699;local v700;while true do if (v698==(0 -0)) then v699=v217 + v12(0 -0 ,v697,0 + 0 ) ;v700=v4:Raycast(v221,v699-v221 ,v42);v698=1 + 0 ;end if (v698==(3 -2)) then if ( not v700 or  not v700.Instance.CanCollide) then return true;end break;end end end return false;end local function v76(v222,v223,v224,v225) if  not v223 then return false;end return v71(v222 + v12(0 + 0 ,2.6 -1 ,0 + 0 ) ,v223.Position,{v224,v225});end local function v77(v226,v227,v228) local v229=v228:FindFirstChild("Head");local v230=v228:FindFirstChild("UpperTorso") or v228:FindFirstChild("Torso") ;local v231=v226.Position + v12(0 -0 ,1.6 + 0 ,0 -0 ) ;local v232={v227,v228};return (v229 and v71(v231,v229.Position,v232)) or (v230 and v71(v231,v230.Position,v232)) ;end local function v78(v233,v234,v235) local v236=0 -0 ;local v237;while true do if (v236==(1189 -(442 + 747))) then v237=v235:FindFirstChild("Head");if  not v237 then return false;end v236=1;end if (v236==(1136 -(832 + 303))) then for v1569=2 -1 ,v38.apPointCount do local v1570=v38.apPoints[v1569];if (v1570 and v1570.canReach) then v42.FilterDescendantsInstances={v234,v235};local v1811=v1570.pos + v12(0,1.6 + 0 ,0 + 0 ) ;local v1812=v4:Raycast(v1811,v237.Position-v1811 ,v42);if ( not v1812 or  not v1812.Instance.CanCollide) then return true;end end end return false;end end end local function v79() if ( not v37.apESP or  not v38.apActive) then local v991=0;while true do if (v991==(0 -0)) then v70();return;end end end local v238,v239=v8.Character,v38.myHRP;if ( not v238 or  not v239) then return;end local v240,v241=v8.Team,v8.TeamColor;local v242={};for v701,v702 in v26(v3:GetPlayers()) do if (v702==v8) then continue;end if (v37.apTeamCheck and v240 and ((v702.Team==v240) or (v702.TeamColor==v241))) then continue;end local v703=v702.Character;if  not v703 then continue;end local v704=v703:FindFirstChildOfClass("Humanoid");if ( not v704 or (v704.Health<=(0 + 0))) then continue;end v242[v702.UserId]=true;local v706=v78(v239,v238,v703);local v707=v53[v702.UserId];if (v707 and v707.Parent) then local v1137=789 -(766 + 23) ;local v1138;while true do if (v1137==(4 -3)) then v707.FillColor=v1138;break;end if (v1137==(0 -0)) then v1138=(v706 and Color3.fromRGB(131 -81 ,865 -610 ,1123 -(1036 + 37) )) or Color3.fromRGB(255,50,36 + 14 ) ;v707.OutlineColor=v1138;v1137=1 -0 ;end end else local v1139=1388 -(1307 + 81) ;local v1140;local v1141;while true do if (v1139==(1 + 0)) then v1140.DepthMode=Enum.HighlightDepthMode.AlwaysOnTop;v1140.FillTransparency=1480.85 -(641 + 839) ;v1140.OutlineTransparency=913 -(910 + 3) ;v1139=2;end if (v1139==(4 -2)) then v1141=(v706 and Color3.fromRGB(156 -106 ,255,1734 -(1466 + 218) )) or Color3.fromRGB(211 + 44 ,23 + 27 ,1198 -(556 + 592) ) ;v1140.OutlineColor=v1141;v1140.FillColor=v1141;v1139=2 + 1 ;end if (v1139==(263 -(197 + 63))) then v1140.Parent=v703;v53[v702.UserId]=v1140;break;end if (v1139==0) then v1140=Instance.new("Highlight");v1140.Name="AP_ESP";v1140.Adornee=v703;v1139=809 -(329 + 479) ;end end end end for v708,v709 in v25(v53) do if  not v242[v708] then pcall(function() v709:Destroy();end);v53[v708]=nil;end end end local function v80() for v710=855 -(174 + 680) , #v38.apPoints do if (v38.apPoints[v710] and v38.apPoints[v710].part) then v38.apPoints[v710].part:Destroy();end v38.apPoints[v710]=nil;end local v243=v37.apRings or (1 + 2) ;local v244=v37.apPointsPerRing or (41 -29) ;local v245=v37.apRingSpacing or (1 + 2) ;local v246=v37.apRandomOffset or (0.3 -0) ;local v247=v37.apPeekDist/v243 ;local v248=0;for v712=1370 -(618 + 751) ,v243 do local v713=0 + 0 ;local v714;while true do if (v713==(0 + 0)) then v714=v712 * v247 * (v245/(1913 -(206 + 1704))) ;for v1693=740 -(396 + 343) ,v244 do v248=v248 + 1 + 0 ;local v1694=((v1693-(1478 -(29 + 1448))) * ((1749 -(135 + 1254))/v244)) + (v712 * (((1356 -996)/v244)/(1508 -(396 + 1110)))) ;v38.apPoints[v248]={ring=v712,dist=v714 + ((v28() -(0.5 -0)) * (9 -7) * v246) ,angle=v1694 + ((v28() -(0.5 + 0)) * (16 + 4) * v246) ,pos=v13,groundY=0 + 0 ,canReach=false,canShoot=false,enemySees=false,coverScore=0 + 0 ,angleScore=1527 -(389 + 1138) ,heightAdvantage=574 -(102 + 472) ,score=976 -(230 + 746) ,part=nil};if v37.apShowPoints then local v1964=Instance.new("Part");v1964.Name="AP_P";v1964.Size=v12(0.5 + 0 ,0.5 + 0 ,266.5 -(38 + 228) );v1964.Shape=Enum.PartType.Ball;v1964.Anchored=true;v1964.CanCollide=false;v1964.CastShadow=false;v1964.Material=Enum.Material.Neon;v1964.Transparency=0.3 -0 ;v1964.Color=Color3.new(1 + 0 ,1 + 0 ,1);v1964.Parent=v4;v38.apPoints[v248].part=v1964;end end break;end end end v38.apPointCount=v248;end local function v81() for v715=1546 -(320 + 1225) , #v38.apPoints do local v716=0 -0 ;while true do if (v716==(0 + 0)) then if (v38.apPoints[v715] and v38.apPoints[v715].part) then v38.apPoints[v715].part:Destroy();end v38.apPoints[v715]=nil;break;end end end v38.apPointCount=1464 -(157 + 1307) ;v70();end local function v82(v251,v252,v253) for v717=1,v38.apPointCount do local v718=v38.apPoints[v717];if v718 then local v1143=1859 -(821 + 1038) ;local v1144;local v1145;while true do if (v1143==(3 -2)) then v718.canReach=v74(v251,v718.pos,v252);v718.canShoot=false;v718.enemySees=false;v718.coverScore=0 -0 ;v1143=2 + 0 ;end if (v1143==(0 + 0)) then v1144=v16(v718.angle);v1145=v251 + v12(v14(v1144) * v718.dist ,0 -0 ,v15(v1144) * v718.dist ) ;v718.groundY=v72(v1145,v252,v253);v718.pos=v12(v1145.X,v718.groundY,v1145.Z);v1143=1 + 0 ;end if (v1143==(4 -2)) then v718.angleScore=1026 -(834 + 192) ;v718.heightAdvantage=0 + 0 ;v718.score=0 + 0 ;if v718.part then v718.part.Position=v718.pos + v12(0 + 0 ,0.7,0 -0 ) ;v718.part.Color=(v718.canReach and Color3.new(0.5,1181.5 -(1035 + 146) ,304.5 -(300 + 4) )) or Color3.fromRGB(53 + 37 ,9 + 21 ,78 -48 ) ;v718.part.Transparency=(v718.canReach and 0.4) or 0.7 ;v718.part.Size=(v718.canReach and v12(362.5 -(112 + 250) ,0.5 + 0 ,0.5 + 0 )) or v12(0.35,0.35,0.35 -0 ) ;end break;end end end end end local function v83(v254,v255,v256) local v257=0 + 0 ;local v258;while true do if (v257==(0 + 0)) then if ( not v254 or  not v254.Parent) then return false;end v258=v254.AssemblyLinearVelocity.Y;v257=1 + 0 ;end if (v257==2) then return true;end if (v257==(1 + 0)) then v254.CFrame=v23(v255,v255 + v256 );v254.AssemblyLinearVelocity=v12(1212 -(615 + 597) ,v10(v258, -(45 + 5),25 + 25 ),0 + 0 );v257=2;end end end local v84={v12(2 -1 ,1899 -(1056 + 843) ,0 -0 ),v12( -(1 -0),693 -(627 + 66) ,0 -0 ),v12(1906 -(1665 + 241) ,717 -(373 + 344) ,1 + 0 ),v12(0 + 0 ,0, -1),v12(0.7 -0 ,507 -(263 + 244) ,1099.7 -(35 + 1064) ),v12( -(1687.7 -(1502 + 185)),0 + 0 ,0.7 -0 ),v12(0.7 + 0 ,1527 -(629 + 898) , -(1236.7 -(298 + 938))),v12( -0.7,1666 -(636 + 1030) , -(0.7 + 0))};local function v85(v259,v260,v261,v262) local v263=v262:FindFirstChild("Head");if  not v263 then return nil;end local v264,v265=nil, -(976765 + 23234);local v266=v259.Position;local v267=v261.Position;local v268=v37.apWeightDist;local v269=v37.apWeightEnemy;local v270=v37.apWeightCover;local v271=v37.apWeightAngle;local v272=v37.apWeightHeight;local v273=(v267-v266).Unit;local v274=v12(v273.X,0,v273.Z).Unit;local v275=v12(v261.CFrame.LookVector.X,0 + 0 ,v261.CFrame.LookVector.Z).Unit;v42.FilterDescendantsInstances={v260,v262};for v719=222 -(55 + 166) ,v38.apPointCount do local v720=v38.apPoints[v719];if ( not v720 or  not v720.canReach) then continue;end v720.canShoot=v76(v720.pos,v263,v260,v262);v720.enemySees=v75(v261,v720.pos,v260,v262);if (v720.enemySees and v720.canShoot) then local v1149=0 + 0 ;local v1150;local v1151;local v1152;local v1153;local v1154;local v1155;local v1156;local v1157;while true do if ((1 + 1)==v1149) then for v1978=3 -2 ,301 -(36 + 261)  do local v1979=v4:Raycast(v720.pos + v12(0 -0 ,1369 -(34 + 1334) ,0 + 0 ) ,v84[v1978] * (3 + 0) ,v42);if (v1979 and v1979.Instance.CanCollide) then v1154=v1154 + (1284 -(1035 + 248)) ;end end v720.score=v720.score + (v1154 * (36 -(20 + 1)) * v270) ;v1155=(v720.pos-v267).Unit;v1156=v12(v1155.X,0,v1155.Z).Unit:Dot(v275);v1149=2 + 1 ;end if (v1149==(1444 -(189 + 1255))) then v1150=(v720.pos-v266).Magnitude;v1151=(v720.pos-v267).Magnitude;v720.score=((1319 -(134 + 185)) -(v1150 * (1141 -(549 + 584)) * v268)) -(v21(v1151-(1294 -(1170 + 109)) ) * 3 * v269) ;v720.score=v720.score + (((v37.apRings-v720.ring) + (686 -(314 + 371))) * (1319 -(1115 + 174))) ;v1149=1;end if ((13 -9)==v1149) then if (v720.score>v265) then v265=v720.score;v264=v720;end break;end if ((969 -(478 + 490))==v1149) then v1152=(v720.pos-v266).Unit;v1153=v12(v1152.X,0 + 0 ,v1152.Z).Unit;v720.score=v720.score + (((1173 -(786 + 386)) -v21(v274:Dot(v1153))) * 100 * v271) ;v1154=0 -0 ;v1149=1869 -(1151 + 716) ;end if (v1149==(1382 -(1055 + 324))) then if (v1156<(0.5 + 0)) then v720.score=v720.score + (1400 -(1093 + 247)) ;end if (v1156<(0 + 0)) then v720.score=v720.score + 5 + 35 ;end v1157=v720.pos.Y-v267.Y ;if (v1157>(3 -2)) then v720.score=v720.score + (v18(v1157,3) * (72 -52) * v272) ;end v1149=13 -9 ;end end end end return v264;end local function v86(v277,v278,v279,v280) local v281=0 -0 ;local v282;local v283;while true do if (v281==(0 + 0)) then v282=v280:FindFirstChild("Head");if  not v282 then return false;end v281=2 -1 ;end if (v281==(1 + 0)) then v42.FilterDescendantsInstances={v278,v280};v283=v277.Position + v12(0 -0 ,3.6 -2 ,0) ;v281=2 + 0 ;end if (v281==(2 + 0)) then if  not v4:Raycast(v283,v282.Position-v283 ,v42) then return true;end for v1572=2 -1 ,v38.apPointCount do local v1573=v38.apPoints[v1572];if (v1573 and v1573.canReach) then local v1842=v4:Raycast(v1573.pos + v12(688 -(364 + 324) ,957.6 -(719 + 237) ,0 -0 ) ,v282.Position-(v1573.pos + v12(0 -0 ,2.6 -1 ,0 + 0 )) ,v42);if ( not v1842 or  not v1842.Instance.CanCollide) then return true;end end end v281=3 + 0 ;end if (v281==(12 -9)) then return false;end end end local function v87(v284,v285) local v286,v287,v288=nil,v37.apRange,nil;local v289,v290=v8.Team,v8.TeamColor;for v723,v724 in v26(v3:GetPlayers()) do if (v724~=v8) then local v1159=0 -0 ;local v1160;local v1161;local v1162;local v1163;local v1164;while true do if ((0 -0)==v1159) then if (v37.apTeamCheck and v289 and ((v724.Team==v289) or (v724.TeamColor==v290))) then continue;end v1160=v724.Character;v1159=2 -1 ;end if (v1159==(1269 -(1249 + 19))) then if  not v1160 then continue;end v1161=v1160:FindFirstChild("HumanoidRootPart");v1159=195 -(80 + 113) ;end if ((4 + 0)==v1159) then if ((v1164<v287) and v86(v285,v284,v1161,v1160)) then v287=v1164;v286=v1161;v288=v1160;end break;end if (v1159==(7 -5)) then v1162=v1160:FindFirstChildOfClass("Humanoid");v1163=v1160:FindFirstChild("Head");v1159=1089 -(686 + 400) ;end if (v1159==(3 + 0)) then if ( not v1161 or  not v1162 or (v1162.Health<=(229 -(73 + 156))) or  not v1163) then continue;end v1164=(v1161.Position-v285.Position).Magnitude;v1159=4;end end end end return v286,v288,v287;end local function v88(v291,v292,v293,v294,v295) local v296=0 -0 ;local v297;local v298;local v299;local v300;local v301;local v302;local v303;local v304;local v305;while true do if (v296==(1 + 0)) then if  not v76(v292.pos,v298,v293,v295) then return;end v299=v295:FindFirstChildOfClass("Humanoid");if ( not v299 or (v299.Health<=(0 + 0))) then return;end v38.apTeleporting=true;v296=1 + 1 ;end if ((815 -(721 + 90))==v296) then v83(v291,v305,v303);if (v291.Parent and v294.Parent) then local v1696=v12(v294.Position.X,v291.Position.Y,v294.Position.Z);v291.CFrame=v23(v291.Position,v1696);v291.AssemblyLinearVelocity=v12(0 + 0 ,0 -0 ,470 -(224 + 246) );end task.delay(v33,function() if (v291 and v291.Parent) then v83(v291,v302,v303);v291.CFrame=v301;v291.AssemblyLinearVelocity=v12(0,0 -0 ,0 -0 );end if (v292 and v292.part) then v292.part.Size=v12(1408.5 -(496 + 912) ,0.5 -0 ,0.5 + 0 );end v38.apTeleporting=false;end);break;end if (v296==(3 -1)) then v55=v11();v300=v291.Position.Y;v301=v291.CFrame;v302=v291.Position;v296=1 + 2 ;end if (v296==(3 + 0)) then v303=v291.CFrame.LookVector;v304=v73(v300,v292.groundY + v34 );v305=v12(v292.pos.X,v304,v292.pos.Z);if v292.part then v292.part.Color=Color3.fromRGB(973 -(317 + 401) ,949 -(303 + 646) ,506 -251 );v292.part.Size=v12(1.2,1733.2 -(1675 + 57) ,3.2 -2 );v292.part.Transparency=513 -(203 + 310) ;end v296=4;end if (v296==(1993 -(1238 + 755))) then if v38.apTeleporting then return;end v297=v67();if ((v11() -v55)<v297) then return;end v298=v295:FindFirstChild("Head");v296=1 + 0 ;end end end local function v89() while v38.apActive and v38.running  do v1.Heartbeat:Wait();if v38.apTeleporting then continue;end local v725=v8.Character;local v726=v725 and v725:FindFirstChild("HumanoidRootPart") ;local v727=v725 and v725:FindFirstChildOfClass("Humanoid") ;if ( not v726 or  not v727 or (v727.Health<=0)) then continue;end v82(v726.Position,v725,v726.Position.Y);if ((v11() -v54)>0.2) then local v1170=1534 -(709 + 825) ;while true do if (v1170==(0 -0)) then v54=v11();v79();break;end end end local v728,v729=v87(v725,v726);if ( not v728 or  not v729) then local v1171=0 -0 ;while true do if (v1171==(732 -(628 + 104))) then for v1980=865 -(196 + 668) ,v38.apPointCount do local v1981=v38.apPoints[v1980];if (v1981 and v1981.part) then local v2119=1891 -(439 + 1452) ;while true do if (v2119==(3 -2)) then v1981.part.Size=(v1981.canReach and v12(0.5 -0 ,0.5 -0 ,833.5 -(171 + 662) )) or v12(93.35 -(4 + 89) ,0.35 -0 ,0.35 + 0 ) ;break;end if (v2119==(0 -0)) then v1981.part.Color=(v1981.canReach and Color3.fromRGB(100 + 155 ,255,222 + 33 )) or Color3.fromRGB(1586 -(35 + 1451) ,34 + 6 ,1493 -(28 + 1425) ) ;v1981.part.Transparency=(v1981.canReach and 0.5) or 0.75 ;v2119=1994 -(941 + 1052) ;end end end end continue;break;end end end if v77(v726,v725,v729) then local v1172=0;while true do if (v1172==(0 + 0)) then for v1982=1515 -(822 + 692) ,v38.apPointCount do local v1983=0 -0 ;local v1984;while true do if (v1983==(0 + 0)) then v1984=v38.apPoints[v1982];if (v1984 and v1984.part) then v1984.part.Color=Color3.fromRGB(397 -(45 + 252) ,198 + 2 ,80 + 20 );v1984.part.Transparency=0.6 + 0 ;v1984.part.Size=v12(0.45 + 0 ,0.45 -0 ,0.45);end break;end end end continue;break;end end end local v730=v85(v726,v725,v728,v729);if (v730 and v730.canShoot) then v88(v726,v730,v725,v728,v729);end end v70();end local function v90() local v306=0 -0 ;local v307;local v308;while true do if (v306==(0 -0)) then if v38.apActive then return;end v307=v8.Character;v308=v307 and v307:FindFirstChild("HumanoidRootPart") ;if  not v308 then return;end v306=434 -(114 + 319) ;end if (v306==(2 -0)) then v55=0 -0 ;v80();v38.hotkeys["AI Peek v6"]={active=true,key=(v37.apKey and v37.apKey.Name) or "None" };v44();v306=2 + 1 ;end if (v306==(1 + 0)) then v38.apActive=true;v38.apTeleporting=false;v38.apPointCount=0;v54=0 + 0 ;v306=2 -0 ;end if (v306==3) then task.spawn(v89);break;end end end local function v91() v38.apActive=false;v38.apTeleporting=false;v81();v70();v38.hotkeys["AI Peek v6"]=nil;v44();end local function v92() if (v38.epActive or  not v38.myChar or  not v38.myHRP or  not v38.myHum) then return;end v38.epActive,v38.epOriginalPos=true,v38.myHRP.CFrame;if v38.epDecoy then pcall(function() v38.epDecoy:Destroy();end);end local v315=v4.CurrentCamera;local v316=(v315 and v315.CFrame.LookVector) or v38.myHRP.CFrame.LookVector ;v316=v12(v316.X,0 + 0 ,v316.Z).Unit;v38.myHRP.CFrame=v23(v38.epOriginalPos.Position + (v316 * v37.epDist) ) * v24(0,math.atan2( -v316.X, -v316.Z),0 -0 ) ;local v318=Instance.new("Model");v318.Name,v318.Parent="ShadowDecoy",v4;v38.epDecoy=v318;for v731,v732 in v26(v38.myChar:GetChildren()) do if (v732:IsA("BasePart") and (v732.Name~="HumanoidRootPart")) then local v1178=1963 -(556 + 1407) ;local v1179;while true do if (v1178==(1206 -(741 + 465))) then v1179=v732:Clone();v1179.Name,v1179.Parent=v732.Name,v38.epDecoy;v1178=1;end if (v1178==(466 -(170 + 295))) then v1179.Transparency,v1179.Color=0.3 + 0 ,Color3.fromRGB(3 + 17 ,19 + 1 ,49 -29 );v1179.CanCollide,v1179.Material,v1179.Anchored=false,Enum.Material.ForceField,false;break;end end end end local v322=v38.myHRP:Clone();v322.Name,v322.Anchored,v322.CFrame="HumanoidRootPart",true,v38.epOriginalPos;v322.Transparency,v322.Color,v322.CanCollide=0.3 + 0 ,Color3.fromRGB(13 + 7 ,15 + 5 ,20),false;v322.Parent=v38.epDecoy;local v330=Instance.new("Humanoid",v38.epDecoy);v330.MaxHealth,v330.Health=0 -0 ,0 + 0 ;v330.DisplayDistanceType=Enum.HumanoidDisplayDistanceType.None;for v733,v734 in v26(v38.epDecoy:GetChildren()) do if (v734:IsA("BasePart") and (v734~=v322)) then local v1180=Instance.new("WeldConstraint",v322);v1180.Part0,v1180.Part1=v322,v734;end end local v335=v38.myChar:FindFirstChild("Torso") or v38.myChar:FindFirstChild("UpperTorso") ;if v335 then local v992=1230 -(957 + 273) ;local v993;while true do if (v992==(0 -0)) then v993=v335:FindFirstChild("Neck");if (v993 and v993:IsA("Motor6D")) then local v1985=0 + 0 ;while true do if (v1985==0) then v38.epOriginalNeckC0=v993.C0;v993.C0=v993.C0 * v23(0 + 0 , -2,0 -0 ) ;break;end end end break;end end end v38.epHealthConn=v38.myHum.HealthChanged:Connect(function(v735) if (v38.epActive and (v735<v38.myHum.MaxHealth)) then pcall(function() v38.myHum.Health=v38.myHum.MaxHealth;end);end end);v38.hotkeys["Exploit Pos"]={active=true,key=v37.epKey.Name};v44();end local function v93() local v338=0 -0 ;local v339;while true do if (v338==(5 -3)) then if v339 then local v1702=v339:FindFirstChild("Neck");if (v1702 and v1702:IsA("Motor6D") and v38.epOriginalNeckC0) then v1702.C0=v38.epOriginalNeckC0;end end v38.epOriginalNeckC0=nil;v338=14 -11 ;end if (v338==(1784 -(389 + 1391))) then v38.hotkeys["Exploit Pos"]=nil;v44();break;end if (v338==(2 + 1)) then if v38.epHealthConn then v38.epHealthConn:Disconnect();v38.epHealthConn=nil;end v38.epOriginalPos,v38.epActive=nil,false;v338=4;end if (v338==(1 + 0)) then if (v38.epOriginalPos and v38.myHRP) then v38.myHRP.CFrame=v38.epOriginalPos;end v339=v38.myChar and (v38.myChar:FindFirstChild("Torso") or v38.myChar:FindFirstChild("UpperTorso")) ;v338=4 -2 ;end if (0==v338) then if  not v38.epActive then return;end if v38.epDecoy then local v1706=951 -(783 + 168) ;while true do if ((0 -0)==v1706) then pcall(function() v38.epDecoy:Destroy();end);v38.epDecoy=nil;break;end end end v338=1 + 0 ;end end end local function v94() local v340=266 -(112 + 154) ;while true do if (v340==(1 + 0)) then if v38.myHRP then pcall(function() v38.myHRP.Anchored=false;end);end break;end if (v340==0) then v93();if v38.myHum then pcall(function() v38.myHum.WalkSpeed=327 -(309 + 2) ;end);end v340=2 -1 ;end end end local function v95() if  not v8.Character then return nil;end local v341=v4:FindFirstChild(v8.Name);if v341 then local v994=1719 -(531 + 1188) ;local v995;while true do if (v994==(1212 -(1090 + 122))) then v995=v341:FindFirstChild("SSG-08");if v995 then local v1988=0 + 0 ;local v1989;while true do if (v1988==(663 -(96 + 567))) then v1989=v995:FindFirstChild("Hole");if (v1989 and v1989:IsA("BasePart")) then return v1989;end break;end end end break;end end end return nil;end local function v96() if (v38.beActive or  not v38.myChar or  not v38.myHRP) then return;end local v342=v95();if  not v342 then return;end if v38.beDecoy then pcall(function() v38.beDecoy:Destroy();end);v38.beDecoy=nil;end local v343=Instance.new("Model");v343.Name,v343.Parent="BarrelDecoy",v4;v38.beDecoy=v343;local v347=Instance.new("Part",v343);v347.Name,v347.Size="HumanoidRootPart",v12(6 -4 ,2 + 0 ,1119 -(628 + 490) );v347.Transparency,v347.Color=0.3 + 0 ,Color3.fromRGB(49 -29 ,72 -52 ,91 -71 );v347.CanCollide,v347.Anchored=false,true;v347.CFrame=v23(v342.Position);local v355=Instance.new("Humanoid",v343);v355.MaxHealth,v355.Health=774 -(431 + 343) ,0;v355.DisplayDistanceType=Enum.HumanoidDisplayDistanceType.None;v38.beActive=true;v38.hotkeys["Barrel Ext"]={active=true,key=v37.beKey.Name   .. " ["   .. v37.beMode   .. "]" };v44();if v38.beUpdateConn then v38.beUpdateConn:Disconnect();end v38.beUpdateConn=v1.Heartbeat:Connect(function() if (v38.beActive and v38.beDecoy) then local v1187=v95();if v1187 then local v1707=v38.beDecoy:FindFirstChild("HumanoidRootPart");if v1707 then v1707.CFrame=v23(v1187.Position);end end end end);end local function v97() if  not v38.beActive then return;end if v38.beUpdateConn then local v997=0 -0 ;while true do if (v997==(0 -0)) then v38.beUpdateConn:Disconnect();v38.beUpdateConn=nil;break;end end end if v38.beDecoy then pcall(function() v38.beDecoy:Destroy();end);v38.beDecoy=nil;end v38.beActive=false;v38.hotkeys["Barrel Ext"]=nil;v44();end local function v98(v365) local v366=0 -0 ;local v367;while true do if (v366==(1 + 0)) then return (v367 and v367.Position) or v365 ;end if (v366==(0 + 0)) then if  not v38.beActive then return v365;end v367=v95();v366=1696 -(556 + 1139) ;end end end local function v99() if (v38.rbAirPart or  not v38.myHRP) then return;end local v368=Instance.new("Part");v368.Name,v368.Size="AirShootPlatform",v12(19 -(6 + 9) ,0.5 + 0 ,1 + 3 );v368.Anchored,v368.CanCollide,v368.Transparency=true,true,1 + 0 ;v368.CFrame,v368.Parent=v38.myHRP.CFrame * v23(0, -3,607 -(45 + 562) ) ,v4;v38.rbAirPart=v368;end local function v100() if v38.rbAirPart then pcall(function() v38.rbAirPart:Destroy();end);v38.rbAirPart=nil;end end local function v101() if  not v37.rbAirShoot then v100();v38.asCanJump=true;if v38.myHum then v38.myHum:SetStateEnabled(Enum.HumanoidStateType.Jumping,true);end return;end if ( not v38.myHRP or  not v38.myHum) then return;end local v377=v38.myHum:GetState();local v378=(v377==Enum.HumanoidStateType.Freefall) or (v377==Enum.HumanoidStateType.Jumping) ;v39.FilterDescendantsInstances={v38.myChar,v38.rbAirPart};local v380=v4:Raycast(v38.myHRP.Position,v12(0 -0 , -(1 + 3),0 + 0 ),v39)~=nil ;if (v378 or  not v380) then if  not v38.rbAirPart then v99();end if v38.rbAirPart then local v1577=1317 -(486 + 831) ;while true do if (v1577==0) then v38.rbAirPart.CFrame=v23(v38.myHRP.Position-v12(0 -0 ,10 -7 ,0) );v38.rbAirPart.CanCollide,v38.rbAirPart.Anchored=true,true;break;end end end if  not v37.ijEnabled then local v1578=0 + 0 ;while true do if (v1578==(0 -0)) then v38.asCanJump=false;v38.myHum:SetStateEnabled(Enum.HumanoidStateType.Jumping,false);break;end end end else local v1001=1263 -(668 + 595) ;while true do if (v1001==(1 + 0)) then v38.myHum:SetStateEnabled(Enum.HumanoidStateType.Jumping,true);break;end if (v1001==(0 + 0)) then v100();v38.asCanJump=true;v1001=2 -1 ;end end end end local function v102() local v381=0;local v382;while true do if (v381==(290 -(23 + 267))) then if (v38.ijPart or  not v38.myHRP) then return;end v382=Instance.new("Part");v381=1;end if (v381==(426 -(104 + 320))) then v382.CFrame,v382.Parent=v38.myHRP.CFrame * v23(1944 -(1129 + 815) , -(1326 -(1206 + 117)),387 -(371 + 16) ) ,v4;v38.ijPart=v382;break;end if (v381==(1751 -(1326 + 424))) then v382.Name,v382.Size="InfinityJumpPlatform",v12(7 -3 ,0.5 -0 ,122 -(88 + 30) );v382.Anchored,v382.CanCollide,v382.Transparency=true,true,772 -(720 + 51) ;v381=4 -2 ;end end end local function v103() if v38.ijPart then local v1002=0 -0 ;while true do if (v1002==(1776 -(421 + 1355))) then pcall(function() v38.ijPart:Destroy();end);v38.ijPart=nil;break;end end end end local function v104() local v383=0 -0 ;local v384;local v385;while true do if (v383==(1 + 0)) then v384=v38.myHum:GetState();v385=(v384==Enum.HumanoidStateType.Freefall) or (v384==Enum.HumanoidStateType.Jumping) ;v383=1085 -(286 + 797) ;end if (v383==(0 -0)) then if  not v37.ijEnabled then v103();return;end if ( not v38.myHRP or  not v38.myHum) then return;end v383=1;end if ((2 -0)==v383) then if v385 then v102();if v38.ijPart then v38.ijPart.CFrame=v38.myHRP.CFrame * v23(202 -(10 + 192) , -(442 -(397 + 42)),0 + 0 ) ;end v38.ijCanJump=true;else v103();v38.ijCanJump=true;end break;end end end local function v105() if v38.avLine then pcall(function() v38.avLine:Destroy();end);v38.avLine=nil;end local v386=Instance.new("Part");v386.Name,v386.Anchored,v386.CanCollide="AimViewLine",true,false;v386.Material,v386.Color,v386.Transparency=Enum.Material.Neon,Color3.fromRGB(1055 -(24 + 776) ,0 -0 ,0 -0 ),785.3 -(222 + 563) ;v386.Parent=v4;v38.avLine=v386;end local function v106() if v38.avLine then local v1004=0 -0 ;while true do if (v1004==(0 -0)) then pcall(function() v38.avLine:Destroy();end);v38.avLine=nil;break;end end end end local function v107(v396,v397) if ( not v37.avEnabled or  not v396) then v106();return;end if ( not v38.avLine or  not v38.avLine.Parent) then v105();end if  not v38.avLine then return;end local v398=v397 or (v38.myHRP and (v38.myHRP.Position + (v38.myHRP.CFrame.LookVector * (1 + 0)))) ;if  not v398 then local v1005=0;while true do if ((190 -(23 + 167))==v1005) then v106();return;end end end local v399=(v396-v398).Magnitude;local v400=(v398 + v396)/(1 + 1) ;v38.avLine.Size=v12(1703.1 -(494 + 1209) ,1798.1 -(690 + 1108) ,v399);v38.avLine.CFrame=CFrame.lookAt(v400,v396);end local v108={Forward=v12(0 + 0 ,0 + 0 , -(999 -(197 + 801))),Back=v12(848 -(40 + 808) ,0 + 0 ,3 -2 ),Left=v12( -(1 + 0),0 + 0 ,0 + 0 ),Right=v12(468 -(369 + 98) ,1115 -(400 + 715) ,571 -(47 + 524) )};local function v109(v403) if ( not v38.myHRP or  not v38.myChar or  not v38.myHum) then return;end local v404=v4.CurrentCamera;if  not v404 then return;end local v405,v406=v38.myHRP.Position,v38.myHRP.CFrame;v39.FilterDescendantsInstances={v38.myChar};if ((v37.dtMode=="Off") or (v37.dtMode=="Defensive")) then local v1006=0 + 0 ;local v1007;while true do if ((8 -5)==v1006) then v38.dtLastPeek=v11();break;end if (v1006==(1 + 0)) then if (v1007.Magnitude<(0.1 -0)) then return;end v1007=v12(v1007.X,0,v1007.Z).Unit;v1006=4 -2 ;end if (v1006==(1728 -(1165 + 561))) then if v4:Raycast(v405,v1007 * v37.dtDist ,v39) then return;end v38.myHRP.CFrame=v23(v405 + (v1007 * v37.dtDist) ) * v406.Rotation ;v1006=1 + 2 ;end if (v1006==(0 -0)) then if ((v11() -v38.dtLastPeek)<(24 -19)) then return;end v1007=v38.myHum.MoveDirection;v1006=4 -3 ;end end else if ((v11() -v38.dtLastPeek)<(0.3 + 0)) then return;end local v1008=v108[v403];if  not v1008 then return;end local v1009=v404.CFrame:VectorToWorldSpace(v1008);v1009=v12(v1009.X,479 -(341 + 138) ,v1009.Z).Unit;if v4:Raycast(v405,v1009 * v37.dtDist ,v39) then return;end v38.myHRP.CFrame=v23(v405 + (v1009 * v37.dtDist) ) * v406.Rotation ;v38.dtLastPeek=v11();task.delay(0.05 + 0 ,function() local v1196=0 -0 ;local v1197;while true do if (v1196==(326 -(89 + 237))) then v1197=v58();if (v1197 and v38.myHead) then for v2120=3 -2 ,8 -4  do local v2121=v38.playerData[v2120];if (v2121 and  not v2121.team and (v2121.dist<(1081 -(581 + 300)))) then local v2195=((v37.rbHitbox=="Head") and v2121.head) or v2121.torso or v2121.r ;if v2195 then v39.FilterDescendantsInstances={v38.myChar};local v2229=v4:Raycast(v38.myHead.Position,v2195.Position-v38.myHead.Position ,v39);if ( not v2229 or v2229.Instance:IsDescendantOf(v2121.c)) then pcall(v1197.FireServer,v1197,v38.myHead.Position,(v2195.Position-v38.myHead.Position).Unit,v2195);break;end end end end end v1196=1;end if (v1196==(2 -1)) then task.delay(0.1 + 0 ,function() if (v38.myHRP and v38.myHRP.Parent) then v38.myHRP.CFrame=v406;end end);break;end end end);end end local function v110() if v38.bloomEffect then local v1013=0;while true do if (v1013==(0 + 0)) then pcall(function() v38.bloomEffect:Destroy();end);v38.bloomEffect=nil;break;end end end if v37.bloomEnabled then local v1014=1235 -(1030 + 205) ;local v1015;while true do if (v1014==(1468 -(1261 + 207))) then v1015=Instance.new("BloomEffect");v1015.Intensity,v1015.Size,v1015.Threshold=v37.bloomIntensity,v37.bloomSize,v37.bloomThreshold;v1014=1 + 0 ;end if (v1014==(1 + 0)) then v1015.Parent=v2;v38.bloomEffect=v1015;break;end end end end local function v111() if v38.blurEffect then pcall(function() v38.blurEffect:Destroy();end);v38.blurEffect=nil;end if v37.blurEnabled then local v1017=Instance.new("BlurEffect");v1017.Size=v37.blurSize;v1017.Parent=v2;v38.blurEffect=v1017;end end local function v112() if v38.colorEffect then local v1022=286 -(156 + 130) ;while true do if (v1022==(0 -0)) then pcall(function() v38.colorEffect:Destroy();end);v38.colorEffect=nil;break;end end end if v37.colorEnabled then local v1023=0 -0 ;local v1024;while true do if (v1023==(1 -0)) then v1024.TintColor=v37.ccTintColor;v1024.Parent=v2;v1023=9 -7 ;end if (v1023==(0 + 0)) then v1024=Instance.new("ColorCorrectionEffect");v1024.Brightness,v1024.Contrast,v1024.Saturation=v37.ccBrightness,v37.ccContrast,v37.ccSaturation;v1023=1 + 0 ;end if (v1023==(1 + 1)) then v38.colorEffect=v1024;break;end end end end local function v113() if v38.sunRaysEffect then local v1025=69 -(10 + 59) ;while true do if (v1025==(0 + 0)) then pcall(function() v38.sunRaysEffect:Destroy();end);v38.sunRaysEffect=nil;break;end end end if v37.sunRaysEnabled then local v1026=Instance.new("SunRaysEffect");v1026.Intensity,v1026.Spread=v37.sunRaysIntensity,v37.sunRaysSpread;v1026.Parent=v2;v38.sunRaysEffect=v1026;end end local function v114() if v37.fogEnabled then v2.FogStart,v2.FogEnd,v2.FogColor=v37.fogStart,v37.fogEnd,v37.fogColor;else v2.FogStart,v2.FogEnd=0 -0 ,101163 -(671 + 492) ;end end local function v115() v37.fdEnabled= not v37.fdEnabled;if v37.fdEnabled then local v1041=v38.myHum;if v1041 then local v1579=0 + 0 ;local v1580;while true do if ((1216 -(369 + 846))==v1579) then pcall(function() local v2070=Instance.new("Animation");v2070.AnimationId="rbxassetid://102226306945117";v38.fdIdleAnim=v1580:LoadAnimation(v2070);v38.fdIdleAnim.Priority=Enum.AnimationPriority.Action4;v38.fdIdleAnim.Looped=true;local v2076=Instance.new("Animation");v2076.AnimationId="rbxassetid://124458965304788";v38.fdWalkAnim=v1580:LoadAnimation(v2076);v38.fdWalkAnim.Priority=Enum.AnimationPriority.Action4;v38.fdWalkAnim.Looped=true;end);break;end if (v1579==(0 -0)) then v1580=v1041:FindFirstChildOfClass("Animator");if  not v1580 then v1580=Instance.new("Animator",v1041);end v1579=1 + 0 ;end end end else pcall(function() if (v38.fdIdleAnim and v38.fdIdleAnim.IsPlaying) then v38.fdIdleAnim:Stop();end if (v38.fdWalkAnim and v38.fdWalkAnim.IsPlaying) then v38.fdWalkAnim:Stop();end end);v38.fdCrouch,v38.fdTarget=false,nil;v38.fdIdleAnim,v38.fdWalkAnim=nil,nil;end v45();end local v116=0 + 0 ;local v117=1945 -(1036 + 909) ;local v118=534.1 -(424 + 110) ;local function v119() if  not v38.running then return;end v116=v116 + 1 + 0 ;if ((v116%10)==(0 -0)) then v57();end if ( not v38.myChar or  not v38.myHRP) then return;end local v409=v11();if ((v409-v117)>v118) then local v1046=203 -(11 + 192) ;while true do if (v1046==(0 + 0)) then v59();v117=v409;break;end end end local v410,v411,v412=v38.myHRP,v38.myHead,v38.cam;if v37.ijEnabled then v104();end if v37.rbAirShoot then v101();end if (v37.rbEnabled and v37.rbAutoFire and ((v116%(1 + 1))==(175 -(135 + 40))) and v411) then if ((v409-v38.rbLast)>=v37.rbFireRate) then v39.FilterDescendantsInstances={v38.myChar};local v1582,v1583=nil, -(6028 + 3971);local v1584=v410.Position + v410.CFrame.LookVector ;local v1585=v18(22 -12 , #v38.playerData);for v1739=1,v1585 do local v1740=0 -0 ;local v1741;local v1742;local v1743;local v1744;local v1745;local v1746;while true do if ((177 -(50 + 126))==v1740) then if  not v1742 then continue;end v1743=v1741.r.AssemblyLinearVelocity;v1744=v1742.Position;if (v37.rbPrediction and (v1743.Magnitude>(1924.5 -(1606 + 318)))) then local v2171=v8:GetNetworkPing();local v2172=v2171 * v37.rbPredMulti ;v1744=v1742.Position + v12(v1743.X * v2172 ,0 -0 ,v1743.Z * v2172 ) ;end v1740=1 + 1 ;end if (v1740==(1413 -(1233 + 180))) then v1741=v38.playerData[v1739];if ( not v1741 or v1741.team or (v1741.dist>=v37.rbMaxDist)) then continue;end if (v37.rbNoAir and  not v38.apActive) then local v2173=310 -(154 + 156) ;local v2174;local v2175;while true do if (v2173==(969 -(522 + 447))) then v2174=v4:Raycast(v1741.r.Position,v12(1421 -(107 + 1314) , -(8 -4),1115 -(712 + 403) ),v39);v2175=v1741.r.AssemblyLinearVelocity.Y;v2173=451 -(168 + 282) ;end if (v2173==(1 + 0)) then if ( not v2174 or (v21(v2175)>(24 -16))) then continue;end break;end end end v1742=((v37.rbHitbox=="Head") and v1741.head) or v1741.torso or v1741.r ;v1740=1 + 0 ;end if (v1740==(3 -1)) then v1745=v4:Raycast(v1584,v1744-v1584 ,v39);v1746= not v1745 or v1745.Instance:IsDescendantOf(v1741.c) ;if (v37.rbWallCheck and  not v1746) then continue;end if (v1746 or  not v37.rbWallCheck) then local v2176=v37.rbMaxDist-v1741.dist ;if (v2176>v1583) then v1583=v2176;v1582={d=v1741,tgt=v1742,predictedPos=v1744};end end break;end end end if v37.avEnabled then if (v1582 and v1582.d and v1582.d.head) then v107(v1582.d.head.Position,v1584);else v106();end end if v1582 then local v1860=0 + 0 ;local v1861;while true do if ((0 -0)==v1860) then v1861=v58();if v1861 then local v2196=v1582.predictedPos or v1582.tgt.Position ;local v2197=v98(v1584);pcall(function() v1861:FireServer(v2197,(v2196-v2197).Unit,v1582.tgt);end);v38.rbLast=v409;local v2199=(v1582.d.p and v1582.d.p.Name) or "Unknown" ;v47(v2199,v1582.tgt.Name or v37.rbHitbox );end break;end end end end end if (v37.bhEnabled and ((v116%(1912 -(716 + 1194)))==(0 + 0)) and v38.myHum) then if ((v409-v38.bhPosCheckTime)>=(1.5 + 0)) then local v1586=503 -(74 + 429) ;local v1587;while true do if ((1 -0)==v1586) then v38.bhLastPos,v38.bhPosCheckTime=v1587,v409;break;end if (v1586==0) then v1587=v410.Position;if v38.bhLastPos then local v2123=0 + 0 ;local v2124;while true do if (v2123==(0 -0)) then v2124=(v12(v1587.X,0 + 0 ,v1587.Z) -v12(v38.bhLastPos.X,0 -0 ,v38.bhLastPos.Z)).Magnitude;v38.bhCircling=v2124<15 ;break;end end end v1586=2 -1 ;end end end if  not v38.bhCircling then if (((v409-v38.bhLastReset)>=(435.5 -(279 + 154))) and  not v38.bhResetting) then local v1862=0;local v1863;while true do if (v1862==(778 -(454 + 324))) then v38.bhResetting,v38.bhLastReset=true,v409;v1863=v38.bhInAir;v1862=1;end if (v1862==(1 + 0)) then v38.myHum.WalkSpeed=14 + 13 ;task.delay(17.2 -(12 + 5) ,function() local v2177=0 + 0 ;while true do if (v2177==(0 -0)) then if (v37.bhEnabled and v38.myHum) then v38.myHum.WalkSpeed=(v1863 and v38.bhInAir and v37.bhAirSpeed) or ( not v38.bhInAir and v37.bhGroundSpeed) or v38.bhOrigSpeed ;end v38.bhResetting=false;break;end end end);break;end end end v39.FilterDescendantsInstances={v38.myChar};local v1589=v4:Raycast(v410.Position,v12(1346 -(565 + 781) , -(1096.5 -(277 + 816)),0 -0 ),v39)~=nil ;if ( not v1589 and  not v38.bhInAir) then v38.bhInAir=true;if  not v38.bhResetting then v38.myHum.WalkSpeed=v37.bhAirSpeed;end elseif (v1589 and v38.bhInAir) then v38.bhInAir=false;if  not v38.bhResetting then v38.myHum.WalkSpeed=v37.bhGroundSpeed;end end if (v38.bhInAir and  not v38.bhResetting) then local v1865=1183 -(1058 + 125) ;local v1866;local v1867;while true do if (v1865==0) then v1866,v1867=v410.AssemblyLinearVelocity,v38.myHum.MoveDirection;if (v1867.Magnitude>0) then v410.AssemblyLinearVelocity=v12(v1867.X * v37.bhAirSpeed * 0.95 ,v1866.Y,v1867.Z * v37.bhAirSpeed * (0.95 + 0) );end break;end end end else v38.myHum.WalkSpeed=v38.bhOrigSpeed;end end if (v37.fdEnabled and ((v116%(979 -(815 + 160)))==(0 + 0)) and v411) then if v38.fdLock then v38.fdCrouch=true;else local v1593=0 -0 ;local v1594;local v1595;while true do if (v1593==(4 -2)) then if v1594 then v38.fdTarget,v38.fdCrouch=v1594,false;else local v2133=0 + 0 ;while true do if (v2133==(0 -0)) then if v38.fdTarget then local v2262=1898 -(41 + 1857) ;local v2263;while true do if (v2262==(0 -0)) then v2263=v38.fdTarget.Character;if ( not v2263 or  not v2263:FindFirstChildOfClass("Humanoid") or (v2263:FindFirstChildOfClass("Humanoid").Health<=0)) then v38.fdTarget=nil;end break;end end end if  not v38.fdTarget then v38.fdCrouch=true;end break;end end end break;end if (v1593==(1169 -(854 + 315))) then v39.FilterDescendantsInstances={v38.myChar};v1594=nil;v1593=3 -2 ;end if (v1593==(2 -1)) then v1595=v18(5 -1 , #v38.playerData);for v2087=1183 -(229 + 953) ,v1595 do local v2088=v38.playerData[v2087];if (v2088 and  not v2088.team and (v2088.dist<=v31) and v2088.head and v412) then local v2180,v2181=v412:WorldToScreenPoint(v2088.head.Position);if v2181 then local v2224=v4:Raycast(v411.Position,v2088.head.Position-v411.Position ,v39);if ( not v2224 or v2224.Instance:IsDescendantOf(v2088.c)) then v1594=v2088.p;break;end end end end v1593=1 + 1 ;end end end end if (v116>(544 -(31 + 13))) then v116=0 -0 ;end end local function v120() if v38.mainConn then return;end v57();v38.playerDataTime=1774 -(1111 + 663) ;v59();v38.mainConn=v1.Heartbeat:Connect(v119);end local function v121() if v38.mainConn then v38.mainConn:Disconnect();v38.mainConn=nil;end end function v45() local v415=1579 -(874 + 705) ;local v416;while true do if (v415==(1 + 2)) then if v37.rcEnabled then v38.hotkeys['NoCollision']={active=true,key="ON"};end if v38.apActive then v38.hotkeys["AI Peek v6"]={active=true,key=v37.apKey.Name};end if v38.epActive then v38.hotkeys["Exploit Pos"]={active=true,key=v37.epKey.Name};end v415=4;end if (v415==(5 -3)) then if v37.bhEnabled then v38.hotkeys['BunnyHop']={active=true,key=v37.bhKey.Name};end if v37.dtEnabled then v38.hotkeys['DoubleTap']={active=true,key=v37.dtKey.Name};end if v37.wbEnabled then v38.hotkeys['Wallbang']={active=true,key="ON"};end v415=3 + 0 ;end if (v415==(949 -(216 + 733))) then v38.hotkeys={};v416=v37.rbEnabled or v37.fdEnabled or v37.bhEnabled or v37.ijEnabled or v37.rbAirShoot ;if v416 then v120();else v121();end v415=1 -0 ;end if (v415==(1851 -(137 + 1710))) then if v38.beActive then v38.hotkeys["Barrel Ext"]={active=true,key=v37.beKey.Name   .. " ["   .. v37.beMode   .. "]" };end v44();break;end if (v415==1) then if v37.rbEnabled then v38.hotkeys['Ragebot']={active=true,key="ON"};end if v37.rbAirShoot then v38.hotkeys["Air Shoot"]={active=true,key=v37.rbAirShootKey.Name};end if v37.fdEnabled then v38.hotkeys['Fakeduck']={active=true,key=v37.fdKey.Name};end v415=1 + 1 ;end end end local function v122() if  not v36.FS then return false;end pcall(function() if  not isfolder(v36.Folder) then makefolder(v36.Folder);end end);return true;end local function v123() v36.List={};if  not v36.FS then return;end v122();pcall(function() for v1048,v1049 in v26(listfiles(v36.Folder)) do local v1050=679 -(642 + 37) ;local v1051;while true do if (v1050==(0 + 0)) then v1051=v1049:match("([^/\\]+)%.txt$");if v1051 then v29(v36.List,v1051);end break;end end end end);end local function v124() local v418=0 + 0 ;local v419;while true do if (v418==(1366 -(205 + 1160))) then return table.concat(v419,";");end if (v418==(0 -0)) then v419={};for v1596,v1597 in v25(v37) do local v1598,v1599=nil,v27(v1597);if (v1599=="EnumItem") then v1598="K:"   .. v1597.Name ;elseif (v1599=="boolean") then v1598="B:"   .. ((v1597 and "1") or "0") ;elseif (v1599=="number") then v1598="N:"   .. tostring(v1597) ;elseif (v1599=="string") then v1598="S:"   .. v1597 ;elseif (v1599=="table") then v1598="T:"   .. v5:JSONEncode(v1597) ;elseif (v1599=="Color3") then v1598="C:"   .. v9(v1597.R * (130 + 125) )   .. ","   .. v9(v1597.G * (709 -(233 + 221)) )   .. ","   .. v9(v1597.B * 255 ) ;else continue;end v29(v419,v1596   .. "="   .. v1598 );end v418=2 -1 ;end end end local function v125(v420) for v736 in string.gmatch(v420,"([^;]+)") do local v737=0 + 0 ;local v738;local v739;while true do if ((1541 -(718 + 823))==v737) then v738,v739=string.match(v736,"([^=]+)=(.+)");if (v738 and v739 and (v37[v738]~=nil)) then local v1868,v1869=string.match(v739,"^(%a):(.*)$");if (v1868=="K") then pcall(function() v37[v738]=Enum.KeyCode[v1869];end);elseif (v1868=="B") then v37[v738]=v1869=="1" ;elseif (v1868=="N") then v37[v738]=tonumber(v1869) or v37[v738] ;elseif (v1868=="S") then v37[v738]=v1869;elseif (v1868=="T") then pcall(function() v37[v738]=v5:JSONDecode(v1869);end);elseif (v1868=="C") then local v2295,v2296,v2297=string.match(v1869,"(%d+),(%d+),(%d+)");if v2295 then v37[v738]=Color3.fromRGB(tonumber(v2295),tonumber(v2296),tonumber(v2297));end end end break;end end end end local function v126(v421) if ( not v36.FS or  not v421 or (v421=="")) then return false;end v122();local v422=pcall(function() writefile(v36.Folder   .. "/"   .. v421   .. ".txt" ,v124());end);if v422 then v123();end return v422;end local function v127(v423) local v424=0 + 0 ;local v425;local v426;local v427;while true do if (v424==(806 -(266 + 539))) then if  not isfile(v425) then return false;end v426,v427=pcall(function() return readfile(v425);end);v424=5 -3 ;end if ((1225 -(636 + 589))==v424) then if ( not v36.FS or  not v423 or (v423=="")) then return false;end v425=v36.Folder   .. "/"   .. v423   .. ".txt" ;v424=2 -1 ;end if (v424==(1431 -(1236 + 193))) then if ( not v426 or  not v427) then return false;end v125(v427);v424=5 -2 ;end if (v424==(1895 -(1607 + 285))) then v36.Selected=v423;v45();v424=4;end if (v424==4) then return true;end end end local function v128(v428) if ( not v36.FS or  not v428 or (v428=="")) then return;end pcall(function() if isfile(v36.Folder   .. "/"   .. v428   .. ".txt" ) then delfile(v36.Folder   .. "/"   .. v428   .. ".txt" );end end);v123();end function v44() if  not v38.hkFrame then return;end local v429=v38.hkFrame:FindFirstChild("C");if  not v429 then return;end for v740,v741 in v26(v429:GetChildren()) do if v741:IsA("Frame") then v741:Destroy();end end for v742,v743 in v25(v38.hotkeys) do if v743.active then local v1200=0 + 0 ;local v1201;local v1202;local v1203;while true do if (v1200==(2 + 1)) then v1203.Text="["   .. v743.key   .. "]" ;v1203.Size,v1203.Position=UDim2.new(1015.35 -(657 + 358) ,0 -0 ,2 -1 ,1187 -(1151 + 36) ),UDim2.new(0.65 + 0 ,0 + 0 ,0 + 0 ,0 + 0 );v1200=11 -7 ;end if (v1200==(1836 -(1552 + 280))) then v1203.BackgroundTransparency,v1203.TextXAlignment=835 -(64 + 770) ,Enum.TextXAlignment.Right;v1203.Font,v1203.TextSize,v1203.TextColor3=v35.Font,7 + 3 ,v35.Dim;break;end if (v1200==(2 -1)) then v1202=Instance.new("TextLabel",v1201);v1202.Text,v1202.Size,v1202.BackgroundTransparency=v742,UDim2.new(0.65 + 0 ,1243 -(157 + 1086) ,1,0),455 -(246 + 208) ;v1200=1894 -(614 + 1278) ;end if (v1200==(0 -0)) then v1201=Instance.new("Frame",v429);v1201.Size,v1201.BackgroundTransparency=UDim2.new(315 -(249 + 65) ,0 -0 ,0 -0 ,21 -5 ),820 -(599 + 220) ;v1200=1 -0 ;end if (v1200==(1933 -(1813 + 118))) then v1202.TextXAlignment,v1202.Font,v1202.TextSize,v1202.TextColor3=Enum.TextXAlignment.Left,v35.Font,9 + 2 ,v35.Text;v1203=Instance.new("TextLabel",v1201);v1200=3;end end end end end local function v129() if  not v38.cfgDropdownList then return;end for v744,v745 in v26(v38.cfgDropdownList:GetChildren()) do if v745:IsA("TextButton") then v745:Destroy();end end v123();for v746,v747 in v26(v36.List) do local v748=Instance.new("TextButton",v38.cfgDropdownList);v748.Size,v748.BackgroundColor3,v748.BorderSizePixel=UDim2.new(1,0 + 0 ,1217 -(841 + 376) ,28 -8 ),v35.Dark,0 + 0 ;v748.Text,v748.Font,v748.TextSize,v748.ZIndex=v747,v35.Font,1278 -(323 + 943) ,101;v748.TextColor3=((v747==v36.Selected) and v35.Accent) or v35.Dim ;v748.MouseButton1Click:Connect(function() local v1052=0;while true do if (v1052==(0 -0)) then v36.Selected=v747;if v38.cfgDropdown then v38.cfgDropdown.Text=v747   .. " ▼" ;end v1052=860 -(464 + 395) ;end if (v1052==(2 -1)) then for v1893,v1894 in v26(v38.cfgDropdownList:GetChildren()) do if v1894:IsA("TextButton") then v1894.TextColor3=((v1894.Text==v36.Selected) and v35.Accent) or v35.Dim ;end end break;end end end);end v38.cfgDropdownList.Size=UDim2.new(1 + 0 ,837 -(467 + 370) ,0 -0 ,v17(15 + 5 , #v36.List * (68 -48) ));end local v130={["Mike Wazowski"]={{},{108792046954459 -(105 + 1168) },1283 -(74 + 1208) ,4 -3 ,false,false,nil},["Fat Chicken"]={{},{97309274166680 -(1362 + 404) },1 -0 ,1 + 0 ,false,false,nil},["Tung Tung Sahur"]={{},{117976702168621 -(23 + 55) },2 -1 ,1 + 0 ,false,false,nil},["Ghostface Scream"]={{},{109275113219919 -(708 + 612) },2 -1 ,2 -1 ,false,false,nil},["Mini Pigeon"]={{},{134936622365041 -(234 + 263) },2 -1 ,1 -0 ,false,false,nil},["Patrick Suit"]={{},{114561781784509 -0 },243 -(6 + 236) ,1 + 0 ,false,false,nil},["Buff Doge"]={{},{135861229179895 -(467 + 525) },408 -(174 + 233) ,2 -1 ,false,false,nil},["Monkey Suit"]={{},{133241026561228 -  -13839500 },1 + 0 ,1 + 0 ,false,false,nil},["Chubby Boy Meme"]={{},{112601613563445 -(994 + 100) },518 -(440 + 77) ,3 -2 ,false,false,nil},["Zelensky Skin"]={{114906957886459 -(281 + 1399) },{81828736436792 -0 },1446 -(695 + 750) ,0 -0 ,false,false,v23(1310 -(682 + 628) , -(0.3 + 0),0 -0 )},["Trump Head"]={{77332453752462 -(54 + 339) },{},1405 -(336 + 1068) ,0 -0 ,false,true,nil},["Putin Head"]={{96763093087284 -1205577835 },{},1 + 0 ,0 + 0 ,false,true,nil},["Ronaldo Head"]={{106097690206187 -  -350393 },{},1 + 0 ,0,false,true,v23(0 -0 ,1488.25 -(1309 + 179) ,0 -0 )},["Dexter Morgan"]={{83372203705192 -  -39718859 },{},1 -0 ,0 -0 ,false,true,nil},["Kim Jong-Un"]={{100020881280538 -1690887720 },{},2 -1 ,302 -(115 + 187) ,false,true,v24(0 -0 ,v16(1341 -(160 + 1001) ),1007 -(700 + 307) )},["Messi Head"]={{18200639690},{},898 -(525 + 372) ,0,false,true,nil},["67 Kid"]={{111460135975929 -(643 + 134) },{},2 -1 ,0,false,true,v24(0,v16(367 -187 ),719 -(316 + 403) )}};local v131={"None"};for v431 in v25(v130) do v29(v131,v431);end table.sort(v131,function(v432,v433) if (v432=="None") then return true;end if (v433=="None") then return false;end return v432<v433 ;end);local function v132(v434) if ((v434=="None") or  not v130[v434]) then return;end local v435=v130[v434];local v436,v437,v438,v439,v440,v441,v442=v435[2 -1 ],v435[1 + 1 ],v435[7 -4 ],v435[3 + 1 ],v435[2 + 3 ],v435[2 + 4 ],v435[13 -6 ];local function v443(v759) local v760=0 -0 ;local v761;local v762;while true do if (v760==(9 -7)) then v761=v759:FindFirstChild("Head");if ((v438==(1 -0)) and v761) then local v1895=0 + 0 ;local v1896;while true do if (v1895==(0 -0)) then v1896=v761:FindFirstChild("face") or v761:FindFirstChild("Face") ;if v1896 then v1896:Destroy();end break;end end end v760=8 -5 ;end if (v760==(0 + 0)) then task.wait(0.5 -0 );if ( not v759 or  not v759.Parent) then return;end v760=1;end if (v760==(21 -(12 + 5))) then if v762 then for v2001,v2002 in v26(v437) do task.spawn(function() local v2090=0 + 0 ;local v2091;local v2092;while true do if (v2090==0) then v2091,v2092=pcall(function() return game:GetObjects("rbxassetid://"   .. v2002 )[3 -2 ];end);if (v2091 and v2092) then local v2232=v2092:FindFirstChild("Handle");if v2232 then local v2282=474 -(33 + 441) ;local v2283;while true do if (v2282==(1 -0)) then v2283.Part0,v2283.Part1,v2283.C0=v762,v2232,v23(0 -0 ,0 -0 ,0);v2283.Parent=v762;break;end if ((0 + 0)==v2282) then v2232.CanCollide=false;v2283=Instance.new("Weld");v2282=12 -(5 + 6) ;end end end v2092.Parent=v759;end break;end end end);end end break;end if (v760==(1974 -(1656 + 317))) then for v1758,v1759 in v26(v759:GetChildren()) do if v1759:IsA("Accessory") then local v2003=false;local v2004=v1759:FindFirstChild("Handle");if v2004 then local v2136=v2004:FindFirstChildOfClass("Weld");if (v2136 and ((v2136.Part0 and (v2136.Part0.Name=="Head")) or (v2136.Part1 and (v2136.Part1.Name=="Head")))) then v2003=true;end end if ( not v440 or  not v2003) then v1759:Destroy();end end end for v1760,v1761 in v26(v759:GetChildren()) do if (v1761:IsA("BasePart") and (v1761.Name~="HumanoidRootPart")) then local v2005=0;while true do if (v2005==(0 + 0)) then v1761.Transparency=((v1761.Name=="Head") and v438) or v439 ;if (v1761.Name=="UpperTorso") then for v2234,v2235 in v26(v1761:GetChildren()) do if v2235:IsA("Decal") then v2235:Destroy();end end end break;end end end end v760=2 + 0 ;end if (v760==(3 + 0)) then v762=v759:FindFirstChild("UpperTorso") or v759:FindFirstChild("Torso") ;for v1762,v1763 in v26(v436) do task.spawn(function() local v1897,v1898=pcall(function() return game:GetObjects("rbxassetid://"   .. v1763 )[1];end);if (v1897 and v1898 and v761) then local v2093=0 -0 ;local v2094;while true do if (v2093==(0 -0)) then v2094=v1898:FindFirstChild("Handle");if v2094 then local v2236=354 -(5 + 349) ;local v2237;while true do if (v2236==(4 -3)) then v2237.Part0,v2237.Part1=v761,v2094;v2237.C0=(v441 and (v442 or v23(294 -(50 + 244) ,1271 -(266 + 1005) ,0 + 0 ))) or (v442 and (v23(0 -0 ,v761.Size.Y/2 ,1896 -(1741 + 155) ) * v442)) or v23(0 -0 ,v761.Size.Y/(1698 -(561 + 1135)) ,0) ;v2236=2 -0 ;end if (v2236==(3 -1)) then v2237.Parent=v761;break;end if (v2236==0) then v2094.CanCollide=false;v2237=Instance.new("Weld");v2236=3 -2 ;end end end v2093=1067 -(507 + 559) ;end if (v2093==(2 -1)) then v1898.Parent=v759;break;end end end end);end v760=9 -5 ;end end end if getgenv().modelConn then getgenv().modelConn:Disconnect();end getgenv().modelConn=v8.CharacterAdded:Connect(v443);if v8.Character then v443(v8.Character);end end local v133={};local function v134() local v445=0 -0 ;local v446;local v447;local v448;local v449;local v450;local v451;local v452;local v453;while true do if (v445==(393 -(212 + 176))) then v29(v38.conns,v0.InputEnded:Connect(function(v1600) if (v1600.UserInputType==Enum.UserInputType.MouseButton1) then v451=false;end end));break;end if ((498 -(73 + 424))==v445) then Instance.new("UIStroke",v446).Color=v35.Stroke;v447=Instance.new("Frame",v446);v447.Size,v447.BorderSizePixel=UDim2.new(906 -(250 + 655) ,0 -0 ,0 -0 ,2 -0 ),0 -0 ;Instance.new("UIGradient",v447).Color=ColorSequence.new({ColorSequenceKeypoint.new(0 -0 ,v35.Accent),ColorSequenceKeypoint.new(1902 -(484 + 1417) ,Color3.fromRGB(25 + 75 ,268 -68 ,50))});v445=2;end if (v445==2) then v448=Instance.new("TextLabel",v446);v448.Text,v448.Size,v448.Position="hotkeys",UDim2.new(919 -(794 + 124) ,0 -0 ,0 -0 ,3 + 17 ),UDim2.new(773 -(48 + 725) ,0 -0 ,1927 -(1299 + 628) ,4 -1 );v448.BackgroundTransparency,v448.Font,v448.TextSize,v448.TextColor3=2 -1 ,v35.Font,7 + 4 ,v35.Dim;v449=Instance.new("Frame",v446);v445=7 -4 ;end if ((2 + 2)==v445) then v38.hkFrame=v446;v451,v452,v453=false,nil,nil;v446.InputBegan:Connect(function(v1601) if (v1601.UserInputType==Enum.UserInputType.MouseButton1) then v451,v452,v453=true,v1601.Position,v446.Position;end end);v446.InputChanged:Connect(function(v1602) if ((v1602.UserInputType==Enum.UserInputType.MouseMovement) and v451) then local v1901=v1602.Position-v452 ;v446.Position=UDim2.new(v453.X.Scale,v453.X.Offset + v1901.X ,v453.Y.Scale,v453.Y.Offset + v1901.Y );end end);v445=1450 -(335 + 1110) ;end if ((3 + 0)==v445) then v449.Name,v449.Size,v449.Position,v449.BackgroundTransparency="C",UDim2.new(1 + 0 , -(861 -(152 + 701)),1312 -(430 + 881) , -(10 + 14)),UDim2.new(895 -(557 + 338) ,2 + 2 ,0 -0 ,22),1279 -(243 + 1035) ;v450=Instance.new("UIListLayout",v449);v450.Padding=UDim.new(0 -0 ,6 -4 );v450:GetPropertyChangedSignal("AbsoluteContentSize"):Connect(function() v446.Size=UDim2.new(0 -0 ,344 -184 ,801 -(499 + 302) ,v17(890 -(39 + 827) ,v450.AbsoluteContentSize.Y + 17 + 9 ));end);v445=10 -6 ;end if (v445==0) then if v38.hkFrame then v38.hkFrame:Destroy();end v446=Instance.new("Frame",v38.gui);v446.Name,v446.Size,v446.Position="HK",UDim2.new(0 -0 ,635 -475 ,0 -0 ,124 -(90 + 10) ),UDim2.new(1 + 0 , -(497 -327),0 + 0 ,316 -116 );v446.BackgroundColor3,v446.BackgroundTransparency,v446.BorderSizePixel,v446.Active=v35.Main,104.1 -(103 + 1) ,554 -(475 + 79) ,true;v445=1;end end end local function v135() local v454=0;local v455;local v456;local v457;while true do if (v454==(3 -2)) then Instance.new("UIStroke",v455).Color=v35.Stroke;v456=Instance.new("Frame",v455);v456.Size,v456.BorderSizePixel=UDim2.new(2 -1 ,0 -0 ,0 + 0 ,2 + 0 ),1503 -(1395 + 108) ;Instance.new("UIGradient",v456).Color=ColorSequence.new({ColorSequenceKeypoint.new(0,v35.Accent),ColorSequenceKeypoint.new(1205 -(7 + 1197) ,Color3.fromRGB(44 + 56 ,479 -(174 + 105) ,18 + 32 ))});v454=321 -(27 + 292) ;end if (v454==(8 -5)) then v38.wmFrame=v455;task.spawn(function() local v1604,v1605,v1606=v11(),0 -0 ,251 -191 ;local v1607=v1.RenderStepped:Connect(function() v1605=v1605 + (1 -0) ;end);while v38.running and v455 and v455.Parent  do local v1764=0;local v1765;local v1766;while true do if (v1764==(7 -5)) then v455.Size=UDim2.new(0 -0 ,v6:GetTextSize(v457.Text,150 -(43 + 96) ,v35.Font,v12(4079 -3079 ,49 -27 )).X + 17 + 3 ,0 + 0 ,42 -20 );task.wait(0.1 + 0 );break;end if (v1764==1) then v1766=v9(v8:GetNetworkPing() * (384 + 616) );v457.Text="Crack By Lvzz | fps: "   .. v1606   .. " | ping: "   .. v1766   .. "ms" ;v1764=3 -1 ;end if (v1764==(0 + 0)) then v1765=v11() -v1604 ;if (v1765>=(1 + 0)) then v1606,v1605,v1604=v9(v1605/v1765 ),0 + 0 ,v11();end v1764=1752 -(1414 + 337) ;end end end if v1607 then v1607:Disconnect();end end);break;end if ((1940 -(1642 + 298))==v454) then if v38.wmFrame then v38.wmFrame:Destroy();end v455=Instance.new("Frame",v38.gui);v455.Size,v455.Position=UDim2.new(0 -0 ,152 + 48 ,0 -0 ,65 -43 ),UDim2.new(1306 -(301 + 1005) ,4 + 6 ,0 + 0 ,10);v455.BackgroundColor3,v455.BackgroundTransparency,v455.BorderSizePixel=v35.Main,972.1 -(357 + 615) ,1873 -(674 + 1199) ;v454=1 + 0 ;end if (v454==(4 -2)) then v457=Instance.new("TextLabel",v455);v457.Name,v457.Size,v457.Position="T",UDim2.new(1 + 0 , -10,2 -1 , -(1 + 1)),UDim2.new(0 + 0 ,1 + 4 ,0 + 0 ,1303 -(384 + 917) );v457.BackgroundTransparency,v457.Font,v457.TextSize,v457.TextColor3,v457.TextXAlignment=698 -(128 + 569) ,v35.Font,1554 -(1407 + 136) ,v35.Text,Enum.TextXAlignment.Left;v457.Text="Crack By Lvzz | loading...";v454=3;end end end local function v136() local v458=1887 -(687 + 1200) ;local v459;local v460;local v461;local v462;local v463;local v464;while true do if (v458==(1714 -(556 + 1154))) then v38.timeFrame=v459;v462,v463,v464=false,nil,nil;v459.InputBegan:Connect(function(v1608) if (v1608.UserInputType==Enum.UserInputType.MouseButton1) then v462,v463,v464=true,v1608.Position,v459.Position;end end);v458=17 -12 ;end if (v458==(96 -(9 + 86))) then v459.BackgroundColor3,v459.BackgroundTransparency,v459.BorderSizePixel,v459.Active=v35.Main,421.1 -(275 + 146) ,0 + 0 ,true;Instance.new("UIStroke",v459).Color=v35.Stroke;v460=Instance.new("Frame",v459);v458=66 -(29 + 35) ;end if ((22 -17)==v458) then v459.InputChanged:Connect(function(v1609) if ((v1609.UserInputType==Enum.UserInputType.MouseMovement) and v462) then local v1905=0;local v1906;while true do if (v1905==(0 -0)) then v1906=v1609.Position-v463 ;v459.Position=UDim2.new(v464.X.Scale,v464.X.Offset + v1906.X ,v464.Y.Scale,v464.Y.Offset + v1906.Y );break;end end end end);v29(v38.conns,v0.InputEnded:Connect(function(v1610) if (v1610.UserInputType==Enum.UserInputType.MouseButton1) then v462=false;end end));task.spawn(function() while v38.running and v459 and v459.Parent  do local v1767=GetBerlinTime();v461.Text=v30("%02d:%02d:%02d",v1767.hour,v1767.min,v1767.sec);task.wait(4 -3 );end end);break;end if (v458==(2 + 1)) then v461.Name,v461.Size,v461.Position="T",UDim2.new(1318 -(930 + 387) , -(10 + 0),1013 -(53 + 959) , -(410 -(312 + 96))),UDim2.new(0 -0 ,8 -3 ,0 -0 ,287 -(147 + 138) );v461.BackgroundTransparency,v461.Font,v461.TextSize,v461.TextColor3,v461.TextXAlignment=900 -(813 + 86) ,v35.Font,10 + 1 ,v35.Text,Enum.TextXAlignment.Center;v461.Text="--:--:--";v458=7 -3 ;end if (v458==(492 -(18 + 474))) then if v38.timeFrame then v38.timeFrame:Destroy();end v459=Instance.new("Frame",v38.gui);v459.Size,v459.Position=UDim2.new(0 + 0 ,261 -181 ,1086 -(860 + 226) ,325 -(121 + 182) ),UDim2.new(1 + 0 , -(83 + 7),1240 -(988 + 252) ,2 + 8 );v458=1 + 0 ;end if (v458==(2 + 0)) then v460.Size,v460.BorderSizePixel=UDim2.new(250 -(197 + 52) ,1970 -(49 + 1921) ,890 -(223 + 667) ,4 -2 ),52 -(51 + 1) ;Instance.new("UIGradient",v460).Color=ColorSequence.new({ColorSequenceKeypoint.new(0,v35.Accent),ColorSequenceKeypoint.new(1 -0 ,Color3.fromRGB(1225 -(146 + 979) ,57 + 143 ,655 -(311 + 294) ))});v461=Instance.new("TextLabel",v459);v458=10 -7 ;end end end local v137=nil;local v138={};local function v139() if v137 then v137:Destroy();end v138={};if ( not v38.gui or  not v37.scopeEnabled) then return;end v137=Instance.new("Frame",v38.gui);v137.Name="ScopeCrosshair";v137.Size=UDim2.new(0,0 -0 ,0 + 0 ,1443 -(496 + 947) );local v467=v37.scopeOffsetY or  -(1394 -(1233 + 125)) ;v137.Position=UDim2.new(0.5 + 0 ,0 + 0 ,0.5 + 0 ,v467);v137.AnchorPoint=Vector2.new(0.5 -0 ,1845.5 -(143 + 1702) );v137.BackgroundTransparency=1646 -(963 + 682) ;v137.ZIndex=84 + 16 ;local v472=v37.scopeColor or Color3.fromRGB(1759 -(504 + 1000) ,50,18 + 32 ) ;local v473=v37.scopeSize or (14 + 6) ;local v474=v37.scopeGap or (8 + 0) ;local v475=v37.scopeThickness or (1 + 0) ;local function v476(v763,v764,v765,v766) local v767=Instance.new("Frame",v137);v767.Size=UDim2.new(65 -(9 + 56) ,v765 + (586 -(531 + 53)) ,0 + 0 ,v766 + 2 );v767.Position=UDim2.new(773 -(89 + 684) ,v763-((v765 + 1 + 1)/(2 -0)) ,0 + 0 ,v764-((v766 + 2 + 0)/(184 -(156 + 26))) );v767.BackgroundColor3=Color3.fromRGB(0 + 0 ,0 -0 ,164 -(149 + 15) );v767.BackgroundTransparency=960.3 -(890 + 70) ;v767.BorderSizePixel=0 + 0 ;v767.ZIndex=218 -(39 + 78) ;v29(v138,v767);local v774=Instance.new("Frame",v137);v774.Size=UDim2.new(482 -(14 + 468) ,v765,0 + 0 ,v766);v774.Position=UDim2.new(0 -0 ,v763-(v765/(5 -3)) ,0 -0 ,v764-(v766/(2 + 0)) );v774.BackgroundColor3=v472;v774.BackgroundTransparency=0 + 0 ;v774.BorderSizePixel=0;v774.ZIndex=377 -275 ;v29(v138,v774);return v774;end v476(0, -(v474 + (v473/(1 + 1))),v475,v473);v476(0 + 0 ,v474 + (v473/2) ,v475,v473);v476( -(v474 + (v473/(1 + 1))),0,v473,v475);v476(v474 + (v473/(3 -1)) ,462 -(428 + 34) ,v473,v475);end local function v140() local v477=0 + 0 ;while true do if ((0 -0)==v477) then if v137 then v137:Destroy();v137=nil;end v138={};break;end end end local function v141() local v478=0 + 0 ;local v479;while true do if ((0 -0)==v478) then if  not v137 then return;end v479=v37.scopeColor or Color3.fromRGB(896 -641 ,2 + 48 ,50) ;v478=52 -(12 + 39) ;end if (v478==(1 + 0)) then for v1611,v1612 in ipairs(v138) do if (v1612 and v1612.Parent and (v1612.ZIndex==(315 -213))) then v1612.BackgroundColor3=v479;end end break;end end end local function v142(v480) if v480 then v139();else v140();end end local v143={Red=Color3.fromRGB(908 -653 ,15 + 35 ,9 + 41 ),Blue=Color3.fromRGB(85 -35 ,53 + 47 ,22 + 233 ),Green=Color3.fromRGB(28 + 22 ,646 -391 ,212 -112 ),Purple=Color3.fromRGB(120 + 60 ,241 -191 ,1965 -(1596 + 114) ),Cyan=Color3.fromRGB(130 -80 ,968 -(164 + 549) ,1693 -(1059 + 379) ),Yellow=Color3.fromRGB(316 -61 ,133 + 122 ,9 + 41 ),White=Color3.fromRGB(909 -654 ,647 -(145 + 247) ,210 + 45 ),Pink=Color3.fromRGB(255,47 + 53 ,195 + 5 )};local function v144() local v481=0 -0 ;local v482;local v483;local v484;while true do if ((0 + 0)==v481) then if ( not v38.gui or  not v37.killEffects) then return;end v482=v37.killScreenType or "CS:GO" ;v481=1 + 0 ;end if (v481==(3 -2)) then v483=v37.killScreenDuration or (0.25 -0) ;v484=v143[v37.killScreenColor] or v143.Red ;v481=2 -0 ;end if (v481==2) then if (v482=="CS:GO") then local v1769=Instance.new("Frame",v38.gui);v1769.Name="KillFlash";v1769.Size=UDim2.new(721 -(254 + 466) ,0 -0 ,561 -(544 + 16) ,0 -0 );v1769.Position=UDim2.new(628 -(294 + 334) ,253 -(236 + 17) ,0,703 -(227 + 476) );v1769.BackgroundColor3=v484;v1769.BackgroundTransparency=0.4 + 0 ;v1769.BorderSizePixel=0 -0 ;v1769.ZIndex=173 -73 ;local v1777=Instance.new("TextLabel",v1769);v1777.Size=UDim2.new(0 -0 ,63 + 17 ,0 -0 ,378 -298 );v1777.Position=UDim2.new(0.5 + 0 , -(736 -(127 + 569)),0.4, -(33 + 7));v1777.BackgroundTransparency=795 -(413 + 381) ;v1777.Text="✕";v1777.TextColor3=Color3.fromRGB(11 + 244 ,542 -287 ,255);v1777.TextSize=186 -114 ;v1777.Font=Enum.Font.GothamBold;v1777.TextTransparency=0 + 0 ;v1777.TextStrokeTransparency=1970.5 -(582 + 1388) ;v1777.TextStrokeColor3=Color3.fromRGB(0 + 0 ,0 -0 ,0 + 0 );v1777.ZIndex=465 -(326 + 38) ;local v1790=TweenInfo.new(v483,Enum.EasingStyle.Quad,Enum.EasingDirection.Out);v7:Create(v1769,v1790,{BackgroundTransparency=2 -1 }):Play();v7:Create(v1777,v1790,{TextTransparency=1 -0 ,TextStrokeTransparency=621 -(47 + 573) }):Play();task.delay(v483 + 0.1 + 0 ,function() if (v1769 and v1769.Parent) then v1769:Destroy();end end);elseif (v482=="Flash") then local v2006=0;local v2007;local v2008;while true do if (v2006==1) then v2007.Size=UDim2.new(1 + 0 ,0 -0 ,1 -0 ,1664 -(1269 + 395) );v2007.BackgroundColor3=v484;v2006=494 -(76 + 416) ;end if (v2006==(447 -(319 + 124))) then v7:Create(v2007,v2008,{BackgroundTransparency=1}):Play();task.delay(v483 + (0.1 -0) ,function() if (v2007 and v2007.Parent) then v2007:Destroy();end end);break;end if (v2006==(1007 -(564 + 443))) then v2007=Instance.new("Frame",v38.gui);v2007.Name="KillFlash";v2006=2 -1 ;end if ((1 + 1)==v2006) then v2007.BackgroundTransparency=458.3 -(337 + 121) ;v2007.BorderSizePixel=0 -0 ;v2006=3 + 0 ;end if (v2006==(9 -6)) then v2007.ZIndex=2011 -(1261 + 650) ;v2008=TweenInfo.new(v483,Enum.EasingStyle.Quad,Enum.EasingDirection.Out);v2006=2 + 2 ;end end elseif (v482=="Vignette") then local v2138=Instance.new("Frame",v38.gui);v2138.Name="KillVignette";v2138.Size=UDim2.new(1 -0 ,1817 -(772 + 1045) ,1 + 0 ,0 -0 );v2138.BackgroundColor3=v484;v2138.BackgroundTransparency=1629.6 -(1094 + 535) ;v2138.BorderSizePixel=144 -(102 + 42) ;v2138.ZIndex=1976 -(1554 + 322) ;local v2145=Instance.new("UIGradient",v2138);v2145.Transparency=NumberSequence.new({NumberSequenceKeypoint.new(1844 -(1524 + 320) ,1178 -(816 + 362) ),NumberSequenceKeypoint.new(156.4 -(18 + 138) ,0.8 -0 ),NumberSequenceKeypoint.new(349 -(136 + 212) ,4 -3 )});v2145.Rotation=73 + 17 ;local v2148=TweenInfo.new(v483 * (1.5 + 0) ,Enum.EasingStyle.Quad,Enum.EasingDirection.Out);v7:Create(v2138,v2148,{BackgroundTransparency=1}):Play();task.delay((v483 * (1605.5 -(240 + 1364))) + (0.1 -0) ,function() if (v2138 and v2138.Parent) then v2138:Destroy();end end);elseif (v482=="Skull") then local v2202=1082 -(1050 + 32) ;local v2203;local v2204;local v2205;while true do if ((14 -10)==v2202) then v7:Create(v2203,v2205,{BackgroundTransparency=1 + 0 }):Play();v7:Create(v2204,v2205,{TextTransparency=1056 -(331 + 724) }):Play();task.delay(v483 + 0.1 + 0 ,function() if (v2203 and v2203.Parent) then v2203:Destroy();end end);break;end if (v2202==(647 -(269 + 375))) then v2204.TextSize=2 + 78 ;v2204.TextTransparency=725 -(267 + 458) ;v2204.ZIndex=101;v2205=TweenInfo.new(v483,Enum.EasingStyle.Quad,Enum.EasingDirection.Out);v2202=2 + 2 ;end if (v2202==(3 -1)) then v2204.Size=UDim2.new(0,918 -(667 + 151) ,0,1597 -(1410 + 87) );v2204.Position=UDim2.new(1897.5 -(1504 + 393) , -(223 -173),0.4 -0 , -(1819 -(54 + 1715)));v2204.BackgroundTransparency=2 -1 ;v2204.Text="💀";v2202=3;end if (v2202==(797 -(461 + 335))) then v2203.BackgroundTransparency=0.5;v2203.BorderSizePixel=0 + 0 ;v2203.ZIndex=1861 -(1730 + 31) ;v2204=Instance.new("TextLabel",v2203);v2202=1669 -(728 + 939) ;end if (v2202==(0 -0)) then v2203=Instance.new("Frame",v38.gui);v2203.Name="KillFlash";v2203.Size=UDim2.new(3 -2 ,0 -0 ,2 -1 ,0);v2203.BackgroundColor3=v484;v2202=3 -2 ;end end elseif (v482=="HvH") then local v2238=Instance.new("Frame",v38.gui);v2238.Name="KillFlash";v2238.Size=UDim2.new(1,1068 -(138 + 930) ,1 + 0 ,0 + 0 );v2238.BackgroundColor3=Color3.fromRGB(200 + 55 ,219 + 36 ,631 -376 );v2238.BackgroundTransparency=0.2 -0 ;v2238.BorderSizePixel=1766 -(459 + 1307) ;v2238.ZIndex=1970 -(474 + 1396) ;local v2245=Instance.new("TextLabel",v2238);v2245.Size=UDim2.new(0 -0 ,188 + 12 ,0 + 0 ,143 -93 );v2245.Position=UDim2.new(0.5, -(13 + 87),0.4 -0 , -(108 -83));v2245.BackgroundTransparency=592 -(562 + 29) ;v2245.Text="KILL";v2245.TextColor3=v484;v2245.TextSize=48;v2245.Font=Enum.Font.GothamBlack;v2245.TextTransparency=0 + 0 ;v2245.TextStrokeTransparency=1327 -(443 + 884) ;v2245.TextStrokeColor3=Color3.fromRGB(1419 -(374 + 1045) ,0,0 + 0 );v2245.ZIndex=313 -212 ;local v2258=TweenInfo.new(0.08 + 0 ,Enum.EasingStyle.Quad,Enum.EasingDirection.Out);v7:Create(v2238,v2258,{BackgroundTransparency=639 -(448 + 190) }):Play();local v2259=TweenInfo.new(v483,Enum.EasingStyle.Quad,Enum.EasingDirection.Out);v7:Create(v2245,v2259,{TextTransparency=1 + 0 ,TextStrokeTransparency=1}):Play();task.delay(v483 + 0.1 + 0 ,function() if (v2238 and v2238.Parent) then v2238:Destroy();end end);elseif (v482=="None") then return;end break;end end end local function v145(v485) local v486=0 + 0 ;local v487;local v488;local v489;local v490;local v491;local v492;local v493;local v494;local v495;local v496;while true do if (v486==(3 + 1)) then v496=v495[v491] or v495.Binary ;for v1613=748 -(16 + 731) ,v494 do local v1614=0 -0 ;local v1615;local v1616;local v1617;local v1618;while true do if (v1614==2) then v1616.TextColor3=v496.main;v1616.TextSize=v28(43 -29 ,1518 -(1307 + 187) );v1616.Font=Enum.Font.Code;v1616.TextStrokeTransparency=0.3 -0 ;v1614=6 -3 ;end if (v1614==(11 -7)) then task.spawn(function() local v2097=v11();local v2098=684.2 -(232 + 451) ;while v1615.Parent do local v2149=v11() -v2097 ;local v2150=v18(v2149/v2098 ,1 + 0 );v1615.StudsOffset=v1617:Lerp(v1618,v2150);v1616.TextTransparency=v2150 * (0.95 + 0) ;v1616.TextStrokeTransparency=(564.3 -(510 + 54)) + (v2150 * (0.7 -0)) ;if (v9(v2149 * 7 )~=v9((v2149-(36.016 -(13 + 23))) * (13 -6) )) then v1616.Text=v493[v28(1 -0 , #v493)];if (v491=="Glitch") then v1616.TextColor3=Color3.fromRGB(v28(272 -122 ,1343 -(830 + 258) ),v28(176 -126 ,160 + 95 ),v28(150,255));end end if (v2150>=(1 + 0)) then break;end v1.Heartbeat:Wait();end if v1615.Parent then v1615:Destroy();end end);break;end if (1==v1614) then v1616=Instance.new("TextLabel",v1615);v1616.Size=UDim2.new(1442 -(860 + 581) ,0 -0 ,1 + 0 ,241 -(237 + 4) );v1616.BackgroundTransparency=2 -1 ;v1616.Text=v493[v28(2 -1 , #v493)];v1614=3 -1 ;end if (v1614==3) then v1616.TextStrokeColor3=v496.stroke;v1617=v1615.StudsOffset;v1618=v1617 + v12(v28( -(3 + 0),2 + 1 ),v28(3 + 1 ,10),v28( -(11 -8),2 + 1 )) ;if (v491=="Matrix") then v1618=v1617 + v12(v28( -(1 + 0),1427 -(85 + 1341) ),v28( -(13 -5), -(11 -7)),v28( -(373 -(45 + 327)),1 -0 )) ;end v1614=506 -(444 + 58) ;end if (v1614==(0 + 0)) then v1615=Instance.new("BillboardGui",v490);v1615.Size=UDim2.new(0 + 0 ,13 + 12 ,0 -0 ,1335 -(436 + 874) );v1615.StudsOffset=v12(v28( -3,1735 -(64 + 1668) ),v28( -(1974 -(1227 + 746)),9 -6 ),v28( -(5 -2),497 -(415 + 79) ));v1615.AlwaysOnTop=true;v1614=2 -1 ;end end end task.delay(1 + 1 ,function() if (v490 and v490.Parent) then v490:Destroy();end end);break;end if (v486==(1 + 2)) then v493=v492[v491] or v492.Binary ;v494=1 + 14 ;v495={Binary={main=Color3.fromRGB(0,467 -212 ,591 -(142 + 349) ),stroke=Color3.fromRGB(1711 -(1611 + 100) ,38 + 12 ,804 -(14 + 770) )},Matrix={main=Color3.fromRGB(0 + 0 ,350 -95 ,35 + 35 ),stroke=Color3.fromRGB(381 -(229 + 152) ,57 + 23 ,54 -24 )},Hex={main=Color3.fromRGB(694 -439 ,1964 -(1710 + 154) ,368 -(200 + 118) ),stroke=Color3.fromRGB(477 -377 ,12 + 18 ,0 -0 )},Code={main=Color3.fromRGB(148 -48 ,178 + 22 ,255),stroke=Color3.fromRGB(0 + 0 ,50 + 0 ,54 + 46 )},Glitch={main=Color3.fromRGB(41 + 214 ,100,552 -297 ),stroke=Color3.fromRGB(1300 -(363 + 887) ,0,87 -37 )},Numbers={main=Color3.fromRGB(1213 -958 ,40 + 215 ,33 + 222 ),stroke=Color3.fromRGB(116 -66 ,50,50)}};v486=3 + 1 ;end if (v486==(1665 -(674 + 990))) then v489=v488 or v487 ;if  not v489 then return;end v490=Instance.new("Attachment",v489);v486=1 + 1 ;end if (v486==(1504 -(771 + 733))) then if ( not v485 or  not v37.killEffects) then return;end v487=v485:FindFirstChild("HumanoidRootPart");v488=v485:FindFirstChild("Head");v486=1 + 0 ;end if (v486==2) then v490.Name="KillParticleAtt";v491=v37.killParticleType or "Binary" ;v492={Binary={"0","1","00","11","01","10"},Matrix={"ア","イ","ウ","カ","キ","0","1"},Hex={"0x","FF","00","A1","B2","C3"},Code={"</>","{}","[]","();","++","=="},Glitch={"█","▓","▒","░","■","□"},Numbers={"0","1","2","3","4","5","6","7","8","9"}};v486=14 -11 ;end end end local function v146(v497) local v498=0 -0 ;local v499;local v500;local v501;local v502;while true do if (v498==2) then v502=Instance.new("Highlight");v502.Name="GhostHighlight";v502.Adornee=v497;v498=1 + 2 ;end if (v498==0) then if ( not v497 or  not v37.killEffects or  not v37.ghostEffectEnabled) then return;end v499={};v500={};v498=3 -2 ;end if (v498==(1 + 0)) then for v1619,v1620 in ipairs(v497:GetDescendants()) do if (v1620:IsA("BasePart") and (v1620.Transparency<(90 -(40 + 49)))) then v499[v1620]=v1620.Transparency;v29(v500,v1620);end end if ( #v500==(0 -0)) then return;end v501=v37.ghostColor or Color3.fromRGB(590 -(99 + 391) ,303 -(72 + 31) ,603 -(89 + 259) ) ;v498=2;end if (v498==(4 + 0)) then v502.OutlineTransparency=0 -0 ;v502.DepthMode=Enum.HighlightDepthMode.AlwaysOnTop;v502.Parent=v497;v498=12 -7 ;end if (v498==(5 + 0)) then task.spawn(function() local v1621=0 -0 ;local v1622;local v1623;while true do if (v1621==(1 + 0)) then while true do local v2099=v11() -v1623 ;local v2100=v18(v2099/v1622 ,1605 -(1032 + 572) );local v2101=v2100 * v2100 ;for v2154=418 -(203 + 214) , #v500 do local v2155=v500[v2154];if (v2155 and v2155.Parent) then local v2208=v499[v2155] or (1817 -(568 + 1249)) ;v2155.Transparency=v2208 + (((1 + 0) -v2208) * v2101) ;end end if (v502 and v502.Parent) then v502.FillTransparency=(0.5 -0) + (v2101 * (0.5 -0)) ;v502.OutlineTransparency=v2101;end if (v2100>=(1307 -(913 + 393))) then break;end v1.Heartbeat:Wait();end if (v502 and v502.Parent) then v502:Destroy();end v1621=2 -0 ;end if (v1621==(5 -3)) then task.delay(0.3 + 0 ,function() for v2156,v2157 in pairs(v499) do if (v2156 and v2156.Parent) then v2156.Transparency=v2157;end end end);break;end if (v1621==(1579 -(1243 + 336))) then v1622=0.8 -0 ;v1623=v11();v1621=1330 -(774 + 555) ;end end end);break;end if (v498==(413 -(269 + 141))) then v502.FillColor=v501;v502.OutlineColor=v501;v502.FillTransparency=799.5 -(150 + 649) ;v498=8 -4 ;end end end local function v147(v503,v504) local v505=0 -0 ;while true do if (v505==(1982 -(362 + 1619))) then v145(v504);v146(v504);break;end if ((1984 -(1122 + 862))==v505) then if  not v37.killEffects then return;end v144();v505=1626 -(950 + 675) ;end end end local v148=0 + 0 ;local function v149() local v506=1179 -(216 + 963) ;local v507;while true do if (v506==(1 + 2)) then v507.BorderSizePixel=0;v38.hlFrame=v507;break;end if (v506==(1289 -(485 + 802))) then v507.Position=UDim2.new(559.5 -(432 + 127) , -(1348 -(1065 + 8)),743.58 -(549 + 194) ,0);v507.BackgroundTransparency=1 + 0 ;v506=1604 -(635 + 966) ;end if (0==v506) then if v38.hlFrame then v38.hlFrame:Destroy();end v507=Instance.new("Frame",v38.gui);v506=1 + 0 ;end if (v506==(1 -0)) then v507.Name="HitLogger";v507.Size=UDim2.new(0 + 0 ,550,42 -(5 + 37) ,497 -297 );v506=1705 -(453 + 1250) ;end end end function v48(v508,v509,v510,v511) if ( not v37.hlEnabled or  not v38.hlFrame) then return;end if (v508=="kill") then local v1053=nil;for v1297,v1298 in v26(v3:GetPlayers()) do if (v1298.Name==v509) then v1053=v1298.Character;break;end end v147(v509,v1053);end local v512=((v508=="kill") and (42 + 58)) or v511 or (0 + 0) ;local v513=((v508=="kill") and (0 -0)) or ((v508=="miss") and (5 + 95)) or (100 -v512) ;if (v513<0) then v513=0 + 0 ;end v148=v148 + (1 -0) ;local v514=v148;for v781,v782 in ipairs(v38.hlFrame:GetChildren()) do if (v782:IsA("Frame") and v782.Name:match("^Log_")) then local v1299=v782.Position.Y.Offset;game:GetService("TweenService"):Create(v782,TweenInfo.new(0.15 -0 ,Enum.EasingStyle.Quad),{Position=UDim2.new(0.5 -0 ,318 -(56 + 262) ,0 -0 ,v1299 + 16 + 6 )}):Play();end end local v515=((v508=="kill") and "Killed") or ((v508=="miss") and "Missed") or "Hurt" ;local v516=(v510 or "head"):lower();local v517;if (v508=="miss") then v517=v30("✕ Missed %s (shot at %s).",v509 or "Unknown" ,v516);else v517=v30("%s %s in the %s for %d hp (%d remaining).",v515,v509 or "Unknown" ,v516,v512,v513);end local v518=Instance.new("Frame",v38.hlFrame);v518.Name="Log_"   .. v514 ;v518.Size=UDim2.new(529 -(318 + 211) ,2263 -1803 ,1587 -(963 + 624) ,9 + 11 );v518.Position=UDim2.new(846.5 -(518 + 328) ,0 -0 ,0 -0 ,0 -0 );v518.AnchorPoint=Vector2.new(317.5 -(301 + 16) ,0);v518.BackgroundColor3=Color3.fromRGB(73 -48 ,84 -54 ,91 -56 );v518.BackgroundTransparency=0.45 + 0 ;v518.BorderSizePixel=0 + 0 ;v518.ZIndex=1102 -(16 + 986) ;Instance.new("UICorner",v518).CornerRadius=UDim.new(0,8 -4 );local v528=Instance.new("TextLabel",v518);v528.Size=UDim2.new(0 + 0 ,22,3 -2 ,0 + 0 );v528.Position=UDim2.new(1511 -(617 + 894) ,6,0 -0 ,458 -(271 + 187) );v528.BackgroundTransparency=1 + 0 ;v528.Text=((v508=="miss") and "✕") or "⊙" ;v528.Font=Enum.Font.GothamBold;v528.TextSize=13;v528.TextColor3=((v508=="kill") and Color3.fromRGB(255,1119 -(829 + 190) ,100)) or ((v508=="miss") and Color3.fromRGB(909 -654 ,625 -445 ,101 -21 )) or Color3.fromRGB(248 -68 ,496 -296 ,53 + 167 ) ;v528.ZIndex=34 + 68 ;local v538=Instance.new("TextLabel",v518);v538.Size=UDim2.new(1 + 0 , -(96 -64),1 + 0 ,0);v538.Position=UDim2.new(613 -(520 + 93) ,302 -(259 + 17) ,0 + 0 ,0 + 0 );v538.BackgroundTransparency=1 + 0 ;v538.Text=v517;v538.Font=Enum.Font.Code;v538.TextSize=43 -30 ;v538.TextColor3=Color3.fromRGB(786 -(396 + 195) ,192 + 8 ,1063 -(25 + 828) );v538.TextXAlignment=Enum.TextXAlignment.Left;v538.TextTruncate=Enum.TextTruncate.AtEnd;v538.ZIndex=254 -153 ;local v552=Instance.new("Frame",v518);v552.Size=UDim2.new(0,5 -3 ,1762 -(440 + 1321) , -(1833 -(1059 + 770)));v552.Position=UDim2.new(0,50 -(18 + 30) ,0 -0 ,9 -7 );v552.BackgroundColor3=((v508=="kill") and Color3.fromRGB(417 -162 ,23 + 57 ,625 -(424 + 121) )) or ((v508=="miss") and Color3.fromRGB(47 + 208 ,160,53 + 7 )) or Color3.fromRGB(1798 -(470 + 1228) ,1527 -(641 + 706) ,101 + 154 ) ;v552.BackgroundTransparency=686.3 -(537 + 149) ;v552.BorderSizePixel=0;v552.ZIndex=123 -21 ;Instance.new("UICorner",v552).CornerRadius=UDim.new(440 -(249 + 191) ,1 + 0 );v518.Position=UDim2.new(0.5 -0 ,0,0 + 0 , -(44 -29));v518.BackgroundTransparency=3 -2 ;v538.TextTransparency=428 -(183 + 244) ;v528.TextTransparency=1 + 0 ;v552.BackgroundTransparency=731 -(434 + 296) ;local v562=TweenInfo.new(0.2 + 0 ,Enum.EasingStyle.Quint,Enum.EasingDirection.Out);local v563=TweenInfo.new(0.15 + 0 );game:GetService("TweenService"):Create(v518,v562,{Position=UDim2.new(0.5 -0 ,512 -(169 + 343) ,0 + 0 ,0 + 0 )}):Play();game:GetService("TweenService"):Create(v518,v563,{BackgroundTransparency=0.45}):Play();game:GetService("TweenService"):Create(v538,v563,{TextTransparency=0 -0 }):Play();game:GetService("TweenService"):Create(v528,v563,{TextTransparency=0 -0 }):Play();game:GetService("TweenService"):Create(v552,v563,{BackgroundTransparency=0.3 -0 }):Play();local v564={};for v783,v784 in ipairs(v38.hlFrame:GetChildren()) do if (v784:IsA("Frame") and v784.Name:match("^Log_")) then v29(v564,v784);end end table.sort(v564,function(v785,v786) local v787=tonumber(v785.Name:match("Log_(%d+)")) or (0 + 0) ;local v788=tonumber(v786.Name:match("Log_(%d+)")) or (0 -0) ;return v787<v788 ;end);while  #v564>v37.hlMaxLogs  do local v789=v564[1124 -(651 + 472) ];if v789 then local v1300=0 + 0 ;while true do if (v1300==(0 + 0)) then v789:Destroy();table.remove(v564,1 + 0 );break;end end end end task.delay(6 -1 ,function() if (v518 and v518.Parent) then local v1301=TweenInfo.new(483.3 -(397 + 86) ,Enum.EasingStyle.Quad);v7:Create(v518,v1301,{BackgroundTransparency=877 -(423 + 453) }):Play();v7:Create(v538,v1301,{TextTransparency=261 -(36 + 224) }):Play();v7:Create(v528,v1301,{TextTransparency=1 + 0 }):Play();v7:Create(v552,v1301,{BackgroundTransparency=1 + 0 }):Play();task.delay(0.35 + 0 ,function() if (v518 and v518.Parent) then v518:Destroy();end end);end end);end local v150={};local v151=nil;local v152=nil;local v153=0 + 0 ;local v154=0 + 0 ;local v155=0 -0 ;local v156=1190 -(50 + 1140) ;local v157={};local v158={};function v47(v565,v566) v151=v565;v152=v566 or "Head" ;v153=v11();if v158[v565] then v157[v158[v565]]=nil;end local v567=v11()   .. "_"   .. v28(865 + 135 ,9999) ;v157[v567]={target=v565,hitbox=v566 or "Head" ,time=v11()};v158[v565]=v567;task.delay(0.8 + 0 ,function() if v157[v567] then local v1302=0 -0 ;local v1303;while true do if (v1302==(1 + 0)) then v157[v567]=nil;if (v158[v565]==v567) then v158[v565]=nil;end break;end if (v1302==0) then v1303=v11();if (((v1303-v156)>(0.3 -0)) and ((v1303-v155)>(0.3 + 0)) and ((v1303-v154)>(596.3 -(157 + 439)))) then v156=v1303;v48("miss",v565,v566 or "Head" ,0 -0 );end v1302=1 -0 ;end end end end);end local function v159(v570) for v790,v791 in pairs(v157) do if (v791.target==v570) then v157[v790]=nil;end end v158[v570]=nil;end function v49() for v792,v793 in v26(v3:GetPlayers()) do if ((v793~=v8) and  not v150[v793.UserId]) then local v1305=0 -0 ;local v1306;while true do if (v1305==(5 -3)) then v793.CharacterAdded:Connect(v1306);break;end if (v1305==(1524 -(248 + 1276))) then v150[v793.UserId]=true;v1306=nil;v1305=919 -(782 + 136) ;end if (v1305==(856 -(112 + 743))) then function v1306(v2025) if  not v2025 then return;end local v2026=v2025:WaitForChild("Humanoid",5 + 0 );if  not v2026 then return;end local v2027=v2026.Health;v2026.HealthChanged:Connect(function(v2103) local v2104=1171 -(1026 + 145) ;local v2105;local v2106;while true do if (v2104==1) then if ((v151==v793.Name) and ((v2105-v153)<(1.5 + 0))) then local v2261=0 -0 ;while true do if (v2261==(0 + 0)) then v159(v793.Name);if ((v2103<=(718 -(493 + 225))) and (v2027>(0 -0))) then if ((v2105-v154)>(0.5 + 0)) then v154=v2105;v48("kill",v793.Name,v152 or "Head" ,v9(v2027));end elseif ((v2106>(0 -0)) and ((v2105-v155)>(1776.25 -(482 + 1294)))) then v155=v2105;v48("hit",v793.Name,v152 or "Head" ,v2106);end break;end end end v2027=v2103;break;end if (v2104==(0 + 0)) then v2105=v11();v2106=v9(v2027-v2103 );v2104=2 -1 ;end end end);v2026.Died:Connect(function() local v2107=0 + 0 ;while true do if (v2107==0) then task.wait(0.5 -0 );v2027=1695 -(210 + 1385) ;break;end end end);end if v793.Character then v1306(v793.Character);end v1305=1691 -(1201 + 488) ;end end end end end v3.PlayerAdded:Connect(function(v572) if (v572~=v8) then task.delay(1 + 0 ,v49);end end);v133.Create=function(v573,v574) if v38.gui then v38.gui:Destroy();end v38.gui=Instance.new("ScreenGui");v38.gui.Name,v38.gui.ResetOnSpawn="Arc",false;v38.gui.Parent=game:GetService("CoreGui");v134();v135();v136();v149();local v579=Instance.new("Frame",v38.gui);v579.Name,v579.Size,v579.Position="M",UDim2.new(0 -0 ,382 + 238 ,0 -0 ,807 -357 ),UDim2.new(585.5 -(352 + 233) , -(749 -439),0.5 + 0 , -(575 -350));v579.BackgroundColor3,v579.BorderSizePixel=v35.Main,0 + 0 ;Instance.new("UIStroke",v579).Color=v35.Border;v38.main=v579;local v589=Instance.new("Frame",v579);v589.Size,v589.BorderSizePixel=UDim2.new(2 -1 ,574 -(489 + 85) ,1501 -(277 + 1224) ,2),1493 -(663 + 830) ;Instance.new("UIGradient",v589).Color=ColorSequence.new({ColorSequenceKeypoint.new(0,Color3.fromRGB(624 -369 ,875 -(461 + 414) ,0 + 0 )),ColorSequenceKeypoint.new(0.2 + 0 ,Color3.fromRGB(252 + 3 ,1431 -(1169 + 7) ,1873 -(751 + 1122) )),ColorSequenceKeypoint.new(0.4 + 0 ,Color3.fromRGB(0 -0 ,47 + 208 ,0 + 0 )),ColorSequenceKeypoint.new(0.6,Color3.fromRGB(0 -0 ,78 + 177 ,70 + 185 )),ColorSequenceKeypoint.new(0.8 + 0 ,Color3.fromRGB(0 -0 ,0,1515 -(684 + 576) )),ColorSequenceKeypoint.new(1 + 0 ,Color3.fromRGB(142 + 113 ,0,255))});local v593=Instance.new("TextLabel",v579);v593.Text,v593.Size,v593.Position=v574,UDim2.new(2 -1 ,0 + 0 ,0 + 0 ,26 -6 ),UDim2.new(0 -0 ,0 -0 ,0 + 0 ,4 + 0 );v593.BackgroundTransparency,v593.Font,v593.TextSize,v593.TextColor3=1 + 0 ,v35.Font,8 + 5 ,v35.Text;local v603=Instance.new("Frame",v579);v603.Size,v603.Position=UDim2.new(448 -(133 + 314) , -20,0 + 0 ,253 -(199 + 14) ),UDim2.new(0 -0 ,1559 -(647 + 902) ,0 -0 ,233 -(131 + 72) );v603.BackgroundColor3,v603.BorderColor3=v35.Group,v35.Stroke;local v610=Instance.new("UIListLayout",v603);v610.FillDirection,v610.HorizontalAlignment,v610.Padding=Enum.FillDirection.Horizontal,Enum.HorizontalAlignment.Center,UDim.new(233 -(85 + 148) ,1304 -(426 + 863) );local v616=Instance.new("Frame",v579);v616.Size,v616.Position,v616.BackgroundTransparency=UDim2.new(4 -3 , -20,1655 -(873 + 781) , -(148 -63)),UDim2.new(0 + 0 ,13 -3 ,0 -0 ,75),1 + 0 ;v579.InputBegan:Connect(function(v794) if ((v794.UserInputType==Enum.UserInputType.MouseButton1) and (v794.Position.Y<(v579.AbsolutePosition.Y + (110 -80)))) then v38.drag,v38.dragStart,v38.startPos=true,v794.Position,v579.Position;end end);v579.InputChanged:Connect(function(v795) if ((v795.UserInputType==Enum.UserInputType.MouseMovement) and v38.drag) then local v1312=0 + 0 ;local v1313;while true do if (v1312==(0 -0)) then v1313=v795.Position-v38.dragStart ;v579.Position=UDim2.new(v38.startPos.X.Scale,v38.startPos.X.Offset + v1313.X ,v38.startPos.Y.Scale,v38.startPos.Y.Offset + v1313.Y );break;end end end end);v29(v38.conns,v0.InputChanged:Connect(function(v796) if (v38.sliderDrag and (v796.UserInputType==Enum.UserInputType.MouseMovement)) then local v1314=v38.sliderDrag;local v1315=v10((v796.Position.X-v1314.bg.AbsolutePosition.X)/v1314.bg.AbsoluteSize.X ,0 -0 ,1948 -(414 + 1533) );v1314.val=v9(v1314.min + ((v1314.max-v1314.min) * v1315) + (0.5 -0) );v1314.fill.Size=UDim2.new(v1315,0 + 0 ,556 -(443 + 112) ,1479 -(888 + 591) );v1314.lbl.Text=v1314.text   .. ": "   .. v1314.val ;if v1314.cb then v1314.cb(v1314.val);end end end));v29(v38.conns,v0.InputEnded:Connect(function(v797) if (v797.UserInputType==Enum.UserInputType.MouseButton1) then v38.drag,v38.sliderDrag=false,nil;end end));local v620={};v620.NewTab=function(v798,v799) local v800=Instance.new("TextButton",v603);v800.Text,v800.Size,v800.BackgroundTransparency=v799,UDim2.new(0 + 0 ,318 -248 ,2 -1 ,0 -0 ),1 + 0 ;v800.Font,v800.TextSize,v800.TextColor3=v35.Font,48 -35 ,v35.Dim;local v809=Instance.new("ScrollingFrame",v616);v809.Size,v809.BackgroundTransparency,v809.Visible,v809.BorderSizePixel=UDim2.new(1 + 0 ,0 + 0 ,1 + 0 ,0 + 0 ),1 -0 ,false,823 -(426 + 397) ;v809.ScrollBarThickness,v809.ScrollBarImageColor3,v809.AutomaticCanvasSize=4,v35.Accent,Enum.AutomaticSize.Y;local v819=Instance.new("Frame",v809);v819.Size,v819.BackgroundTransparency,v819.AutomaticSize=UDim2.new(0.48 -0 ,1678 -(136 + 1542) ,0 -0 ,0 + 0 ),1 -0 ,Enum.AutomaticSize.Y;Instance.new("UIListLayout",v819).Padding=UDim.new(0,18 -6 );local v824=Instance.new("Frame",v809);v824.Size,v824.Position,v824.BackgroundTransparency,v824.AutomaticSize=UDim2.new(0.48 + 0 ,0 + 0 ,486 -(68 + 418) ,0 -0 ),UDim2.new(0.52 -0 ,841 -(566 + 275) ,935 -(167 + 768) ,0 + 0 ),1093 -(770 + 322) ,Enum.AutomaticSize.Y;Instance.new("UIListLayout",v824).Padding=UDim.new(0 + 0 ,4 + 8 );v800.MouseButton1Click:Connect(function() for v1321,v1322 in v26(v616:GetChildren()) do v1322.Visible=false;end for v1324,v1325 in v26(v603:GetChildren()) do if v1325:IsA("TextButton") then v1325.TextColor3=v35.Dim;end end v809.Visible,v800.TextColor3=true,v35.Accent;end);if ( #v603:GetChildren()==(1 + 1)) then v809.Visible,v800.TextColor3=true,v35.Accent;end local v830={};v830.NewGroupbox=function(v1058,v1059,v1060) local v1061=Instance.new("Frame",((v1059=="Right") and v824) or v819 );v1061.Size,v1061.BackgroundTransparency,v1061.AutomaticSize=UDim2.new(1 -0 ,0 -0 ,15 -(8 + 7) ,0 -0 ),3 -2 ,Enum.AutomaticSize.Y;local v1066=Instance.new("Frame",v1061);v1066.Size,v1066.Position=UDim2.new(1 + 0 ,0 -0 ,1256 -(300 + 956) ,0 + 0 ),UDim2.new(0 + 0 ,122 -(22 + 100) ,0 + 0 ,30 -22 );v1066.BackgroundColor3,v1066.BorderColor3,v1066.AutomaticSize=v35.Main,v35.Stroke,Enum.AutomaticSize.Y;local v1074=Instance.new("TextLabel",v1061);v1074.Text,v1074.Position,v1074.AutomaticSize=v1060,UDim2.new(0,294 -(47 + 235) ,0 -0 ,18 -4 ),Enum.AutomaticSize.X;v1074.BackgroundColor3,v1074.TextColor3,v1074.Font,v1074.TextSize,v1074.ZIndex=v35.Main,v35.Text,v35.Font,7 + 5 ,1 + 1 ;local v1086=Instance.new("Frame",v1066);v1086.Size,v1086.Position,v1086.BackgroundTransparency,v1086.AutomaticSize=UDim2.new(1, -(73 -57),0 -0 ,0 + 0 ),UDim2.new(0 -0 ,839 -(762 + 69) ,1217 -(553 + 664) ,71 -49 ),1 + 0 ,Enum.AutomaticSize.Y;Instance.new("UIListLayout",v1086).Padding=UDim.new(0 + 0 ,30 -22 );Instance.new("UIPadding",v1066).PaddingBottom=UDim.new(0 -0 ,3 + 5 );local v1093={};v1093.Toggle=function(v1329,v1330,v1331,v1332) local v1333=0;local v1334;local v1335;local v1336;local v1337;local v1338;local v1339;while true do if (v1333==5) then return v1093;end if (v1333==(0 + 0)) then v1334=Instance.new("Frame",v1086);v1334.Size,v1334.BackgroundTransparency=UDim2.new(3 -2 ,157 -(8 + 149) ,1320 -(1199 + 121) ,33 -13 ),1 + 0 ;v1335=Instance.new("Frame",v1334);v1333=2 -1 ;end if ((1 + 1)==v1333) then v1336.Text,v1336.Size,v1336.Position=v1330,UDim2.new(1, -(89 -64),1,0 + 0 ),UDim2.new(0 -0 ,23 + 2 ,1807 -(518 + 1289) ,0 -0 );v1336.BackgroundTransparency,v1336.TextXAlignment,v1336.Font,v1336.TextSize=1,Enum.TextXAlignment.Left,v35.Font,2 + 11 ;v1337=v1331;v1333=3 -0 ;end if (v1333==(1 + 0)) then v1335.Size,v1335.Position=UDim2.new(0,485 -(304 + 165) ,0 + 0 ,176 -(54 + 106) ),UDim2.new(1969 -(1618 + 351) ,0 + 0 ,0 + 0 ,1018 -(10 + 1006) );Instance.new("UIStroke",v1335).Color=v35.Stroke;v1336=Instance.new("TextLabel",v1334);v1333=1 + 1 ;end if (v1333==4) then v1339.Size,v1339.BackgroundTransparency,v1339.Text=UDim2.new(1,0 + 0 ,3 -2 ,1033 -(912 + 121) ),1 + 0 ,"";v1339.MouseButton1Click:Connect(function() v1337= not v1337;v1338();end);v1338();v1333=1360 -(117 + 1238) ;end if (v1333==(1718 -(686 + 1029))) then v1338=nil;function v1338() local v2028=1289 -(1140 + 149) ;while true do if (v2028==(0 + 0)) then v1335.BackgroundColor3=(v1337 and v35.Accent) or v35.Dark ;v1336.TextColor3=(v1337 and v35.Text) or v35.Dim ;v2028=1 -0 ;end if (v2028==(1 + 0)) then if v1332 then v1332(v1337);end break;end end end v1339=Instance.new("TextButton",v1334);v1333=8 -4 ;end end end;v1093.Slider=function(v1340,v1341,v1342,v1343,v1344,v1345) local v1346=Instance.new("Frame",v1086);v1346.Size,v1346.BackgroundTransparency=UDim2.new(3 -2 ,0 -0 ,0 + 0 ,121 -86 ),187 -(165 + 21) ;local v1349=Instance.new("TextLabel",v1346);v1349.Text,v1349.Size,v1349.BackgroundTransparency=v1341   .. ": "   .. v1344 ,UDim2.new(112 -(61 + 50) ,0 + 0 ,0,71 -56 ),1 -0 ;v1349.TextXAlignment,v1349.TextColor3,v1349.Font,v1349.TextSize=Enum.TextXAlignment.Left,v35.Dim,v35.Font,13;local v1360=Instance.new("Frame",v1346);v1360.Size,v1360.Position,v1360.BackgroundColor3,v1360.BorderColor3=UDim2.new(1 + 0 ,0,629 -(129 + 500) ,1472 -(1295 + 165) ),UDim2.new(0 + 0 ,0 + 0 ,1397 -(819 + 578) ,18),v35.Dark,v35.Stroke;local v1367=Instance.new("Frame",v1360);v1367.Size,v1367.BackgroundColor3,v1367.BorderSizePixel=UDim2.new((v1344-v1342)/(v1343-v1342) ,0 + 0 ,1,1402 -(331 + 1071) ),v35.Accent,743 -(588 + 155) ;v1360.InputBegan:Connect(function(v1624) if (v1624.UserInputType==Enum.UserInputType.MouseButton1) then v38.sliderDrag={bg=v1360,fill=v1367,lbl=v1349,text=v1341,min=v1342,max=v1343,val=v1344,cb=v1345};end end);return v1093;end;v1093.Dropdown=function(v1372,v1373,v1374,v1375,v1376) local v1377=Instance.new("Frame",v1086);v1377.Size,v1377.BackgroundTransparency,v1377.ClipsDescendants,v1377.ZIndex=UDim2.new(1283 -(546 + 736) ,0,1937 -(1834 + 103) ,13 + 27 ),1 + 0 ,false,29 -19 ;local v1382=Instance.new("TextLabel",v1377);v1382.Text,v1382.Size,v1382.BackgroundTransparency=v1373,UDim2.new(854 -(406 + 447) ,117 -(91 + 26) ,0 -0 ,1781 -(1536 + 230) ),492 -(128 + 363) ;v1382.TextXAlignment,v1382.TextColor3,v1382.Font,v1382.TextSize=Enum.TextXAlignment.Left,v35.Dim,v35.Font,13;local v1393=Instance.new("TextButton",v1377);v1393.Size,v1393.Position=UDim2.new(1 + 0 ,0 + 0 ,0 -0 ,6 + 14 ),UDim2.new(0 -0 ,0 -0 ,0 -0 ,283 -(260 + 5) );v1393.BackgroundColor3,v1393.BorderColor3,v1393.Text=v35.Dark,v35.Stroke,v1375   .. " ▼" ;v1393.TextColor3,v1393.Font,v1393.TextSize=v35.Text,v35.Font,31 -18 ;local v1405=Instance.new("Frame",v1377);v1405.Size,v1405.Position=UDim2.new(1 + 0 ,1571 -(1440 + 131) ,1009 -(615 + 394) , #v1374 * (19 + 1) ),UDim2.new(0 + 0 ,0 -0 ,0 -0 ,689 -(59 + 592) );v1405.BackgroundColor3,v1405.BorderColor3,v1405.Visible,v1405.ZIndex=v35.Darker,v35.Stroke,false,221 -121 ;Instance.new("UIListLayout",v1405);local v1413,v1414=v1375,false;for v1625,v1626 in v26(v1374) do local v1627=0 -0 ;local v1628;while true do if ((2 + 0)==v1627) then v1628.MouseButton1Click:Connect(function() v1413,v1393.Text,v1405.Visible,v1414=v1626,v1626   .. " ▼" ,false,false;v1377.Size=UDim2.new(1 + 0 ,171 -(70 + 101) ,0 -0 ,29 + 11 );for v2158,v2159 in v26(v1405:GetChildren()) do if v2159:IsA("TextButton") then v2159.TextColor3=((v2159.Text==v1413) and v35.Accent) or v35.Dim ;end end if v1376 then v1376(v1413);end end);break;end if (v1627==(0 -0)) then v1628=Instance.new("TextButton",v1405);v1628.Size,v1628.BackgroundColor3,v1628.BorderSizePixel=UDim2.new(1 + 0 ,0 -0 ,0 -0 ,261 -(123 + 118) ),v35.Dark,0;v1627=1 + 0 ;end if (v1627==(1 + 0)) then v1628.Text,v1628.Font,v1628.TextSize,v1628.ZIndex=v1626,v35.Font,1 + 11 ,1500 -(653 + 746) ;v1628.TextColor3=((v1626==v1413) and v35.Accent) or v35.Dim ;v1627=409 -(204 + 203) ;end end end v1393.MouseButton1Click:Connect(function() local v1629=0 -0 ;while true do if (v1629==(1 + 0)) then v1377.Size=(v1414 and UDim2.new(1 -0 ,0,0 -0 ,18 + 22 + ( #v1374 * 20) )) or UDim2.new(1 + 0 ,0 + 0 ,0 + 0 ,5 + 35 ) ;break;end if (v1629==(0 + 0)) then v1414= not v1414;v1405.Visible=v1414;v1629=2 -1 ;end end end);return v1093;end;v1093.Button=function(v1415,v1416,v1417) local v1418=0 + 0 ;local v1419;while true do if (v1418==(1 -0)) then v1419.Text,v1419.TextColor3,v1419.Font,v1419.TextSize=v1416,v35.Text,v35.Font,1247 -(885 + 349) ;v1419.MouseButton1Click:Connect(v1417);v1418=2;end if (v1418==(0 + 0)) then v1419=Instance.new("TextButton",v1086);v1419.Size,v1419.BackgroundColor3,v1419.BorderColor3=UDim2.new(1,0 -0 ,0 -0 ,990 -(915 + 53) ),v35.Dark,v35.Stroke;v1418=1 + 0 ;end if (v1418==(803 -(768 + 33))) then return v1093;end end end;v1093.Keybind=function(v1420,v1421,v1422,v1423) local v1424=Instance.new("Frame",v1086);v1424.Size,v1424.BackgroundTransparency=UDim2.new(1,215 -(75 + 140) ,0 -0 ,76 -56 ),1 -0 ;local v1427=Instance.new("TextLabel",v1424);v1427.Text,v1427.Size,v1427.BackgroundTransparency=v1421,UDim2.new(0.6,328 -(287 + 41) ,1020 -(867 + 152) ,847 -(638 + 209) ),1 + 0 ;v1427.TextXAlignment,v1427.TextColor3,v1427.Font,v1427.TextSize=Enum.TextXAlignment.Left,v35.Dim,v35.Font,1699 -(96 + 1590) ;local v1438=Instance.new("TextButton",v1424);v1438.Size,v1438.Position=UDim2.new(0.3,36 -(21 + 15) ,1 -0 ,1672 -(741 + 931) ),UDim2.new(0.7 -0 ,0 + 0 ,0 -0 ,0 -0 );v1438.BackgroundColor3,v1438.BorderColor3=Color3.fromRGB(22,10 + 12 ,10 + 12 ),v35.Stroke;v1438.Text,v1438.TextColor3,v1438.Font,v1438.TextSize="["   .. v1422.Name   .. "]" ,v35.Dim,v35.Font,4 + 7 ;local v1448=false;v1438.MouseButton1Click:Connect(function() v1448,v1438.Text,v1438.TextColor3=true,"[...]",v35.Accent;end);v29(v38.conns,v0.InputBegan:Connect(function(v1633) if (v1448 and (v1633.UserInputType==Enum.UserInputType.Keyboard)) then local v1943=0 -0 ;while true do if (v1943==(0 + 0)) then v1448,v1438.Text,v1438.TextColor3=false,"["   .. v1633.KeyCode.Name   .. "]" ,v35.Dim;if v1423 then v1423(v1633.KeyCode);end break;end end end end));return v1093;end;v1093.TextBox=function(v1449,v1450,v1451,v1452) local v1453=Instance.new("Frame",v1086);v1453.Size,v1453.BackgroundTransparency=UDim2.new(1,0 + 0 ,0 -0 ,36 + 4 ),1 + 0 ;local v1456=Instance.new("TextLabel",v1453);v1456.Text,v1456.Size,v1456.BackgroundTransparency=v1450,UDim2.new(495 -(64 + 430) ,0 + 0 ,0 + 0 ,15),1 + 0 ;v1456.TextXAlignment,v1456.TextColor3,v1456.Font,v1456.TextSize=Enum.TextXAlignment.Left,v35.Dim,v35.Font,13;local v1467=Instance.new("TextBox",v1453);v1467.Size,v1467.Position=UDim2.new(1,363 -(106 + 257) ,0 + 0 ,20),UDim2.new(940 -(467 + 473) ,0,721 -(496 + 225) ,36 -18 );v1467.BackgroundColor3,v1467.BorderColor3,v1467.Text,v1467.PlaceholderText=v35.Dark,v35.Stroke,v1451 or "" ,"Enter...";v1467.TextColor3,v1467.Font,v1467.TextSize=v35.Text,v35.Font,12;v1467.FocusLost:Connect(function() if v1452 then v1452(v1467.Text);end end);return v1093;end;v1093.ConfigDropdown=function(v1480,v1481) local v1482=Instance.new("Frame",v1086);v1482.Size,v1482.BackgroundTransparency,v1482.ClipsDescendants,v1482.ZIndex=UDim2.new(4 -3 ,0 -0 ,0 -0 ,16 + 24 ),1659 -(256 + 1402) ,false,1909 -(30 + 1869) ;local v1487=Instance.new("TextLabel",v1482);v1487.Text,v1487.Size,v1487.BackgroundTransparency=v1481,UDim2.new(1,1369 -(213 + 1156) ,0 -0 ,203 -(96 + 92) ),1 -0 ;v1487.TextXAlignment,v1487.TextColor3,v1487.Font,v1487.TextSize=Enum.TextXAlignment.Left,v35.Dim,v35.Font,3 + 10 ;local v1498=Instance.new("TextButton",v1482);v1498.Size,v1498.Position=UDim2.new(900 -(142 + 757) ,0 + 0 ,0 + 0 ,99 -(32 + 47) ),UDim2.new(237 -(58 + 179) ,0,0 -0 ,1995 -(1053 + 924) );v1498.BackgroundColor3,v1498.BorderColor3=v35.Dark,v35.Stroke;v1498.Text,v1498.TextColor3,v1498.Font,v1498.TextSize=(((v36.Selected~="") and v36.Selected) or "Select...")   .. " ▼" ,v35.Text,v35.Font,6 + 7 ;v38.cfgDropdown=v1498;local v1511=Instance.new("Frame",v1482);v1511.Size,v1511.Position=UDim2.new(1 -0 ,0 + 0 ,0 -0 ,20),UDim2.new(1648 -(685 + 963) ,0 + 0 ,0 -0 ,58 -20 );v1511.BackgroundColor3,v1511.BorderColor3,v1511.Visible,v1511.ZIndex=v35.Darker,v35.Stroke,false,1809 -(541 + 1168) ;Instance.new("UIListLayout",v1511);v38.cfgDropdownList=v1511;local v1520=false;v1498.MouseButton1Click:Connect(function() local v1634=1597 -(645 + 952) ;while true do if (v1634==(839 -(669 + 169))) then if v1520 then local v2163=0 -0 ;while true do if (v2163==(0 -0)) then v129();v1482.Size=UDim2.new(1 + 0 ,947 -(652 + 295) ,0 + 0 ,(805 -(181 + 584)) + v17(20, #v36.List * (1415 -(665 + 730)) ) );break;end end else v1482.Size=UDim2.new(2 -1 ,989 -(848 + 141) ,0 -0 ,24 + 16 );end break;end if (v1634==(1350 -(540 + 810))) then v1520= not v1520;v1511.Visible=v1520;v1634=1;end end end);v129();return v1093;end;v1093.Label=function(v1521,v1522) local v1523=Instance.new("TextLabel",v1086);v1523.Size,v1523.BackgroundTransparency=UDim2.new(3 -2 ,0 -0 ,0 + 0 ,219 -(166 + 37) ),1882 -(22 + 1859) ;v1523.Text,v1523.TextXAlignment=v1522,Enum.TextXAlignment.Left;v1523.TextColor3,v1523.Font,v1523.TextSize=v35.Accent,v35.Font,5 + 6 ;return v1093,v1523;end;return v1093;end;return v830;end;return v620;end;local v161=v133:Create("Crack By Lvzz");do local v622=v161:NewTab("Rage");local v623=v622:NewGroupbox("Left","Ragebot");v623:Toggle("Enable",v37.rbEnabled,function(v832) local v833=1772 -(843 + 929) ;while true do if (v833==(262 -(30 + 232))) then v37.rbEnabled=v832;v45();break;end end end);v623:Toggle("Resolver",v37.rbResolver,function(v834) v37.rbResolver=v834;end);v623:Toggle("Prediction",v37.rbPrediction,function(v836) v37.rbPrediction=v836;end);v623:Toggle("Auto Fire",v37.rbAutoFire,function(v838) v37.rbAutoFire=v838;end);v623:Toggle("Team Check",v37.rbTeamCheck,function(v840) v37.rbTeamCheck=v840;end);v623:Dropdown("Hitbox",{"Head","Torso"},v37.rbHitbox,function(v842) v37.rbHitbox=v842;end);v623:Toggle("Wall Check",v37.rbWallCheck,function(v844) v37.rbWallCheck=v844;end);v623:Toggle("No Air Shot",v37.rbNoAir,function(v846) v37.rbNoAir=v846;end);v623:Toggle("Smart Aim",v37.rbSmartAim,function(v848) v37.rbSmartAim=v848;end);v623:Slider("Max Distance",8 + 92 ,2146 -1146 ,v37.rbMaxDist,function(v850) v37.rbMaxDist=v850;end);v623:Slider("Fire Rate",1 + 0 ,20,v37.rbFireRate * (1775 -(78 + 1597)) ,function(v852) v37.rbFireRate=v852/(28 + 72) ;end);v623:Slider("Prediction Multi",11 + 39 ,182 + 18 ,v37.rbPredMulti * (74 + 26) ,function(v854) v37.rbPredMulti=v854/(216 -116) ;end);local v624=v622:NewGroupbox("Left","Air Shoot");v624:Toggle("Enable",v37.rbAirShoot,function(v856) local v857=0 + 0 ;while true do if (v857==(1 + 0)) then v45();break;end if ((549 -(305 + 244))==v857) then v37.rbAirShoot=v856;if  not v856 then v100();end v857=1 + 0 ;end end end);v624:Keybind("Toggle Key",v37.rbAirShootKey,function(v858) v37.rbAirShootKey=v858;end);v624:Toggle("AimView Line",v37.avEnabled,function(v860) v37.avEnabled=v860;if  not v860 then v106();end end);local v625=v622:NewGroupbox("Right","Double Tap");v625:Toggle("Enable",v37.dtEnabled,function(v862) v37.dtEnabled=v862;v45();end);v625:Keybind("Key",v37.dtKey,function(v864) v37.dtKey=v864;end);v625:Slider("TP Distance",108 -(95 + 10) ,8 + 2 ,v37.dtDist,function(v866) v37.dtDist=v866;end);v625:Dropdown("Mode",{"Defensive","Offensive","Off"},v37.dtMode,function(v868) v37.dtMode=v868;end);local v626=v622:NewGroupbox("Right","AI Peek v6");v626:Toggle("Enable",v37.apEnabled,function(v870) v37.apEnabled=v870;if ( not v870 and v38.apActive) then v91();end end);v626:Keybind("Key",v37.apKey,function(v872) v37.apKey=v872;end);v626:Dropdown("Mode",{"Hold","Toggle"},v37.apMode,function(v874) v37.apMode=v874;end);v626:Toggle("Show Points",v37.apShowPoints,function(v876) v37.apShowPoints=v876;if v38.apActive then v81();v80();end end);v626:Toggle("ESP Outline",v37.apESP,function(v878) local v879=762 -(592 + 170) ;while true do if (v879==(0 + 0)) then v37.apESP=v878;if v38.apActive then v79();end break;end end end);v626:Toggle("Team Check",v37.apTeamCheck,function(v880) v37.apTeamCheck=v880;end);v626:Slider("Range",10,200,v37.apRange,function(v882) v37.apRange=v882;end);v626:Slider("Peek Distance",6 -4 ,8 + 17 ,v37.apPeekDist,function(v884) v37.apPeekDist=v884;if v38.apActive then local v1534=0 + 0 ;while true do if ((0 -0)==v1534) then v81();v80();break;end end end end);v626:Slider("Max Height",1,5 + 5 ,v37.apHeight,function(v886) v37.apHeight=v886;end);local v627,v628=v626:Label("Cooldown: "   .. v68()   .. "ms ("   .. v69()   .. ")" );v626:Slider("Speed",0 -0 ,1000,v37.apSpeed,function(v888) v37.apSpeed=v888;if v628 then v628.Text="Cooldown: "   .. v68()   .. "ms ("   .. v69()   .. ")" ;end end);v626:Slider("Rings",1 + 0 ,14 -9 ,v37.apRings,function(v890) v37.apRings=v890;if v38.apActive then v81();v80();end end);v626:Slider("Points/Ring",1200 -(700 + 496) ,38 -22 ,v37.apPointsPerRing,function(v892) v37.apPointsPerRing=v892;if v38.apActive then v81();v80();end end);end do local v629=v161:NewTab("AA");local v630=v629:NewGroupbox("Left","Fakeduck");v630:Toggle("Enable",v37.fdEnabled,function(v894) if (v894~=v37.fdEnabled) then v115();end end);v630:Toggle("Team Check",v37.fdTeamCheck,function(v895) v37.fdTeamCheck=v895;end);v630:Keybind("Toggle Key",v37.fdKey,function(v897) v37.fdKey=v897;end);v630:Keybind("Lock Key",v37.fdLockKey,function(v899) v37.fdLockKey=v899;end);local v631=v629:NewGroupbox("Right","Info");v631:Button("Fakeduck Info",function() print("[Crack By Lvzz] Fakeduck automatically crouches when no enemy is visible");end);end do local v632=v161:NewTab("Visuals");local v633=v632:NewGroupbox("Left","Watermark");v633:Toggle("Show Watermark",true,function(v901) local v902=0 + 0 ;while true do if (v902==(252 -(65 + 187))) then v37.wmVisible=v901;if v38.wmFrame then v38.wmFrame.Visible=v901;end break;end end end);local v634=v632:NewGroupbox("Left","Hotkey List");v634:Toggle("Show Hotkeys",true,function(v903) v37.hkVisible=v903;if v38.hkFrame then v38.hkFrame.Visible=v903;end end);local v635=v632:NewGroupbox("Left","Time Display");v635:Toggle("Show Time",true,function(v905) v37.timeVisible=v905;if v38.timeFrame then v38.timeFrame.Visible=v905;end end);local v636=v632:NewGroupbox("Left","Hit Logger");v636:Toggle("Enable",v37.hlEnabled,function(v907) v37.hlEnabled=v907;if v38.hlFrame then v38.hlFrame.Visible=v907;end end);v636:Slider("Max Logs",943 -(827 + 112) ,15,v37.hlMaxLogs,function(v909) v37.hlMaxLogs=v909;end);local v637=v632:NewGroupbox("Left","Kill Effects");v637:Toggle("Enable",v37.killEffects,function(v911) v37.killEffects=v911;end);v637:Dropdown("Screen Type",{"CS:GO","Flash","Vignette","Skull","HvH","None"},v37.killScreenType or "CS:GO" ,function(v913) v37.killScreenType=v913;end);v637:Dropdown("Screen Color",{"Red","Blue","Green","Purple","Cyan","Yellow","White","Pink"},v37.killScreenColor or "Red" ,function(v915) v37.killScreenColor=v915;end);v637:Slider("Duration (ms)",135 -85 ,2508 + 2492 ,v9((v37.killScreenDuration or 0.5) * (1445 -445) ),function(v917) v37.killScreenDuration=v917/(1892 -892) ;end);v637:Dropdown("Particles",{"Binary","Matrix","Hex","Code","Glitch","Numbers"},v37.killParticleType,function(v919) v37.killParticleType=v919;end);v637:Toggle("Ghost Effect",v37.ghostEffectEnabled,function(v921) v37.ghostEffectEnabled=v921;end);v637:Dropdown("Ghost Color",{"Cyan","Red","Green","Purple","White","Pink"},"Cyan",function(v923) local v924={Cyan=Color3.fromRGB(100,426 -226 ,73 + 182 ),Red=Color3.fromRGB(527 -272 ,269 -169 ,480 -(262 + 118) ),Green=Color3.fromRGB(1183 -(1038 + 45) ,551 -296 ,100),Purple=Color3.fromRGB(430 -(19 + 211) ,54 + 46 ,368 -(88 + 25) ),White=Color3.fromRGB(649 -394 ,127 + 128 ,238 + 17 ),Pink=Color3.fromRGB(209 + 46 ,1186 -(1007 + 29) ,2111 -(1790 + 121) )};v37.ghostColor=v924[v923] or Color3.fromRGB(100,652 -452 ,1794 -(259 + 1280) ) ;end);local v638=v632:NewGroupbox("Left","Scope Crosshair");v638:Toggle("Enable",v37.scopeEnabled,function(v926) v37.scopeEnabled=v926;v142(v926);end);v638:Slider("Size",5,500,v37.scopeSize,function(v928) local v929=1584 -(160 + 1424) ;while true do if (v929==0) then v37.scopeSize=v928;if v37.scopeEnabled then v139();end break;end end end);v638:Slider("Gap",0 + 0 ,200,v37.scopeGap,function(v930) local v931=0;while true do if (v931==0) then v37.scopeGap=v930;if v37.scopeEnabled then v139();end break;end end end);v638:Slider("Thickness",1,12 -7 ,v37.scopeThickness,function(v932) v37.scopeThickness=v932;if v37.scopeEnabled then v139();end end);v638:Slider("Y Offset", -(945 -745),200,v37.scopeOffsetY,function(v934) local v935=0 + 0 ;while true do if (v935==(0 -0)) then v37.scopeOffsetY=v934;if v37.scopeEnabled then v139();end break;end end end);v638:Dropdown("Color",{"Red","Cyan","Green","Yellow","Purple","White","Pink"},"Red",function(v936) local v937={Red=Color3.fromRGB(851 -596 ,47 + 3 ,22 + 28 ),Cyan=Color3.fromRGB(5 + 45 ,255,2227 -(495 + 1477) ),Green=Color3.fromRGB(149 -99 ,255,33 + 17 ),Yellow=Color3.fromRGB(658 -(342 + 61) ,112 + 143 ,703 -(269 + 384) ),Purple=Color3.fromRGB(365 -(4 + 161) ,31 + 19 ,800 -545 ),White=Color3.fromRGB(844 -589 ,670 -415 ,1197 -942 ),Pink=Color3.fromRGB(752 -(322 + 175) ,663 -(173 + 390) ,50 + 150 )};v37.scopeColor=v937[v936] or Color3.fromRGB(55 + 200 ,50,364 -(203 + 111) ) ;v141();end);local v639=v632:NewGroupbox("Right","Effects");v639:Toggle("Bloom",false,function(v939) local v940=0 + 0 ;while true do if (v940==(1162 -(142 + 1020))) then v37.bloomEnabled=v939;v110();break;end end end);v639:Slider("Bloom Intensity",0 + 0 ,145 -95 ,15,function(v941) v37.bloomIntensity=v941/(10 + 0) ;v110();end);v639:Slider("Bloom Size",0 + 0 ,806 -(57 + 649) ,424 -(328 + 56) ,function(v943) local v944=0 + 0 ;while true do if (v944==0) then v37.bloomSize=v943;v110();break;end end end);v639:Toggle("Blur",false,function(v945) local v946=512 -(433 + 79) ;while true do if (v946==(0 + 0)) then v37.blurEnabled=v945;v111();break;end end end);v639:Slider("Blur Size",0 + 0 ,80 -56 ,47 -37 ,function(v947) v37.blurSize=v947;v111();end);v639:Toggle("Color Correction",false,function(v949) local v950=0 + 0 ;while true do if (v950==(0 + 0)) then v37.colorEnabled=v949;v112();break;end end end);v639:Toggle("Sun Rays",false,function(v951) local v952=0;while true do if ((1036 -(562 + 474))==v952) then v37.sunRaysEnabled=v951;v113();break;end end end);v639:Toggle("Fog",false,function(v953) local v954=0;while true do if (v954==(0 -0)) then v37.fogEnabled=v953;v114();break;end end end);v639:Slider("Fog End",203 -103 ,5905 -(76 + 829) ,2173 -(1506 + 167) ,function(v955) v37.fogEnd=v955;v114();end);local v640=v632:NewGroupbox("Right","Custom Model");v640:Dropdown("Select Model",v131,"None",function(v957) v37.selectedModel=v957;end);v640:Button("Apply Model",function() if (v37.selectedModel and (v37.selectedModel~="None")) then v132(v37.selectedModel);end end);v640:Button("Remove Model",function() local v959=0 -0 ;while true do if (v959==(0 -0)) then if getgenv().modelConn then local v1945=266 -(58 + 208) ;while true do if (v1945==(977 -(613 + 364))) then getgenv().modelConn:Disconnect();getgenv().modelConn=nil;break;end end end v37.selectedModel="None";v959=1 + 0 ;end if (v959==1) then if v8.Character then v8:LoadCharacter();end break;end end end);end do local v641=0 + 0 ;local v642;local v643;local v644;local v645;while true do if ((0 + 0)==v641) then v642=v161:NewTab("Exploits");v643=v642:NewGroupbox("Left","Exploit Position");v643:Toggle("Enable",v37.epEnabled,function(v1649) local v1650=0 + 0 ;while true do if (v1650==(0 + 0)) then v37.epEnabled=v1649;if ( not v1649 and v38.epActive) then v93();end break;end end end);v641=3 -2 ;end if (v641==(338 -(258 + 79))) then v643:Keybind("Key",v37.epKey,function(v1651) v37.epKey=v1651;end);v643:Slider("Distance",1 + 0 ,21 -11 ,v37.epDist,function(v1653) v37.epDist=v1653;end);v644=v642:NewGroupbox("Left","Infinity Jump");v641=2;end if (v641==(1472 -(1219 + 251))) then v644:Toggle("Enable",v37.ijEnabled,function(v1655) local v1656=1671 -(1231 + 440) ;while true do if (v1656==(58 -(34 + 24))) then v37.ijEnabled=v1655;if  not v1655 then v103();end v1656=1 + 0 ;end if (v1656==(1 -0)) then v45();break;end end end);v644:Keybind("Key",v37.ijKey,function(v1657) v37.ijKey=v1657;end);v645=v642:NewGroupbox("Right","Barrel Extend");v641=1550 -(1077 + 470) ;end if (v641==(5 -2)) then v645:Toggle("Enable",v37.beEnabled,function(v1659) local v1660=0 + 0 ;while true do if ((0 + 0)==v1660) then v37.beEnabled=v1659;if ( not v1659 and v38.beActive) then v97();end v1660=2 -1 ;end if (v1660==(2 -1)) then v45();break;end end end);v645:Keybind("Key",v37.beKey,function(v1661) v37.beKey=v1661;end);v645:Dropdown("Mode",{"Hold","Toggle"},v37.beMode,function(v1663) v37.beMode=v1663;end);v641=13 -9 ;end if (v641==4) then v645:Slider("Distance",2 -1 ,1599 -(877 + 712) ,v37.beDist,function(v1665) v37.beDist=v1665;end);break;end end end do local v646=v161:NewTab("Misc");local v647=v646:NewGroupbox("Left","BunnyHop");v647:Toggle("Enable",v37.bhEnabled,function(v960) local v961=0 + 0 ;while true do if (v961==(1 -0)) then v45();break;end if (v961==(754 -(242 + 512))) then v37.bhEnabled=v960;if v960 then v38.bhOrigSpeed=(v38.myHum and v38.myHum.WalkSpeed) or (5 + 11) ;v38.bhInAir,v38.bhLastReset,v38.bhResetting=false,0 -0 ,false;v38.bhLastPos,v38.bhPosCheckTime,v38.bhCircling=nil,0,false;if v38.myHum then v38.myHum.WalkSpeed=v37.bhGroundSpeed;end elseif v38.myHum then v38.myHum.WalkSpeed=v38.bhOrigSpeed;end v961=628 -(92 + 535) ;end end end);v647:Keybind("Toggle Key",v37.bhKey,function(v962) v37.bhKey=v962;end);v647:Slider("Ground Speed",4 + 16 ,50,v37.bhGroundSpeed,function(v964) v37.bhGroundSpeed=v964;if (v37.bhEnabled and v38.myHum and  not v38.bhInAir) then v38.myHum.WalkSpeed=v964;end end);v647:Slider("Air Speed",57 -37 ,1155 -(924 + 181) ,v37.bhAirSpeed,function(v966) v37.bhAirSpeed=v966;if (v37.bhEnabled and v38.myHum and v38.bhInAir) then v38.myHum.WalkSpeed=v966;end end);local v648=v646:NewGroupbox("Right","Wallbang Helper");v648:Toggle("Enable",v37.wbEnabled,function(v968) local v969=0 + 0 ;while true do if (v969==(0 -0)) then v37.wbEnabled=v968;if v968 then v61();else v62();end v969=1 + 0 ;end if (v969==1) then v45();break;end end end);v648:Button("Refresh Walls",function() if v37.wbEnabled then v62();task.wait(0.1 -0 );v61();end end);local v649=v646:NewGroupbox("Right","Wallbang Map");v649:Toggle("Enable",v37.wmEnabled,function(v970) local v971=0 -0 ;while true do if (v971==(1 + 0)) then v38.hotkeys["WB Map"]=(v970 and {active=true,key="ON"}) or nil ;v44();break;end if (v971==(0 + 0)) then v37.wmEnabled=v970;if v970 then v65();else v66();end v971=1 + 0 ;end end end);local v650=v646:NewGroupbox("Right","Remove Collision");v650:Toggle("Enable",v37.rcEnabled,function(v972) v37.rcEnabled=v972;if v972 then v63();else v64();end v45();end);local v651=v646:NewGroupbox("Left","Teleport");v651:Toggle("Enable",v37.tpEnabled,function(v974) v37.tpEnabled=v974;v38.hotkeys['Teleport']=(v974 and {active=true,key="ON"}) or nil ;v44();end);v651:Keybind("CT Spawn",v37.tpCTKey,function(v977) v37.tpCTKey=v977;end);v651:Keybind("T Spawn",v37.tpTKey,function(v979) v37.tpTKey=v979;end);end do local v652=v161:NewTab("Settings");local v653=v652:NewGroupbox("Left","Menu");v653:Keybind("Menu Key",v37.menuKey,function(v981) v37.menuKey=v981;end);v653:Button("Unload Script",function() v38.running=false;v121();if v38.apActive then v91();end v94();if v38.beActive then v97();end v100();v103();v106();if (v37.bhEnabled and v38.myHum) then v38.myHum.WalkSpeed=v38.bhOrigSpeed or (31 -15) ;end if v37.wbEnabled then v62();end if v37.rcEnabled then v64();end if v37.wmEnabled then v66();end if v38.bloomEffect then pcall(function() v38.bloomEffect:Destroy();end);end if v38.blurEffect then pcall(function() v38.blurEffect:Destroy();end);end if v38.colorEffect then pcall(function() v38.colorEffect:Destroy();end);end if v38.sunRaysEffect then pcall(function() v38.sunRaysEffect:Destroy();end);end v2.FogStart,v2.FogEnd=0 -0 ,101785 -(1476 + 309) ;for v1102,v1103 in v26(v38.conns) do pcall(function() v1103:Disconnect();end);end for v1104,v1105 in v26(v38.fx) do pcall(function() v1105:Destroy();end);end if v38.gui then v38.gui:Destroy();end if getgenv().modelConn then local v1542=0 + 0 ;while true do if (v1542==(1284 -(299 + 985))) then getgenv().modelConn:Disconnect();getgenv().modelConn=nil;break;end end end print("[Crack By Lvzz] Script unloaded!");end);local v654=v652:NewGroupbox("Right","Configs");v654:ConfigDropdown("Select Config");local v655="";v654:TextBox("New Config Name","",function(v986) v655=v986;end);v654:Button("Create & Save",function() if (v655~="") then local v1543=0 + 0 ;while true do if (v1543==(0 -0)) then v126(v655);v36.Selected=v655;v1543=94 -(86 + 7) ;end if (v1543==(4 -3)) then if v38.cfgDropdown then v38.cfgDropdown.Text=v655   .. " ▼" ;end v129();break;end end end end);v654:Button("Save Current",function() if (v36.Selected~="") then v126(v36.Selected);end end);v654:Button("Load Selected",function() if (v36.Selected~="") then v127(v36.Selected);end end);v654:Button("Delete Selected",function() if (v36.Selected~="") then local v1544=0 + 0 ;while true do if (v1544==(1 + 0)) then if v38.cfgDropdown then v38.cfgDropdown.Text="Select... ▼";end v129();break;end if (v1544==(880 -(672 + 208))) then v128(v36.Selected);v36.Selected="";v1544=1 + 0 ;end end end end);v654:Button("Refresh List",function() v129();end);local v656=v652:NewGroupbox("Left","Credits");v656:Button("Crack By Lvzz v6.1",function() end);v656:Button("Expires: 20.01.2027",function() end);end function v46(v657,v658) if ( not v37.tpEnabled or  not v38.myHRP) then return;end pcall(function() local v987=v4:FindFirstChild(v657);if v987 then local v1545=v987:GetChildren();if v1545[v658] then local v1794=132 -(14 + 118) ;local v1795;local v1796;while true do if (v1794==0) then v1795=v1545[v658];v1796=(v1795:IsA("BasePart") and v1795.CFrame) or (v1795.PrimaryPart and v1795.PrimaryPart.CFrame) ;v1794=446 -(339 + 106) ;end if (v1794==(287 -(194 + 92))) then if v1796 then v38.myHRP.CFrame=v1796 + v12(1385 -(1057 + 328) ,3 + 0 ,0) ;end break;end end end end end);end local v162=false;local v163={[Enum.KeyCode.Up]="Forward",[Enum.KeyCode.Down]="Back",[Enum.KeyCode.Left]="Left",[Enum.KeyCode.Right]="Right"};v29(v38.conns,v0.InputBegan:Connect(function(v659,v660) if v660 then return;end local v661=v659.KeyCode;if (v661==v37.menuKey) then v38.visible= not v38.visible;if v38.main then v38.main.Visible=v38.visible;end for v1546,v1547 in v26(v38.fx) do pcall(function() v1547:Destroy();end);end v38.fx={};if v38.visible then local v1673=0 + 0 ;local v1674;while true do if (v1673==0) then v1674=Instance.new("DepthOfFieldEffect");v1674.FarIntensity,v1674.FocusDistance,v1674.InFocusRadius,v1674.NearIntensity=1395.6 -(440 + 955) ,50 + 0 ,89 -39 ,0.6 + 0 ;v1673=1 + 0 ;end if (v1673==(2 -1)) then v1674.Parent=v2;v38.fx[1 + 0 ]=v1674;break;end end end return;end if (v37.dtEnabled and (v661==v37.dtKey)) then local v1108=0;while true do if (v1108==(353 -(260 + 93))) then if (v37.dtMode=="Offensive") then v162=true;else v109(nil);end return;end end end if (v37.dtEnabled and (v37.dtMode=="Offensive") and v162 and v163[v661]) then local v1109=0 + 0 ;while true do if (v1109==(0 + 0)) then v109(v163[v661]);return;end end end if (v37.apEnabled and (v661==v37.apKey)) then if (v37.apMode=="Hold") then if  not v38.apActive then v90();end elseif v38.apActive then v91();else v90();end return;end if (v37.epEnabled and (v661==v37.epKey)) then local v1110=0 + 0 ;while true do if (v1110==0) then if v38.epActive then v93();else v92();end return;end end end if (v37.beEnabled and (v661==v37.beKey)) then if (v37.beMode=="Hold") then if  not v38.beActive then v96();end elseif v38.beActive then v97();else v96();end return;end if (v37.ijEnabled and (v661==v37.ijKey) and v38.ijCanJump and v38.myHum) then local v1111=0 + 0 ;while true do if (v1111==(0 -0)) then v38.myHum:ChangeState(Enum.HumanoidStateType.Jumping);return;end end end if (v661==v37.rbAirShootKey) then local v1112=0 -0 ;while true do if ((1974 -(1181 + 793))==v1112) then v37.rbAirShoot= not v37.rbAirShoot;if  not v37.rbAirShoot then v100();end v1112=1 + 0 ;end if ((308 -(105 + 202))==v1112) then v45();return;end end end if (v661==v37.fdKey) then v115();return;end if (v661==v37.fdLockKey) then local v1113=0 + 0 ;while true do if ((0 -0)==v1113) then v38.fdLock=true;return;end end end if (v661==v37.bhKey) then v37.bhEnabled= not v37.bhEnabled;if v37.bhEnabled then local v1675=810 -(352 + 458) ;while true do if (0==v1675) then v38.bhOrigSpeed=(v38.myHum and v38.myHum.WalkSpeed) or (64 -48) ;v38.bhInAir,v38.bhLastReset,v38.bhResetting=false,0 -0 ,false;v1675=1 + 0 ;end if (v1675==1) then v38.bhLastPos,v38.bhPosCheckTime,v38.bhCircling=nil,0 + 0 ,false;if v38.myHum then v38.myHum.WalkSpeed=v37.bhGroundSpeed;end break;end end elseif v38.myHum then v38.myHum.WalkSpeed=v38.bhOrigSpeed;end v45();return;end if v37.tpEnabled then if (v661==v37.tpCTKey) then local v1676=0 -0 ;while true do if (v1676==0) then v46("CTSpawn",4 + 0 );return;end end end if (v661==v37.tpTKey) then local v1677=949 -(438 + 511) ;while true do if (v1677==0) then v46("TSpawn",1388 -(1262 + 121) );return;end end end end end));v29(v38.conns,v0.InputEnded:Connect(function(v662,v663) if v663 then return;end local v664=v662.KeyCode;if (v664==v37.dtKey) then v162=false;return;end if (v37.apEnabled and (v664==v37.apKey) and (v37.apMode=="Hold")) then local v1115=0 + 0 ;while true do if (v1115==(1068 -(728 + 340))) then v91();return;end end end if (v37.beEnabled and (v664==v37.beKey) and (v37.beMode=="Hold")) then local v1116=0;while true do if ((1790 -(816 + 974))==v1116) then v97();return;end end end if (v664==v37.fdLockKey) then v38.fdLock=false;return;end end));v29(v38.conns,v8.CharacterAdded:Connect(function() v38.myChar,v38.myHRP,v38.myHead,v38.myHum=nil,nil,nil,nil;v38.fireShot,v38.playerData=nil,{};v38.playerDataTime,v38.fireShotTime=0 -0 ,0 -0 ;v38.bhInAir,v38.bhLastReset,v38.bhResetting=false,339 -(163 + 176) ,false;v38.bhLastPos,v38.bhPosCheckTime,v38.bhCircling=nil,0 + 0 ,false;if v38.apActive then v91();end v38.apTeleporting=false;v94();v100();if v38.beActive then v97();end v103();v106();task.wait(0.5 -0 );v57();if (v37.bhEnabled and v38.myHum) then local v1118=0 + 0 ;while true do if (v1118==0) then v38.bhOrigSpeed=v38.myHum.WalkSpeed or (24 -8) ;v38.myHum.WalkSpeed=v37.bhGroundSpeed;break;end end end if v37.fdEnabled then local v1119=0;while true do if (v1119==(0 -0)) then v37.fdEnabled=false;v38.fdIdleAnim,v38.fdWalkAnim=nil,nil;v1119=1 + 0 ;end if ((1811 -(1564 + 246))==v1119) then task.wait(0.5 + 0 );v115();break;end end end if v37.wbEnabled then task.delay(1 + 0 ,v61);end if v37.rcEnabled then task.delay(1,v63);end if v37.wmEnabled then task.delay(346 -(124 + 221) ,v65);end end));v57();v122();v123();if ( #v36.List>(0 + 0)) then v36.Selected=v36.List[452 -(115 + 336) ];if v38.cfgDropdown then v38.cfgDropdown.Text=v36.Selected   .. " ▼" ;end end local v164=Instance.new("DepthOfFieldEffect");v164.FarIntensity,v164.FocusDistance,v164.InFocusRadius,v164.NearIntensity=0.6 -0 ,11 + 39 ,96 -(45 + 1) ,0.6 + 0 ;v164.Parent=v2;v38.fx[1]=v164;task.spawn(v49);print("[Crack By Lvzz] Script loaded successfully! (AI Peek v6)");print("[Crack By Lvzz] Press "   .. v37.menuKey.Name   .. " to toggle menu" );
+-- ========== КОНСТАНТЫ ==========
+local FLOOR, CLAMP, TICK = math.floor, math.clamp, tick
+local V3, V3_ZERO = Vector3.new, Vector3.zero
+local COS, SIN, RAD = math.cos, math.sin, math.rad
+local MAX, MIN, CEIL = math.max, math.min, math.ceil
+local HUGE, ABS, SQRT = math.huge, math.abs, math.sqrt
+local CF, CF_ANG = CFrame.new, CFrame.Angles
+local PAIRS, IPAIRS, TYPE = pairs, ipairs, typeof
+local RANDOM = math.random
+local INSERT = table.insert
+local FORMAT = string.format
+
+local FD_DIST = 200
+local PLAYER_CACHE_INTERVAL = 0.15  -- Было 0.4, ускорено для лучшей реакции
+local AP_SHOOT_DELAY = 0.05
+local AP_GROUND_OFFSET = 2.8
+
+-- ========== THEME ==========
+local T = {
+    Main = Color3.fromRGB(12, 12, 12),
+    Group = Color3.fromRGB(19, 19, 19),
+    Stroke = Color3.fromRGB(45, 45, 45),
+    Accent = Color3.fromRGB(168, 247, 50),
+    Text = Color3.fromRGB(220, 220, 220),
+    Dim = Color3.fromRGB(140, 140, 140),
+    Font = Enum.Font.Code,
+    Dark = Color3.fromRGB(25, 25, 25),
+    Darker = Color3.fromRGB(20, 20, 20),
+    Border = Color3.fromRGB(60, 60, 60)
+}
+
+-- ========== CONFIG ==========
+local Cfg = {
+    Folder = "Crack By Lvzz",
+    List = {},
+    Selected = "",
+    FS = (writefile and readfile and isfile and listfiles and makefolder and isfolder) ~= nil
+}
+
+
+-- ========== SETTINGS ==========
+local S = {
+    menuKey = Enum.KeyCode.Delete,
+    rbEnabled = false, rbResolver = false, rbPrediction = true, rbTeamCheck = true,
+    rbAutoFire = true, rbHitbox = "Head", rbMaxDist = 500, rbFireRate = 0.1,
+    rbPredMulti = 1.0, rbNoAir = true, rbWallCheck = true, rbSmartAim = true,
+    rbAirShoot = false, rbAirShootKey = Enum.KeyCode.H,
+    btEnabled = true, btTime = 500,
+    dtEnabled = false, dtKey = Enum.KeyCode.E, dtDist = 6, dtMode = "Defensive",
+    fdEnabled = false, fdTeamCheck = true, fdKey = Enum.KeyCode.X, fdLockKey = Enum.KeyCode.V,
+    epEnabled = false, epKey = Enum.KeyCode.C, epDist = 3,
+    ijEnabled = false, ijKey = Enum.KeyCode.Space,
+    beEnabled = false, beKey = Enum.KeyCode.G, beMode = "Hold", beDist = 5,
+    avEnabled = false,
+    apEnabled = false, apKey = Enum.KeyCode.LeftAlt, apMode = "Hold",
+    apShowPoints = false, apTeamCheck = true, apESP = false,
+    apHeight = 2.0, apSpeed = 500, apRange = 80, apPeekDist = 8,
+    apRings = 3, apPointsPerRing = 12, apRingSpacing = 3, apRandomOffset = 0.3,
+    apWeightDist = 1.0, apWeightEnemy = 0.8, apWeightCover = 2.5,
+    apWeightAngle = 2.0, apWeightHeight = 1.2,
+    bhEnabled = false, bhKey = Enum.KeyCode.F, bhGroundSpeed = 35, bhAirSpeed = 39,
+    wbEnabled = false, wmEnabled = false, rcEnabled = false,
+    tpEnabled = false, tpCTKey = Enum.KeyCode.One, tpTKey = Enum.KeyCode.Two,
+    wmVisible = true, hkVisible = true, timeVisible = true,
+    hlEnabled = true, hlMaxLogs = 8,
+    killEffects = true, killParticleType = "Binary",
+    killScreenType = "CS:GO", killScreenDuration = 0.5, killScreenColor = "Red",  -- Расширено до 5 сек
+    ghostEffectEnabled = true, ghostColor = Color3.fromRGB(100, 200, 255),
+    scopeEnabled = false, scopeColor = Color3.fromRGB(255, 50, 50), scopeSize = 15, scopeGap = 5, scopeThickness = 1, scopeOffsetY = -36,
+    bloomEnabled = false, bloomIntensity = 1.5, bloomSize = 40, bloomThreshold = 0.9,
+    blurEnabled = false, blurSize = 10,
+    colorEnabled = false, ccBrightness = 0, ccContrast = 0.1, ccSaturation = 0.2,
+    ccTintColor = Color3.new(1, 1, 1),
+    sunRaysEnabled = false, sunRaysIntensity = 0.1, sunRaysSpread = 0.5,
+    fogEnabled = false, fogStart = 0, fogEnd = 500, fogColor = Color3.new(0.5, 0.5, 0.5),
+    selectedModel = "None"
+}
+
+-- ========== RUNTIME ==========
+local R = {
+    gui = nil, main = nil, hkFrame = nil, wmFrame = nil, timeFrame = nil, hlFrame = nil, visible = true,
+    drag = false, dragStart = nil, startPos = nil,
+    conns = {}, fx = {}, hotkeys = {}, hitLogs = {},
+    cfgDropdown = nil, cfgDropdownList = nil,
+    fdTarget = nil, fdCrouch = false, fdLock = false, fdIdleAnim = nil, fdWalkAnim = nil,
+    bloomEffect = nil, blurEffect = nil, colorEffect = nil, sunRaysEffect = nil,
+    rbLast = 0, rbAirPart = nil, asCanJump = true,
+    epDecoy = nil, epActive = false, epOriginalPos = nil, epOriginalNeckC0 = nil, epHealthConn = nil,
+    ijPart = nil, ijCanJump = true,
+    beActive = false, beDecoy = nil, beUpdateConn = nil,
+    avLine = nil, dtLastPeek = 0,
+    apActive = false, apTeleporting = false, apPoints = {}, apPointCount = 0,
+    mainConn = nil, running = true, sliderDrag = nil,
+    bhOrigSpeed = 16, bhInAir = false, bhLastReset = 0, bhResetting = false,
+    bhLastPos = nil, bhPosCheckTime = 0, bhCircling = false,
+    myChar = nil, myHRP = nil, myHead = nil, myHum = nil,
+    fireShot = nil, fireShotTime = 0,
+    playerData = {}, playerDataTime = 0, cam = nil
+}
+
+-- ========== RAYCAST PARAMS ==========
+local RayP = RaycastParams.new()
+RayP.FilterType = Enum.RaycastFilterType.Exclude
+
+local APRayP = RaycastParams.new()
+APRayP.FilterType = Enum.RaycastFilterType.Exclude
+
+-- ========== FORWARD DECLARATIONS ==========
+local UpdateHotkeyList, ApplySettings, teleportTo, TrackShot, AddHitLog, SetupKillTracking
+
+-- ========== CACHES ==========
+local wallbangCache, collisionCache, wallbangMapCache = {}, {}, {}
+local apESPCache, apLastUpdate = {}, 0
+local apLastPeekTime = 0
+
+
+-- ========== WALLBANG DATA ==========
+local wallbangWalls = {
+    {n = "hamik", p = V3(97.46, 36.63, -2.82)}, {n = "hamik", p = V3(97.46, 36.63, 0.46)},
+    {n = "hamik", p = V3(97.46, 36.65, -1.18)}, {n = "hamik", p = V3(97.20, 38.47, -1.18)},
+    {n = "hamik", p = V3(96.52, 41.89, -1.18)}, {n = "hamik", p = V3(98.34, 41.89, -1.18)},
+    {n = "hamik", p = V3(97.46, 34.80, -1.18)}, {n = "hamik", p = V3(152.46, 35.57, -6.88)},
+    {n = "hamik", p = V3(150.34, 33.86, 134.91)}, {n = "hamik", p = V3(153.05, 33.91, 134.90)},
+    {n = "hamik", p = V3(151.95, 33.74, 134.93)}, {n = "hamik", p = V3(161.36, 40.47, 153.08)},
+    {n = "hamik", p = V3(108.23, 34.15, 94.53)}, {n = "hamik", p = V3(108.73, 38.13, 93.78)},
+    {n = "hamik", p = V3(71.21, 37.96, -18.74)}, {n = "hamik", p = V3(71.21, 43.09, -18.96)},
+    {n = "Part", p = V3(96.63, 41.21, -3.74)}, {n = "Part", p = V3(96.63, 41.21, 1.38)},
+    {n = "Part", p = V3(205.19, 38.08, 187.89)}, {n = "Part", p = V3(209.46, 30.75, 180.54)},
+    {n = "Part", p = V3(153.66, 33.63, 135.62)}, {n = "Part", p = V3(149.04, 33.91, 135.60)},
+    {n = "Part", p = V3(108.23, 30.38, 83.15)}, {n = "Part", p = V3(108.23, 38.33, 72.24)},
+    {n = "Part", p = V3(108.23, 43.15, 88.36)}, {n = "Part", p = V3(108.74, 38.13, 72.24)},
+    {n = "Part", p = V3(108.73, 42.61, 83.07)}, {n = "Part", p = V3(108.73, 30.48, 83.07)},
+    {n = "Part", p = V3(109.42, 30.04, 93.90)}, {n = "Part", p = V3(88.31, 34.68, 122.17)},
+    {n = "Part", p = V3(87.91, 31.80, 122.17)}, {n = "Part", p = V3(87.28, 33.18, 118.75)},
+    {n = "Part", p = V3(87.28, 33.18, 120.63)}, {n = "Part", p = V3(88.31, 34.68, 98.91)},
+    {n = "Part", p = V3(87.91, 32.32, 100.28)}, {n = "Part", p = V3(65.08, 31.62, 91.62)},
+    {n = "Part", p = V3(127.95, 46.97, 0.99)}, {n = "Part", p = V3(67.02, 37.96, -18.74)},
+    {n = "paletka", p = V3(61.81, 35.08, 90.42)}, {n = "paletka", p = V3(61.81, 39.58, 91.62)},
+    {n = "paletka", p = V3(143.97, 32.34, 199.64)}, {n = "paletka", p = V3(141.99, 32.43, 200.56)},
+    {n = "paletka", p = V3(139.40, 32.34, 198.31)}, {n = "paletka", p = V3(142.04, 32.34, 203.99)},
+    {n = "paletka", p = V3(145.88, 32.43, 198.74)}, {n = "paletka", p = V3(148.51, 32.34, 200.97)},
+    {n = "paletka", p = V3(145.86, 32.34, 195.29)}, {n = "paletka", p = V3(143.96, 36.87, 199.64)},
+    {n = "paletka", p = V3(143.97, 27.64, 199.64)}, {n = "nowallbang1", p = V3(67.38, 43.09, -18.96)},
+}
+
+-- ========== UTILITY FUNCTIONS ==========
+local function CacheChar()
+    local c = LP.Character
+    if c then
+        R.myChar, R.myHRP = c, c:FindFirstChild("HumanoidRootPart")
+        R.myHead, R.myHum = c:FindFirstChild("Head"), c:FindFirstChildOfClass("Humanoid")
+    else
+        R.myChar, R.myHRP, R.myHead, R.myHum = nil, nil, nil, nil
+    end
+    R.cam = WS.CurrentCamera
+end
+
+local function GetFireShot()
+    local now = TICK()
+    if R.fireShot and R.fireShot.Parent and now - R.fireShotTime < 5 then return R.fireShot end
+    if not R.myChar then return nil end
+
+    for _, child in IPAIRS(R.myChar:GetChildren()) do
+        if child:IsA("Tool") then
+            local remotes = child:FindFirstChild("Remotes")
+            if remotes then
+                local fs = remotes:FindFirstChild("FireShot") or remotes:FindFirstChild("fireShot")
+                if fs then R.fireShot, R.fireShotTime = fs, now return fs end
+            end
+        end
+    end
+    return nil
+end
+
+local function UpdatePlayerData()
+    local now = TICK()
+    if now - R.playerDataTime < PLAYER_CACHE_INTERVAL then return end
+    R.playerDataTime = now
+
+    local count = 0
+    if not R.myHRP then 
+        for k in PAIRS(R.playerData) do R.playerData[k] = nil end
+        return 
+    end
+
+    local myPos, myTeam, myColor = R.myHRP.Position, LP.Team, LP.TeamColor
+    local players = Plrs:GetPlayers()
+    local numPlayers = #players
+
+    for i = 1, numPlayers do
+        local p = players[i]
+        if p ~= LP then
+            local c = p.Character
+            if c then
+                local r = c:FindFirstChild("HumanoidRootPart")
+                if r then
+                    local h = c:FindFirstChildOfClass("Humanoid")
+                    if h and h.Health > 0 then
+                        local dist = (myPos - r.Position).Magnitude
+                        if dist < 500 then
+                            count = count + 1
+                            local data = R.playerData[count]
+                            if not data then
+                                data = {}
+                                R.playerData[count] = data
+                            end
+                            data.p = p
+                            data.c = c
+                            data.h = h
+                            data.r = r
+                            data.head = c:FindFirstChild("Head")
+                            data.torso = c:FindFirstChild("UpperTorso") or c:FindFirstChild("Torso")
+                            data.dist = dist
+                            data.team = myTeam and (p.Team == myTeam or p.TeamColor == myColor)
+                        end
+                    end
+                end
+            end
+        end
+    end
+
+    for i = count + 1, #R.playerData do
+        R.playerData[i] = nil
+    end
+
+    if count > 1 then
+        for i = 1, count - 1 do
+            local minIdx = i
+            for j = i + 1, count do
+                if R.playerData[j].dist < R.playerData[minIdx].dist then
+                    minIdx = j
+                end
+            end
+            if minIdx ~= i then
+                R.playerData[i], R.playerData[minIdx] = R.playerData[minIdx], R.playerData[i]
+            end
+        end
+    end
+end
+
+
+-- ========== WALLBANG FUNCTIONS ==========
+local function findWallObject(name, targetPos)
+    local closest, closestDist = nil, HUGE
+    for _, obj in IPAIRS(WS:GetDescendants()) do
+        if obj:IsA("BasePart") and obj.Name == name then
+            local dist = (obj.Position - targetPos).Magnitude
+            if dist < closestDist then closestDist, closest = dist, obj end
+        end
+    end
+    return closest and closestDist < 5 and closest or nil
+end
+
+local function enableWallbangHelper()
+    wallbangCache = {}
+    for i, data in IPAIRS(wallbangWalls) do
+        local obj = findWallObject(data.n, data.p)
+        if obj then
+            wallbangCache[i] = {obj = obj, orig = obj.Transparency}
+            obj.Transparency = 0.8
+        end
+    end
+end
+
+local function disableWallbangHelper()
+    for _, c in PAIRS(wallbangCache) do
+        if c and c.obj and c.obj.Parent then pcall(function() c.obj.Transparency = c.orig end) end
+    end
+    wallbangCache = {}
+end
+
+local function enableRemoveCollision()
+    collisionCache = {}
+    local map = WS:FindFirstChild("Map")
+    if not map then return end
+
+    local folders = {map:FindFirstChild("Clips"), map:FindFirstChild("Doors"), map:FindFirstChild("Ignore")}
+    for _, folder in IPAIRS(folders) do
+        if folder then
+            for _, obj in IPAIRS(folder:GetDescendants()) do
+                if obj:IsA("BasePart") then
+                    INSERT(collisionCache, {obj = obj, col = obj.CanCollide, tr = obj.Transparency})
+                    obj.CanCollide, obj.Transparency = false, 1
+                end
+            end
+        end
+    end
+end
+
+local function disableRemoveCollision()
+    for _, c in PAIRS(collisionCache) do
+        if c and c.obj and c.obj.Parent then
+            pcall(function() c.obj.CanCollide, c.obj.Transparency = c.col, c.tr end)
+        end
+    end
+    collisionCache = {}
+end
+
+local function enableWallbangMap()
+    wallbangMapCache = {}
+    local map = WS:FindFirstChild("Map")
+    local geometry = map and map:FindFirstChild("Geometry")
+    if not geometry then return end
+
+    for _, obj in IPAIRS(geometry:GetDescendants()) do
+        if obj:IsA("BasePart") then
+            INSERT(wallbangMapCache, {obj = obj, orig = obj.Transparency})
+            obj.Transparency = 0.5
+        end
+    end
+end
+
+local function disableWallbangMap()
+    for _, c in PAIRS(wallbangMapCache) do
+        if c and c.obj and c.obj.Parent then pcall(function() c.obj.Transparency = c.orig end) end
+    end
+    wallbangMapCache = {}
+end
+
+
+-- ========== AI PEEK V6 - OPTIMIZED ==========
+
+local function AP_SpeedToCooldown()
+    local speed = S.apSpeed
+    if speed <= 333 then
+        return 0.6 - (speed / 333) * 0.3
+    elseif speed <= 666 then
+        return 0.3 - ((speed - 333) / 333) * 0.18
+    else
+        return 0.12 - ((speed - 666) / 334) * 0.08
+    end
+end
+
+local function AP_GetCooldownMs()
+    return FLOOR(AP_SpeedToCooldown() * 1000)
+end
+
+local function AP_GetSpeedMode()
+    local speed = S.apSpeed
+    if speed <= 333 then return "Slow"
+    elseif speed <= 666 then return "Medium"
+    else return "Fast" end
+end
+
+local function AP_ClearESP()
+    for _, hl in PAIRS(apESPCache) do
+        pcall(function() hl:Destroy() end)
+    end
+    apESPCache = {}
+end
+
+local function AP_CanSee(from, to, ignore)
+    APRayP.FilterDescendantsInstances = ignore
+    local r = WS:Raycast(from, to - from, APRayP)
+    return not r or not r.Instance.CanCollide
+end
+
+local function AP_GetGround(pos, char, baseY)
+    APRayP.FilterDescendantsInstances = {char}
+    local r = WS:Raycast(pos + V3(0, 6, 0), V3(0, -18, 0), APRayP)
+    if r then
+        local gy = r.Position.Y + 0.3
+        local maxH = S.apHeight
+        local diff = gy - baseY
+        if diff > maxH then gy = baseY + maxH
+        elseif diff < -maxH then gy = baseY - maxH end
+        return gy, true
+    end
+    return baseY, false
+end
+
+local function AP_ValidateHeight(startY, endY)
+    local maxH = S.apHeight
+    local diff = endY - startY
+    if diff > maxH then return startY + maxH end
+    if diff < -maxH then return startY - maxH end
+    return endY
+end
+
+local function AP_CanReach(from, to, char)
+    APRayP.FilterDescendantsInstances = {char}
+    for _, h in IPAIRS({1, 2, 3}) do
+        local s = from + V3(0, h, 0)
+        local e = to + V3(0, h, 0)
+        local r = WS:Raycast(s, e - s, APRayP)
+        if r and r.Instance.CanCollide then return false end
+    end
+    return true
+end
+
+local function AP_EnemySeesPoint(enemyRoot, pointPos, myChar, enemyChar)
+    APRayP.FilterDescendantsInstances = {myChar, enemyChar}
+    local enemyEye = enemyRoot.Position + V3(0, 1.5, 0)
+
+    for _, h in IPAIRS({1, 2.5}) do
+        local target = pointPos + V3(0, h, 0)
+        local result = WS:Raycast(enemyEye, target - enemyEye, APRayP)
+        if not result or not result.Instance.CanCollide then return true end
+    end
+    return false
+end
+
+local function AP_CanShootFrom(pointPos, enemyHead, myChar, enemyChar)
+    if not enemyHead then return false end
+    return AP_CanSee(pointPos + V3(0, 1.6, 0), enemyHead.Position, {myChar, enemyChar})
+end
+
+local function AP_EnemyVisible(myRoot, myChar, enemyChar)
+    local head = enemyChar:FindFirstChild("Head")
+    local torso = enemyChar:FindFirstChild("UpperTorso") or enemyChar:FindFirstChild("Torso")
+    local eye = myRoot.Position + V3(0, 1.6, 0)
+    local ignore = {myChar, enemyChar}
+    return (head and AP_CanSee(eye, head.Position, ignore)) or
+           (torso and AP_CanSee(eye, torso.Position, ignore))
+end
+
+local function AP_CanPeekPlayer(myRoot, myChar, targetChar)
+    local targetHead = targetChar:FindFirstChild("Head")
+    if not targetHead then return false end
+
+    for i = 1, R.apPointCount do
+        local pt = R.apPoints[i]
+        if pt and pt.canReach then
+            APRayP.FilterDescendantsInstances = {myChar, targetChar}
+            local eyePos = pt.pos + V3(0, 1.6, 0)
+            local r = WS:Raycast(eyePos, targetHead.Position - eyePos, APRayP)
+            if not r or not r.Instance.CanCollide then return true end
+        end
+    end
+    return false
+end
+
+local function AP_UpdateESP()
+    if not S.apESP or not R.apActive then AP_ClearESP() return end
+
+    local char, root = LP.Character, R.myHRP
+    if not char or not root then return end
+
+    local myTeam, myColor = LP.Team, LP.TeamColor
+    local processed = {}
+
+    for _, p in IPAIRS(Plrs:GetPlayers()) do
+        if p == LP then continue end
+        if S.apTeamCheck and myTeam and (p.Team == myTeam or p.TeamColor == myColor) then continue end
+        
+        local c = p.Character
+        if not c then continue end
+        
+        local h = c:FindFirstChildOfClass("Humanoid")
+        if not h or h.Health <= 0 then continue end
+        
+        processed[p.UserId] = true
+        local canPeek = AP_CanPeekPlayer(root, char, c)
+        local existing = apESPCache[p.UserId]
+        
+        if existing and existing.Parent then
+            local col = canPeek and Color3.fromRGB(50, 255, 50) or Color3.fromRGB(255, 50, 50)
+            existing.OutlineColor = col
+            existing.FillColor = col
+        else
+            local hl = Instance.new("Highlight")
+            hl.Name = "AP_ESP"
+            hl.Adornee = c
+            hl.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
+            hl.FillTransparency = 0.85
+            hl.OutlineTransparency = 0
+            local col = canPeek and Color3.fromRGB(50, 255, 50) or Color3.fromRGB(255, 50, 50)
+            hl.OutlineColor = col
+            hl.FillColor = col
+            hl.Parent = c
+            apESPCache[p.UserId] = hl
+        end
+    end
+
+    for id, hl in PAIRS(apESPCache) do
+        if not processed[id] then 
+            pcall(function() hl:Destroy() end) 
+            apESPCache[id] = nil 
+        end
+    end
+end
+
+
+local function AP_CreatePoints()
+    for i = 1, #R.apPoints do
+        if R.apPoints[i] and R.apPoints[i].part then
+            R.apPoints[i].part:Destroy()
+        end
+        R.apPoints[i] = nil
+    end
+
+    local rings = S.apRings or 3
+    local ppr = S.apPointsPerRing or 12
+    local ringSpacing = S.apRingSpacing or 3
+    local randomOffset = S.apRandomOffset or 0.3
+    local baseSpacing = S.apPeekDist / rings
+    local idx = 0
+
+    for ring = 1, rings do
+        local baseDist = ring * baseSpacing * (ringSpacing / 3)
+        for i = 1, ppr do
+            idx = idx + 1
+            local baseAngle = (i - 1) * (360 / ppr) + (ring * (360 / ppr / 2))
+            
+            R.apPoints[idx] = {
+                ring = ring,
+                dist = baseDist + (RANDOM() - 0.5) * 2 * randomOffset,
+                angle = baseAngle + (RANDOM() - 0.5) * 20 * randomOffset,
+                pos = V3_ZERO,
+                groundY = 0,
+                canReach = false,
+                canShoot = false,
+                enemySees = false,
+                coverScore = 0,
+                angleScore = 0,
+                heightAdvantage = 0,
+                score = 0,
+                part = nil
+            }
+            
+            if S.apShowPoints then
+                local p = Instance.new("Part")
+                p.Name = "AP_P"
+                p.Size = V3(0.5, 0.5, 0.5)
+                p.Shape = Enum.PartType.Ball
+                p.Anchored = true
+                p.CanCollide = false
+                p.CastShadow = false
+                p.Material = Enum.Material.Neon
+                p.Transparency = 0.3
+                p.Color = Color3.new(1, 1, 1)
+                p.Parent = WS
+                R.apPoints[idx].part = p
+            end
+        end
+    end
+    R.apPointCount = idx
+end
+
+local function AP_RemovePoints()
+    for i = 1, #R.apPoints do
+        if R.apPoints[i] and R.apPoints[i].part then
+            R.apPoints[i].part:Destroy()
+        end
+        R.apPoints[i] = nil
+    end
+    R.apPointCount = 0
+    AP_ClearESP()
+end
+
+local function AP_UpdatePoints(rootPos, char, baseY)
+    for i = 1, R.apPointCount do
+        local pt = R.apPoints[i]
+        if pt then
+            local ang = RAD(pt.angle)
+            local basePos = rootPos + V3(COS(ang) * pt.dist, 0, SIN(ang) * pt.dist)
+            
+            pt.groundY = AP_GetGround(basePos, char, baseY)
+            pt.pos = V3(basePos.X, pt.groundY, basePos.Z)
+            pt.canReach = AP_CanReach(rootPos, pt.pos, char)
+            pt.canShoot = false
+            pt.enemySees = false
+            pt.coverScore = 0
+            pt.angleScore = 0
+            pt.heightAdvantage = 0
+            pt.score = 0
+            
+            if pt.part then
+                pt.part.Position = pt.pos + V3(0, 0.7, 0)
+                pt.part.Color = pt.canReach and Color3.new(0.5, 0.5, 0.5) or Color3.fromRGB(90, 30, 30)
+                pt.part.Transparency = pt.canReach and 0.4 or 0.7
+                pt.part.Size = pt.canReach and V3(0.5, 0.5, 0.5) or V3(0.35, 0.35, 0.35)
+            end
+        end
+    end
+end
+
+local function AP_InstantTeleport(root, target, lookDir)
+    if not root or not root.Parent then return false end
+
+    local currentVelY = root.AssemblyLinearVelocity.Y
+    root.CFrame = CF(target, target + lookDir)
+    root.AssemblyLinearVelocity = V3(0, CLAMP(currentVelY, -50, 50), 0)
+
+    return true
+end
+
+local coverDirs = {
+    V3(1, 0, 0), V3(-1, 0, 0), V3(0, 0, 1), V3(0, 0, -1),
+    V3(0.7, 0, 0.7), V3(-0.7, 0, 0.7), V3(0.7, 0, -0.7), V3(-0.7, 0, -0.7)
+}
+
+local function AP_FindBest(myRoot, myChar, enemyRoot, enemyChar)
+    local enemyHead = enemyChar:FindFirstChild("Head")
+    if not enemyHead then return nil end
+
+    local best, bestScore = nil, -999999
+    local myPos = myRoot.Position
+    local enemyPos = enemyRoot.Position
+    local wDist = S.apWeightDist
+    local wEnemy = S.apWeightEnemy
+    local wCover = S.apWeightCover
+    local wAngle = S.apWeightAngle
+    local wHeight = S.apWeightHeight
+
+    local toEnemy = (enemyPos - myPos).Unit
+    local toEnemyFlat = V3(toEnemy.X, 0, toEnemy.Z).Unit
+    local enemyLookFlat = V3(enemyRoot.CFrame.LookVector.X, 0, enemyRoot.CFrame.LookVector.Z).Unit
+
+    APRayP.FilterDescendantsInstances = {myChar, enemyChar}
+
+    for i = 1, R.apPointCount do
+        local pt = R.apPoints[i]
+        if not pt or not pt.canReach then continue end
+        
+        pt.canShoot = AP_CanShootFrom(pt.pos, enemyHead, myChar, enemyChar)
+        pt.enemySees = AP_EnemySeesPoint(enemyRoot, pt.pos, myChar, enemyChar)
+        
+        if pt.enemySees and pt.canShoot then
+            local distMe = (pt.pos - myPos).Magnitude
+            local distEnemy = (pt.pos - enemyPos).Magnitude
+            
+            pt.score = 1000 - distMe * 8 * wDist - ABS(distEnemy - 15) * 3 * wEnemy
+            pt.score = pt.score + (S.apRings - pt.ring + 1) * 30
+            
+            local toPoint = (pt.pos - myPos).Unit
+            local toPointFlat = V3(toPoint.X, 0, toPoint.Z).Unit
+            pt.score = pt.score + (1 - ABS(toEnemyFlat:Dot(toPointFlat))) * 100 * wAngle
+            
+            local coverCount = 0
+            for j = 1, 4 do
+                local result = WS:Raycast(pt.pos + V3(0, 1, 0), coverDirs[j] * 3, APRayP)
+                if result and result.Instance.CanCollide then coverCount = coverCount + 1 end
+            end
+            pt.score = pt.score + coverCount * 15 * wCover
+            
+            local toPointFromEnemy = (pt.pos - enemyPos).Unit
+            local enemySeesAngle = V3(toPointFromEnemy.X, 0, toPointFromEnemy.Z).Unit:Dot(enemyLookFlat)
+            if enemySeesAngle < 0.5 then pt.score = pt.score + 60 end
+            if enemySeesAngle < 0 then pt.score = pt.score + 40 end
+            
+            local heightDiff = pt.pos.Y - enemyPos.Y
+            if heightDiff > 1 then
+                pt.score = pt.score + MIN(heightDiff, 3) * 20 * wHeight
+            end
+            
+            if pt.score > bestScore then 
+                bestScore = pt.score
+                best = pt 
+            end
+        end
+    end
+
+    return best
+end
+
+
+local function AP_HasPossiblePath(myRoot, myChar, enemyRoot, enemyChar)
+    local enemyHead = enemyChar:FindFirstChild("Head")
+    if not enemyHead then return false end
+
+    APRayP.FilterDescendantsInstances = {myChar, enemyChar}
+    local myEye = myRoot.Position + V3(0, 1.6, 0)
+
+    if not WS:Raycast(myEye, enemyHead.Position - myEye, APRayP) then 
+        return true 
+    end
+
+    for i = 1, R.apPointCount do
+        local pt = R.apPoints[i]
+        if pt and pt.canReach then
+            local result = WS:Raycast(
+                pt.pos + V3(0, 1.6, 0), 
+                enemyHead.Position - (pt.pos + V3(0, 1.6, 0)), 
+                APRayP
+            )
+            if not result or not result.Instance.CanCollide then 
+                return true 
+            end
+        end
+    end
+    return false
+end
+
+local function AP_FindEnemy(myChar, myRoot)
+    local best, bestDist, bestChar = nil, S.apRange, nil
+    local myTeam, myColor = LP.Team, LP.TeamColor
+
+    for _, p in IPAIRS(Plrs:GetPlayers()) do
+        if p ~= LP then
+            if S.apTeamCheck and myTeam and (p.Team == myTeam or p.TeamColor == myColor) then continue end
+            
+            local c = p.Character
+            if not c then continue end
+            
+            local r = c:FindFirstChild("HumanoidRootPart")
+            local h = c:FindFirstChildOfClass("Humanoid")
+            local head = c:FindFirstChild("Head")
+            
+            if not r or not h or h.Health <= 0 or not head then continue end
+            
+            local dist = (r.Position - myRoot.Position).Magnitude
+            if dist < bestDist and AP_HasPossiblePath(myRoot, myChar, r, c) then
+                bestDist = dist
+                best = r
+                bestChar = c
+            end
+        end
+    end
+    return best, bestChar, bestDist
+end
+
+local function AP_DoPeek(root, point, char, enemyRoot, enemyChar)
+    if R.apTeleporting then return end
+
+    local cooldown = AP_SpeedToCooldown()
+    if TICK() - apLastPeekTime < cooldown then return end
+
+    local enemyHead = enemyChar:FindFirstChild("Head")
+    if not AP_CanShootFrom(point.pos, enemyHead, char, enemyChar) then return end
+
+    local enemyHum = enemyChar:FindFirstChildOfClass("Humanoid")
+    if not enemyHum or enemyHum.Health <= 0 then return end
+
+    R.apTeleporting = true
+    apLastPeekTime = TICK()
+
+    local baseY = root.Position.Y
+    local origin = root.CFrame
+    local originPos = root.Position
+    local look = root.CFrame.LookVector
+
+    local targetY = AP_ValidateHeight(baseY, point.groundY + AP_GROUND_OFFSET)
+    local targetPos = V3(point.pos.X, targetY, point.pos.Z)
+
+    if point.part then
+        point.part.Color = Color3.fromRGB(255, 0, 255)
+        point.part.Size = V3(1.2, 1.2, 1.2)
+        point.part.Transparency = 0
+    end
+
+    AP_InstantTeleport(root, targetPos, look)
+
+    if root.Parent and enemyRoot.Parent then
+        local lookAtEnemy = V3(enemyRoot.Position.X, root.Position.Y, enemyRoot.Position.Z)
+        root.CFrame = CF(root.Position, lookAtEnemy)
+        root.AssemblyLinearVelocity = V3(0, 0, 0)
+    end
+
+    -- Используем task.delay вместо task.wait для неблокирующего возврата
+    task.delay(AP_SHOOT_DELAY, function()
+        if root and root.Parent then
+            AP_InstantTeleport(root, originPos, look)
+            root.CFrame = origin
+            root.AssemblyLinearVelocity = V3(0, 0, 0)
+        end
+
+        if point and point.part then 
+            point.part.Size = V3(0.5, 0.5, 0.5) 
+        end
+
+        R.apTeleporting = false
+    end)
+end
+
+local function AP_MainLoop()
+    while R.apActive and R.running do
+        RS.Heartbeat:Wait()  -- Синхронизация с кадрами вместо task.wait
+
+        if R.apTeleporting then continue end
+        
+        local char = LP.Character
+        local root = char and char:FindFirstChild("HumanoidRootPart")
+        local hum = char and char:FindFirstChildOfClass("Humanoid")
+        
+        if not root or not hum or hum.Health <= 0 then continue end
+        
+        AP_UpdatePoints(root.Position, char, root.Position.Y)
+        
+        if TICK() - apLastUpdate > 0.2 then
+            apLastUpdate = TICK()
+            AP_UpdateESP()
+        end
+        
+        local enemyRoot, enemyChar = AP_FindEnemy(char, root)
+        
+        if not enemyRoot or not enemyChar then
+            for i = 1, R.apPointCount do
+                local pt = R.apPoints[i]
+                if pt and pt.part then
+                    pt.part.Color = pt.canReach and Color3.fromRGB(255, 255, 255) or Color3.fromRGB(100, 40, 40)
+                    pt.part.Transparency = pt.canReach and 0.5 or 0.75
+                    pt.part.Size = pt.canReach and V3(0.5, 0.5, 0.5) or V3(0.35, 0.35, 0.35)
+                end
+            end
+            continue
+        end
+        
+        if AP_EnemyVisible(root, char, enemyChar) then
+            for i = 1, R.apPointCount do
+                local pt = R.apPoints[i]
+                if pt and pt.part then
+                    pt.part.Color = Color3.fromRGB(100, 200, 100)
+                    pt.part.Transparency = 0.6
+                    pt.part.Size = V3(0.45, 0.45, 0.45)
+                end
+            end
+            continue
+        end
+        
+        local best = AP_FindBest(root, char, enemyRoot, enemyChar)
+        if best and best.canShoot then 
+            AP_DoPeek(root, best, char, enemyRoot, enemyChar) 
+        end
+    end
+
+    AP_ClearESP()
+end
+
+local function AP_Enable()
+    if R.apActive then return end
+
+    local char = LP.Character
+    local root = char and char:FindFirstChild("HumanoidRootPart")
+    if not root then return end
+
+    R.apActive = true
+    R.apTeleporting = false
+    R.apPointCount = 0
+    apLastUpdate = 0
+    apLastPeekTime = 0
+
+    AP_CreatePoints()
+
+    R.hotkeys["AI Peek v6"] = {active = true, key = S.apKey and S.apKey.Name or "None"}
+    UpdateHotkeyList()
+
+    task.spawn(AP_MainLoop)
+end
+
+local function AP_Disable()
+    R.apActive = false
+    R.apTeleporting = false
+    AP_RemovePoints()
+    AP_ClearESP()
+    R.hotkeys["AI Peek v6"] = nil
+    UpdateHotkeyList()
+end
+
+
+-- ========== EXPLOIT POSITION SYSTEM ==========
+local function EP_SpawnDecoy()
+    if R.epActive or not R.myChar or not R.myHRP or not R.myHum then return end
+
+    R.epActive, R.epOriginalPos = true, R.myHRP.CFrame
+    if R.epDecoy then pcall(function() R.epDecoy:Destroy() end) end
+
+    local cam = WS.CurrentCamera
+    local camLook = cam and cam.CFrame.LookVector or R.myHRP.CFrame.LookVector
+    camLook = V3(camLook.X, 0, camLook.Z).Unit
+
+    R.myHRP.CFrame = CF(R.epOriginalPos.Position + camLook * S.epDist) * CF_ANG(0, math.atan2(-camLook.X, -camLook.Z), 0)
+
+    local newModel = Instance.new("Model")
+    newModel.Name, newModel.Parent = "ShadowDecoy", WS
+    R.epDecoy = newModel
+
+    for _, obj in IPAIRS(R.myChar:GetChildren()) do
+        if obj:IsA("BasePart") and obj.Name ~= "HumanoidRootPart" then
+            local partClone = obj:Clone()
+            partClone.Name, partClone.Parent = obj.Name, R.epDecoy
+            partClone.Transparency, partClone.Color = 0.3, Color3.fromRGB(20, 20, 20)
+            partClone.CanCollide, partClone.Material, partClone.Anchored = false, Enum.Material.ForceField, false
+        end
+    end
+
+    local hrpClone = R.myHRP:Clone()
+    hrpClone.Name, hrpClone.Anchored, hrpClone.CFrame = "HumanoidRootPart", true, R.epOriginalPos
+    hrpClone.Transparency, hrpClone.Color, hrpClone.CanCollide = 0.3, Color3.fromRGB(20, 20, 20), false
+    hrpClone.Parent = R.epDecoy
+
+    local hum = Instance.new("Humanoid", R.epDecoy)
+    hum.MaxHealth, hum.Health = 0, 0
+    hum.DisplayDistanceType = Enum.HumanoidDisplayDistanceType.None
+
+    for _, part in IPAIRS(R.epDecoy:GetChildren()) do
+        if part:IsA("BasePart") and part ~= hrpClone then
+            local weld = Instance.new("WeldConstraint", hrpClone)
+            weld.Part0, weld.Part1 = hrpClone, part
+        end
+    end
+
+    local torso = R.myChar:FindFirstChild("Torso") or R.myChar:FindFirstChild("UpperTorso")
+    if torso then
+        local neck = torso:FindFirstChild("Neck")
+        if neck and neck:IsA("Motor6D") then
+            R.epOriginalNeckC0 = neck.C0
+            neck.C0 = neck.C0 * CF(0, -2, 0)
+        end
+    end
+
+    R.epHealthConn = R.myHum.HealthChanged:Connect(function(health)
+        if R.epActive and health < R.myHum.MaxHealth then
+            pcall(function() R.myHum.Health = R.myHum.MaxHealth end)
+        end
+    end)
+
+    R.hotkeys["Exploit Pos"] = {active = true, key = S.epKey.Name}
+    UpdateHotkeyList()
+end
+
+local function EP_DestroyDecoy()
+    if not R.epActive then return end
+
+    if R.epDecoy then pcall(function() R.epDecoy:Destroy() end) R.epDecoy = nil end
+    if R.epOriginalPos and R.myHRP then R.myHRP.CFrame = R.epOriginalPos end
+
+    local torso = R.myChar and (R.myChar:FindFirstChild("Torso") or R.myChar:FindFirstChild("UpperTorso"))
+    if torso then
+        local neck = torso:FindFirstChild("Neck")
+        if neck and neck:IsA("Motor6D") and R.epOriginalNeckC0 then neck.C0 = R.epOriginalNeckC0 end
+    end
+
+    R.epOriginalNeckC0 = nil
+    if R.epHealthConn then R.epHealthConn:Disconnect() R.epHealthConn = nil end
+    R.epOriginalPos, R.epActive = nil, false
+    R.hotkeys["Exploit Pos"] = nil
+    UpdateHotkeyList()
+end
+
+local function EP_Free()
+    EP_DestroyDecoy()
+    if R.myHum then pcall(function() R.myHum.WalkSpeed = 16 end) end
+    if R.myHRP then pcall(function() R.myHRP.Anchored = false end) end
+end
+
+-- ========== BARREL EXTEND SYSTEM ==========
+local function BE_GetHole()
+    if not LP.Character then return nil end
+    local playerFolder = WS:FindFirstChild(LP.Name)
+    if playerFolder then
+        local ssg = playerFolder:FindFirstChild("SSG-08")
+        if ssg then
+            local hole = ssg:FindFirstChild("Hole")
+            if hole and hole:IsA("BasePart") then return hole end
+        end
+    end
+    return nil
+end
+
+local function BE_Enable()
+    if R.beActive or not R.myChar or not R.myHRP then return end
+
+    local hole = BE_GetHole()
+    if not hole then return end
+
+    if R.beDecoy then pcall(function() R.beDecoy:Destroy() end) R.beDecoy = nil end
+
+    local decoy = Instance.new("Model")
+    decoy.Name, decoy.Parent = "BarrelDecoy", WS
+    R.beDecoy = decoy
+
+    local hrpClone = Instance.new("Part", decoy)
+    hrpClone.Name, hrpClone.Size = "HumanoidRootPart", V3(2, 2, 1)
+    hrpClone.Transparency, hrpClone.Color = 0.3, Color3.fromRGB(20, 20, 20)
+    hrpClone.CanCollide, hrpClone.Anchored = false, true
+    hrpClone.CFrame = CF(hole.Position)
+
+    local hum = Instance.new("Humanoid", decoy)
+    hum.MaxHealth, hum.Health = 0, 0
+    hum.DisplayDistanceType = Enum.HumanoidDisplayDistanceType.None
+
+    R.beActive = true
+    R.hotkeys["Barrel Ext"] = {active = true, key = S.beKey.Name .. " [" .. S.beMode .. "]"}
+    UpdateHotkeyList()
+
+    if R.beUpdateConn then R.beUpdateConn:Disconnect() end
+    R.beUpdateConn = RS.Heartbeat:Connect(function()
+        if R.beActive and R.beDecoy then
+            local h = BE_GetHole()
+            if h then
+                local hrp = R.beDecoy:FindFirstChild("HumanoidRootPart")
+                if hrp then hrp.CFrame = CF(h.Position) end
+            end
+        end
+    end)
+end
+
+local function BE_Disable()
+    if not R.beActive then return end
+
+    if R.beUpdateConn then R.beUpdateConn:Disconnect() R.beUpdateConn = nil end
+    if R.beDecoy then pcall(function() R.beDecoy:Destroy() end) R.beDecoy = nil end
+
+    R.beActive = false
+    R.hotkeys["Barrel Ext"] = nil
+    UpdateHotkeyList()
+end
+
+local function BE_GetShootOrigin(defaultOrigin)
+    if not R.beActive then return defaultOrigin end
+    local hole = BE_GetHole()
+    return hole and hole.Position or defaultOrigin
+end
+
+
+-- ========== AIR SHOOT SYSTEM ==========
+local function AS_CreatePart()
+    if R.rbAirPart or not R.myHRP then return end
+
+    local part = Instance.new("Part")
+    part.Name, part.Size = "AirShootPlatform", V3(4, 0.5, 4)
+    part.Anchored, part.CanCollide, part.Transparency = true, true, 1
+    part.CFrame, part.Parent = R.myHRP.CFrame * CF(0, -3, 0), WS
+    R.rbAirPart = part
+end
+
+local function AS_RemovePart()
+    if R.rbAirPart then pcall(function() R.rbAirPart:Destroy() end) R.rbAirPart = nil end
+end
+
+local function AS_Update()
+    if not S.rbAirShoot then
+        AS_RemovePart()
+        R.asCanJump = true
+        if R.myHum then R.myHum:SetStateEnabled(Enum.HumanoidStateType.Jumping, true) end
+        return
+    end
+    if not R.myHRP or not R.myHum then return end
+
+    local state = R.myHum:GetState()
+    local isInAir = state == Enum.HumanoidStateType.Freefall or state == Enum.HumanoidStateType.Jumping
+
+    RayP.FilterDescendantsInstances = {R.myChar, R.rbAirPart}
+    local onRealGround = WS:Raycast(R.myHRP.Position, V3(0, -4, 0), RayP) ~= nil
+
+    if isInAir or not onRealGround then
+        if not R.rbAirPart then AS_CreatePart() end
+        if R.rbAirPart then
+            R.rbAirPart.CFrame = CF(R.myHRP.Position - V3(0, 3, 0))
+            R.rbAirPart.CanCollide, R.rbAirPart.Anchored = true, true
+        end
+        if not S.ijEnabled then
+            R.asCanJump = false
+            R.myHum:SetStateEnabled(Enum.HumanoidStateType.Jumping, false)
+        end
+    else
+        AS_RemovePart()
+        R.asCanJump = true
+        R.myHum:SetStateEnabled(Enum.HumanoidStateType.Jumping, true)
+    end
+end
+
+-- ========== INFINITY JUMP SYSTEM ==========
+local function IJ_CreatePart()
+    if R.ijPart or not R.myHRP then return end
+
+    local part = Instance.new("Part")
+    part.Name, part.Size = "InfinityJumpPlatform", V3(4, 0.5, 4)
+    part.Anchored, part.CanCollide, part.Transparency = true, true, 1
+    part.CFrame, part.Parent = R.myHRP.CFrame * CF(0, -3, 0), WS
+    R.ijPart = part
+end
+
+local function IJ_RemovePart()
+    if R.ijPart then pcall(function() R.ijPart:Destroy() end) R.ijPart = nil end
+end
+
+local function IJ_Update()
+    if not S.ijEnabled then IJ_RemovePart() return end
+    if not R.myHRP or not R.myHum then return end
+
+    local state = R.myHum:GetState()
+    local isInAir = state == Enum.HumanoidStateType.Freefall or state == Enum.HumanoidStateType.Jumping
+
+    if isInAir then
+        IJ_CreatePart()
+        if R.ijPart then R.ijPart.CFrame = R.myHRP.CFrame * CF(0, -3, 0) end
+        R.ijCanJump = true
+    else
+        IJ_RemovePart()
+        R.ijCanJump = true
+    end
+end
+
+-- ========== AIMVIEW SYSTEM ==========
+local function AV_CreateLine()
+    if R.avLine then pcall(function() R.avLine:Destroy() end) R.avLine = nil end
+
+    local line = Instance.new("Part")
+    line.Name, line.Anchored, line.CanCollide = "AimViewLine", true, false
+    line.Material, line.Color, line.Transparency = Enum.Material.Neon, Color3.fromRGB(255, 0, 0), 0.3
+    line.Parent = WS
+    R.avLine = line
+end
+
+local function AV_RemoveLine()
+    if R.avLine then pcall(function() R.avLine:Destroy() end) R.avLine = nil end
+end
+
+local function AV_Update(targetPos, fromPos)
+    if not S.avEnabled or not targetPos then AV_RemoveLine() return end
+
+    if not R.avLine or not R.avLine.Parent then AV_CreateLine() end
+    if not R.avLine then return end
+
+    local startPos = fromPos or (R.myHRP and (R.myHRP.Position + R.myHRP.CFrame.LookVector * 1))
+    if not startPos then AV_RemoveLine() return end
+
+    local distance = (targetPos - startPos).Magnitude
+    local midPoint = (startPos + targetPos) / 2
+
+    R.avLine.Size = V3(0.1, 0.1, distance)
+    R.avLine.CFrame = CFrame.lookAt(midPoint, targetPos)
+end
+
+-- ========== DOUBLE TAP SYSTEM ==========
+local DT_DIRECTIONS = {
+    Forward = V3(0, 0, -1), Back = V3(0, 0, 1),
+    Left = V3(-1, 0, 0), Right = V3(1, 0, 0)
+}
+
+local function DT_Peek(direction)
+    if not R.myHRP or not R.myChar or not R.myHum then return end
+
+    local cam = WS.CurrentCamera
+    if not cam then return end
+
+    local myPos, origCF = R.myHRP.Position, R.myHRP.CFrame
+    RayP.FilterDescendantsInstances = {R.myChar}
+
+    if S.dtMode == "Off" or S.dtMode == "Defensive" then
+        if TICK() - R.dtLastPeek < 5 then return end
+        
+        local moveDir = R.myHum.MoveDirection
+        if moveDir.Magnitude < 0.1 then return end
+        
+        moveDir = V3(moveDir.X, 0, moveDir.Z).Unit
+        if WS:Raycast(myPos, moveDir * S.dtDist, RayP) then return end
+        
+        R.myHRP.CFrame = CF(myPos + moveDir * S.dtDist) * origCF.Rotation
+        R.dtLastPeek = TICK()
+    else
+        if TICK() - R.dtLastPeek < 0.3 then return end
+        
+        local dirVec = DT_DIRECTIONS[direction]
+        if not dirVec then return end
+        
+        local worldDir = cam.CFrame:VectorToWorldSpace(dirVec)
+        worldDir = V3(worldDir.X, 0, worldDir.Z).Unit
+        
+        if WS:Raycast(myPos, worldDir * S.dtDist, RayP) then return end
+        
+        R.myHRP.CFrame = CF(myPos + worldDir * S.dtDist) * origCF.Rotation
+        R.dtLastPeek = TICK()
+        
+        -- Неблокирующая стрельба и возврат
+        task.delay(0.05, function()
+            local fs = GetFireShot()
+            if fs and R.myHead then
+                for i = 1, 4 do
+                    local d = R.playerData[i]
+                    if d and not d.team and d.dist < 200 then
+                        local tgt = S.rbHitbox == "Head" and d.head or d.torso or d.r
+                        if tgt then
+                            RayP.FilterDescendantsInstances = {R.myChar}
+                            local res = WS:Raycast(R.myHead.Position, tgt.Position - R.myHead.Position, RayP)
+                            if not res or res.Instance:IsDescendantOf(d.c) then
+                                pcall(fs.FireServer, fs, R.myHead.Position, (tgt.Position - R.myHead.Position).Unit, tgt)
+                                break
+                            end
+                        end
+                    end
+                end
+            end
+            
+            task.delay(0.1, function()
+                if R.myHRP and R.myHRP.Parent then R.myHRP.CFrame = origCF end
+            end)
+        end)
+    end
+end
+
+
+-- ========== VISUAL EFFECTS ==========
+local function ApplyBloom()
+    if R.bloomEffect then pcall(function() R.bloomEffect:Destroy() end) R.bloomEffect = nil end
+    if S.bloomEnabled then
+        local bloom = Instance.new("BloomEffect")
+        bloom.Intensity, bloom.Size, bloom.Threshold = S.bloomIntensity, S.bloomSize, S.bloomThreshold
+        bloom.Parent = Light
+        R.bloomEffect = bloom
+    end
+end
+
+local function ApplyBlur()
+    if R.blurEffect then pcall(function() R.blurEffect:Destroy() end) R.blurEffect = nil end
+    if S.blurEnabled then
+        local blur = Instance.new("BlurEffect")
+        blur.Size = S.blurSize
+        blur.Parent = Light
+        R.blurEffect = blur
+    end
+end
+
+local function ApplyColorCorrection()
+    if R.colorEffect then pcall(function() R.colorEffect:Destroy() end) R.colorEffect = nil end
+    if S.colorEnabled then
+        local cc = Instance.new("ColorCorrectionEffect")
+        cc.Brightness, cc.Contrast, cc.Saturation = S.ccBrightness, S.ccContrast, S.ccSaturation
+        cc.TintColor = S.ccTintColor
+        cc.Parent = Light
+        R.colorEffect = cc
+    end
+end
+
+local function ApplySunRays()
+    if R.sunRaysEffect then pcall(function() R.sunRaysEffect:Destroy() end) R.sunRaysEffect = nil end
+    if S.sunRaysEnabled then
+        local sr = Instance.new("SunRaysEffect")
+        sr.Intensity, sr.Spread = S.sunRaysIntensity, S.sunRaysSpread
+        sr.Parent = Light
+        R.sunRaysEffect = sr
+    end
+end
+
+local function ApplyFog()
+    if S.fogEnabled then
+        Light.FogStart, Light.FogEnd, Light.FogColor = S.fogStart, S.fogEnd, S.fogColor
+    else
+        Light.FogStart, Light.FogEnd = 0, 100000
+    end
+end
+
+-- ========== FAKEDUCK SYSTEM ==========
+local function ToggleFakeduck()
+    S.fdEnabled = not S.fdEnabled
+
+    if S.fdEnabled then
+        local hum = R.myHum
+        if hum then
+            local anim = hum:FindFirstChildOfClass("Animator")
+            if not anim then anim = Instance.new("Animator", hum) end
+            
+            pcall(function()
+                local a1 = Instance.new("Animation")
+                a1.AnimationId = "rbxassetid://102226306945117"
+                R.fdIdleAnim = anim:LoadAnimation(a1)
+                R.fdIdleAnim.Priority = Enum.AnimationPriority.Action4
+                R.fdIdleAnim.Looped = true
+                
+                local a2 = Instance.new("Animation")
+                a2.AnimationId = "rbxassetid://124458965304788"
+                R.fdWalkAnim = anim:LoadAnimation(a2)
+                R.fdWalkAnim.Priority = Enum.AnimationPriority.Action4
+                R.fdWalkAnim.Looped = true
+            end)
+        end
+    else
+        pcall(function()
+            if R.fdIdleAnim and R.fdIdleAnim.IsPlaying then R.fdIdleAnim:Stop() end
+            if R.fdWalkAnim and R.fdWalkAnim.IsPlaying then R.fdWalkAnim:Stop() end
+        end)
+        R.fdCrouch, R.fdTarget = false, nil
+        R.fdIdleAnim, R.fdWalkAnim = nil, nil
+    end
+
+    ApplySettings()
+end
+
+
+-- ========== MAIN LOOP (OPTIMIZED) ==========
+local frame = 0
+local lastPlayerUpdate = 0
+local PLAYER_UPDATE_INTERVAL = 0.1  -- Было 0.35, ускорено
+
+local function MainLoop()
+    if not R.running then return end
+    frame = frame + 1
+
+    -- Кэш персонажа каждые 10 кадров (было 15)
+    if frame % 10 == 0 then CacheChar() end
+    if not R.myChar or not R.myHRP then return end
+
+    local now = TICK()
+    
+    if now - lastPlayerUpdate > PLAYER_UPDATE_INTERVAL then
+        UpdatePlayerData()
+        lastPlayerUpdate = now
+    end
+
+    local hrp, head, cam = R.myHRP, R.myHead, R.cam
+
+    -- Infinite Jump и Air Shoot - каждый кадр (было 2)
+    if S.ijEnabled then IJ_Update() end
+    if S.rbAirShoot then AS_Update() end
+
+    -- RAGEBOT - каждые 2 кадра (было 3)
+    if S.rbEnabled and S.rbAutoFire and frame % 2 == 0 and head then
+        if now - R.rbLast >= S.rbFireRate then
+            RayP.FilterDescendantsInstances = {R.myChar}
+            local best, bestScore = nil, -9999
+            local bulletOrigin = hrp.Position + hrp.CFrame.LookVector
+            
+            local maxCheck = MIN(10, #R.playerData)  -- Увеличено с 6 до 10
+            for i = 1, maxCheck do
+                local d = R.playerData[i]
+                if not d or d.team or d.dist >= S.rbMaxDist then continue end
+                
+                if S.rbNoAir and not R.apActive then
+                    local groundRay = WS:Raycast(d.r.Position, V3(0, -4, 0), RayP)
+                    local enemyVelY = d.r.AssemblyLinearVelocity.Y
+                    if not groundRay or ABS(enemyVelY) > 8 then continue end
+                end
+                
+                local tgt = S.rbHitbox == "Head" and d.head or d.torso or d.r
+                if not tgt then continue end
+                
+                local vel = d.r.AssemblyLinearVelocity
+                local predictedPos = tgt.Position
+                
+                if S.rbPrediction and vel.Magnitude > 0.5 then
+                    local ping = LP:GetNetworkPing()
+                    local predTime = ping * S.rbPredMulti
+                    predictedPos = tgt.Position + V3(vel.X * predTime, 0, vel.Z * predTime)
+                end
+                
+                local res = WS:Raycast(bulletOrigin, predictedPos - bulletOrigin, RayP)
+                
+                -- Проверка видимости: нет препятствия ИЛИ попали во врага
+                local canHit = not res or res.Instance:IsDescendantOf(d.c)
+                
+                -- Если WallCheck включен - требуем прямую видимость
+                if S.rbWallCheck and not canHit then continue end
+                
+                -- Если WallCheck выключен - стреляем в любом случае (wallbang)
+                if canHit or not S.rbWallCheck then
+                    local score = S.rbMaxDist - d.dist
+                    if score > bestScore then
+                        bestScore = score
+                        best = {d = d, tgt = tgt, predictedPos = predictedPos}
+                    end
+                end
+            end
+            
+            if S.avEnabled then
+                if best and best.d and best.d.head then
+                    AV_Update(best.d.head.Position, bulletOrigin)
+                else
+                    AV_RemoveLine()
+                end
+            end
+            
+            if best then
+                local fs = GetFireShot()
+                if fs then
+                    local pos = best.predictedPos or best.tgt.Position
+                    local shootOrigin = BE_GetShootOrigin(bulletOrigin)
+                    pcall(function() fs:FireServer(shootOrigin, (pos - shootOrigin).Unit, best.tgt) end)
+                    R.rbLast = now
+                    
+                    local playerName = best.d.p and best.d.p.Name or "Unknown"
+                    TrackShot(playerName, best.tgt.Name or S.rbHitbox)
+                end
+            end
+        end
+    end
+
+    -- BUNNYHOP
+    if S.bhEnabled and frame % 2 == 0 and R.myHum then
+        if now - R.bhPosCheckTime >= 1.5 then
+            local curPos = hrp.Position
+            if R.bhLastPos then
+                local dist = (V3(curPos.X, 0, curPos.Z) - V3(R.bhLastPos.X, 0, R.bhLastPos.Z)).Magnitude
+                R.bhCircling = dist < 15
+            end
+            R.bhLastPos, R.bhPosCheckTime = curPos, now
+        end
+        
+        if not R.bhCircling then
+            if now - R.bhLastReset >= 2.5 and not R.bhResetting then
+                R.bhResetting, R.bhLastReset = true, now
+                local wasInAir = R.bhInAir
+                R.myHum.WalkSpeed = 27
+                task.delay(0.2, function()
+                    if S.bhEnabled and R.myHum then
+                        R.myHum.WalkSpeed = wasInAir and R.bhInAir and S.bhAirSpeed or (not R.bhInAir and S.bhGroundSpeed or R.bhOrigSpeed)
+                    end
+                    R.bhResetting = false
+                end)
+            end
+            
+            RayP.FilterDescendantsInstances = {R.myChar}
+            local onGround = WS:Raycast(hrp.Position, V3(0, -3.5, 0), RayP) ~= nil
+            
+            if not onGround and not R.bhInAir then
+                R.bhInAir = true
+                if not R.bhResetting then R.myHum.WalkSpeed = S.bhAirSpeed end
+            elseif onGround and R.bhInAir then
+                R.bhInAir = false
+                if not R.bhResetting then R.myHum.WalkSpeed = S.bhGroundSpeed end
+            end
+            
+            if R.bhInAir and not R.bhResetting then
+                local vel, moveDir = hrp.AssemblyLinearVelocity, R.myHum.MoveDirection
+                if moveDir.Magnitude > 0 then
+                    hrp.AssemblyLinearVelocity = V3(moveDir.X * S.bhAirSpeed * 0.95, vel.Y, moveDir.Z * S.bhAirSpeed * 0.95)
+                end
+            end
+        else
+            R.myHum.WalkSpeed = R.bhOrigSpeed
+        end
+    end
+
+    -- FAKEDUCK
+    if S.fdEnabled and frame % 4 == 0 and head then
+        if R.fdLock then
+            R.fdCrouch = true
+        else
+            RayP.FilterDescendantsInstances = {R.myChar}
+            local enemy = nil
+            
+            local maxCheck = MIN(4, #R.playerData)
+            for i = 1, maxCheck do
+                local d = R.playerData[i]
+                if d and not d.team and d.dist <= FD_DIST and d.head and cam then
+                    local _, on = cam:WorldToScreenPoint(d.head.Position)
+                    if on then
+                        local res = WS:Raycast(head.Position, d.head.Position - head.Position, RayP)
+                        if not res or res.Instance:IsDescendantOf(d.c) then
+                            enemy = d.p
+                            break
+                        end
+                    end
+                end
+            end
+            
+            if enemy then
+                R.fdTarget, R.fdCrouch = enemy, false
+            else
+                if R.fdTarget then
+                    local c = R.fdTarget.Character
+                    if not c or not c:FindFirstChildOfClass("Humanoid") or c:FindFirstChildOfClass("Humanoid").Health <= 0 then
+                        R.fdTarget = nil
+                    end
+                end
+                if not R.fdTarget then R.fdCrouch = true end
+            end
+        end
+    end
+
+    if frame > 500 then frame = 0 end
+end
+
+-- ========== СИСТЕМА ЗАПУСКА/ОСТАНОВКИ ==========
+local function StartMainLoop()
+    if R.mainConn then return end
+    CacheChar()
+    -- Принудительное обновление данных игроков при старте
+    R.playerDataTime = 0
+    UpdatePlayerData()
+    R.mainConn = RS.Heartbeat:Connect(MainLoop)
+end
+
+local function StopMainLoop()
+    if R.mainConn then R.mainConn:Disconnect() R.mainConn = nil end
+end
+
+
+-- ========== APPLY SETTINGS ==========
+function ApplySettings()
+    R.hotkeys = {}
+
+    local needLoop = S.rbEnabled or S.fdEnabled or S.bhEnabled or S.ijEnabled or S.rbAirShoot
+    if needLoop then StartMainLoop() else StopMainLoop() end
+
+    if S.rbEnabled then R.hotkeys["Ragebot"] = {active = true, key = "ON"} end
+    if S.rbAirShoot then R.hotkeys["Air Shoot"] = {active = true, key = S.rbAirShootKey.Name} end
+    if S.fdEnabled then R.hotkeys["Fakeduck"] = {active = true, key = S.fdKey.Name} end
+    if S.bhEnabled then R.hotkeys["BunnyHop"] = {active = true, key = S.bhKey.Name} end
+    if S.dtEnabled then R.hotkeys["DoubleTap"] = {active = true, key = S.dtKey.Name} end
+    if S.wbEnabled then R.hotkeys["Wallbang"] = {active = true, key = "ON"} end
+    if S.rcEnabled then R.hotkeys["NoCollision"] = {active = true, key = "ON"} end
+    if R.apActive then R.hotkeys["AI Peek v6"] = {active = true, key = S.apKey.Name} end
+    if R.epActive then R.hotkeys["Exploit Pos"] = {active = true, key = S.epKey.Name} end
+    if R.beActive then R.hotkeys["Barrel Ext"] = {active = true, key = S.beKey.Name .. " [" .. S.beMode .. "]"} end
+
+    UpdateHotkeyList()
+end
+
+-- ========== CONFIG SYSTEM ==========
+local function EnsureCfgFolder()
+    if not Cfg.FS then return false end
+    pcall(function() if not isfolder(Cfg.Folder) then makefolder(Cfg.Folder) end end)
+    return true
+end
+
+local function RefreshCfg()
+    Cfg.List = {}
+    if not Cfg.FS then return end
+    EnsureCfgFolder()
+    pcall(function()
+        for _, f in IPAIRS(listfiles(Cfg.Folder)) do
+            local n = f:match("([^/\\]+)%.txt$")
+            if n then INSERT(Cfg.List, n) end
+        end
+    end)
+end
+
+local function EncodeSettings()
+    local parts = {}
+    for k, v in PAIRS(S) do
+        local val, vType = nil, TYPE(v)
+        if vType == "EnumItem" then val = "K:" .. v.Name
+        elseif vType == "boolean" then val = "B:" .. (v and "1" or "0")
+        elseif vType == "number" then val = "N:" .. tostring(v)
+        elseif vType == "string" then val = "S:" .. v
+        elseif vType == "table" then val = "T:" .. HTTP:JSONEncode(v)
+        elseif vType == "Color3" then val = "C:" .. FLOOR(v.R * 255) .. "," .. FLOOR(v.G * 255) .. "," .. FLOOR(v.B * 255)
+        else continue end
+        INSERT(parts, k .. "=" .. val)
+    end
+    return table.concat(parts, ";")
+end
+
+local function DecodeSettings(str)
+    for pair in string.gmatch(str, "([^;]+)") do
+        local k, typeVal = string.match(pair, "([^=]+)=(.+)")
+        if k and typeVal and S[k] ~= nil then
+            local t, v = string.match(typeVal, "^(%a):(.*)$")
+            if t == "K" then pcall(function() S[k] = Enum.KeyCode[v] end)
+            elseif t == "B" then S[k] = v == "1"
+            elseif t == "N" then S[k] = tonumber(v) or S[k]
+            elseif t == "S" then S[k] = v
+            elseif t == "T" then pcall(function() S[k] = HTTP:JSONDecode(v) end)
+            elseif t == "C" then
+                local r, g, b = string.match(v, "(%d+),(%d+),(%d+)")
+                if r then S[k] = Color3.fromRGB(tonumber(r), tonumber(g), tonumber(b)) end
+            end
+        end
+    end
+end
+
+local function SaveCfg(name)
+    if not Cfg.FS or not name or name == "" then return false end
+    EnsureCfgFolder()
+    local ok = pcall(function() writefile(Cfg.Folder .. "/" .. name .. ".txt", EncodeSettings()) end)
+    if ok then RefreshCfg() end
+    return ok
+end
+
+local function LoadCfg(name)
+    if not Cfg.FS or not name or name == "" then return false end
+    local path = Cfg.Folder .. "/" .. name .. ".txt"
+    if not isfile(path) then return false end
+    local ok, content = pcall(function() return readfile(path) end)
+    if not ok or not content then return false end
+    DecodeSettings(content)
+    Cfg.Selected = name
+    ApplySettings()
+    return true
+end
+
+local function DeleteCfg(name)
+    if not Cfg.FS or not name or name == "" then return end
+    pcall(function() if isfile(Cfg.Folder .. "/" .. name .. ".txt") then delfile(Cfg.Folder .. "/" .. name .. ".txt") end end)
+    RefreshCfg()
+end
+
+-- ========== HOTKEY LIST ==========
+function UpdateHotkeyList()
+    if not R.hkFrame then return end
+    local cont = R.hkFrame:FindFirstChild("C")
+    if not cont then return end
+
+    for _, c in IPAIRS(cont:GetChildren()) do if c:IsA("Frame") then c:Destroy() end end
+
+    for name, data in PAIRS(R.hotkeys) do
+        if data.active then
+            local e = Instance.new("Frame", cont)
+            e.Size, e.BackgroundTransparency = UDim2.new(1, 0, 0, 16), 1
+            
+            local nl = Instance.new("TextLabel", e)
+            nl.Text, nl.Size, nl.BackgroundTransparency = name, UDim2.new(0.65, 0, 1, 0), 1
+            nl.TextXAlignment, nl.Font, nl.TextSize, nl.TextColor3 = Enum.TextXAlignment.Left, T.Font, 11, T.Text
+            
+            local kl = Instance.new("TextLabel", e)
+            kl.Text = "[" .. data.key .. "]"
+            kl.Size, kl.Position = UDim2.new(0.35, 0, 1, 0), UDim2.new(0.65, 0, 0, 0)
+            kl.BackgroundTransparency, kl.TextXAlignment = 1, Enum.TextXAlignment.Right
+            kl.Font, kl.TextSize, kl.TextColor3 = T.Font, 10, T.Dim
+        end
+    end
+end
+
+local function UpdateCfgDropdown()
+    if not R.cfgDropdownList then return end
+
+    for _, c in IPAIRS(R.cfgDropdownList:GetChildren()) do if c:IsA("TextButton") then c:Destroy() end end
+
+    RefreshCfg()
+
+    for _, cfgName in IPAIRS(Cfg.List) do
+        local btn = Instance.new("TextButton", R.cfgDropdownList)
+        btn.Size, btn.BackgroundColor3, btn.BorderSizePixel = UDim2.new(1, 0, 0, 20), T.Dark, 0
+        btn.Text, btn.Font, btn.TextSize, btn.ZIndex = cfgName, T.Font, 12, 101
+        btn.TextColor3 = cfgName == Cfg.Selected and T.Accent or T.Dim
+        
+        btn.MouseButton1Click:Connect(function()
+            Cfg.Selected = cfgName
+            if R.cfgDropdown then R.cfgDropdown.Text = cfgName .. " ▼" end
+            for _, b in IPAIRS(R.cfgDropdownList:GetChildren()) do
+                if b:IsA("TextButton") then b.TextColor3 = b.Text == Cfg.Selected and T.Accent or T.Dim end
+            end
+        end)
+    end
+
+    R.cfgDropdownList.Size = UDim2.new(1, 0, 0, MAX(20, #Cfg.List * 20))
+end
+
+
+-- ========== MODELS DATA ==========
+local Models = {
+    ["Mike Wazowski"] = {{}, {108792046953186}, 1, 1, false, false, nil},
+    ["Fat Chicken"] = {{}, {97309274164914}, 1, 1, false, false, nil},
+    ["Tung Tung Sahur"] = {{}, {117976702168543}, 1, 1, false, false, nil},
+    ["Ghostface Scream"] = {{}, {109275113218599}, 1, 1, false, false, nil},
+    ["Mini Pigeon"] = {{}, {134936622364544}, 1, 1, false, false, nil},
+    ["Patrick Suit"] = {{}, {114561781784509}, 1, 1, false, false, nil},
+    ["Buff Doge"] = {{}, {135861229178903}, 1, 1, false, false, nil},
+    ["Monkey Suit"] = {{}, {133241040400728}, 1, 1, false, false, nil},
+    ["Chubby Boy Meme"] = {{}, {112601613562351}, 1, 1, false, false, nil},
+    ["Zelensky Skin"] = {{114906957884779}, {81828736436792}, 1, 0, false, false, CF(0, -0.3, 0)},
+    ["Trump Head"] = {{77332453752069}, {}, 1, 0, false, true, nil},
+    ["Putin Head"] = {{96761887509449}, {}, 1, 0, false, true, nil},
+    ["Ronaldo Head"] = {{106097690556580}, {}, 1, 0, false, true, CF(0, 0.25, 0)},
+    ["Dexter Morgan"] = {{83372243424051}, {}, 1, 0, false, true, nil},
+    ["Kim Jong-Un"] = {{100019190392818}, {}, 1, 0, false, true, CF_ANG(0, RAD(180), 0)},
+    ["Messi Head"] = {{18200639690}, {}, 1, 0, false, true, nil},
+    ["67 Kid"] = {{111460135975152}, {}, 1, 0, false, true, CF_ANG(0, RAD(180), 0)}
+}
+
+local ModelList = {"None"}
+for k in PAIRS(Models) do INSERT(ModelList, k) end
+table.sort(ModelList, function(a, b) if a == "None" then return true end if b == "None" then return false end return a < b end)
+
+local function ApplyModel(name)
+    if name == "None" or not Models[name] then return end
+    local d = Models[name]
+    local headIds, torsoIds, headT, bodyT, keepHead, isHeadAcc, rotation = d[1], d[2], d[3], d[4], d[5], d[6], d[7]
+
+    local function onChar(char)
+        task.wait(0.5)
+        if not char or not char.Parent then return end
+        
+        for _, child in IPAIRS(char:GetChildren()) do
+            if child:IsA("Accessory") then
+                local isHeadAccessory = false
+                local handle = child:FindFirstChild("Handle")
+                if handle then
+                    local weld = handle:FindFirstChildOfClass("Weld")
+                    if weld and ((weld.Part0 and weld.Part0.Name == "Head") or (weld.Part1 and weld.Part1.Name == "Head")) then
+                        isHeadAccessory = true
+                    end
+                end
+                if not keepHead or not isHeadAccessory then child:Destroy() end
+            end
+        end
+        
+        for _, desc in IPAIRS(char:GetChildren()) do
+            if desc:IsA("BasePart") and desc.Name ~= "HumanoidRootPart" then
+                desc.Transparency = desc.Name == "Head" and headT or bodyT
+                if desc.Name == "UpperTorso" then
+                    for _, decal in IPAIRS(desc:GetChildren()) do if decal:IsA("Decal") then decal:Destroy() end end
+                end
+            end
+        end
+        
+        local head = char:FindFirstChild("Head")
+        if headT == 1 and head then
+            local face = head:FindFirstChild("face") or head:FindFirstChild("Face")
+            if face then face:Destroy() end
+        end
+        
+        local torsoPart = char:FindFirstChild("UpperTorso") or char:FindFirstChild("Torso")
+        
+        for _, id in IPAIRS(headIds) do
+            task.spawn(function()
+                local ok, acc = pcall(function() return game:GetObjects("rbxassetid://" .. id)[1] end)
+                if ok and acc and head then
+                    local handle = acc:FindFirstChild("Handle")
+                    if handle then
+                        handle.CanCollide = false
+                        local w = Instance.new("Weld")
+                        w.Part0, w.Part1 = head, handle
+                        w.C0 = isHeadAcc and (rotation or CF(0, 0, 0)) or (rotation and (CF(0, head.Size.Y / 2, 0) * rotation) or CF(0, head.Size.Y / 2, 0))
+                        w.Parent = head
+                    end
+                    acc.Parent = char
+                end
+            end)
+        end
+        
+        if torsoPart then
+            for _, id in IPAIRS(torsoIds) do
+                task.spawn(function()
+                    local ok, acc = pcall(function() return game:GetObjects("rbxassetid://" .. id)[1] end)
+                    if ok and acc then
+                        local handle = acc:FindFirstChild("Handle")
+                        if handle then
+                            handle.CanCollide = false
+                            local w = Instance.new("Weld")
+                            w.Part0, w.Part1, w.C0 = torsoPart, handle, CF(0, 0, 0)
+                            w.Parent = torsoPart
+                        end
+                        acc.Parent = char
+                    end
+                end)
+            end
+        end
+    end
+
+    if getgenv().modelConn then getgenv().modelConn:Disconnect() end
+    getgenv().modelConn = LP.CharacterAdded:Connect(onChar)
+    if LP.Character then onChar(LP.Character) end
+end
+
+
+-- ========== UI LIBRARY ==========
+local Lib = {}
+
+local function CreateHK()
+    if R.hkFrame then R.hkFrame:Destroy() end
+
+    local f = Instance.new("Frame", R.gui)
+    f.Name, f.Size, f.Position = "HK", UDim2.new(0, 160, 0, 24), UDim2.new(1, -170, 0, 200)
+    f.BackgroundColor3, f.BackgroundTransparency, f.BorderSizePixel, f.Active = T.Main, 0.1, 0, true
+
+    Instance.new("UIStroke", f).Color = T.Stroke
+
+    local gl = Instance.new("Frame", f)
+    gl.Size, gl.BorderSizePixel = UDim2.new(1, 0, 0, 2), 0
+    Instance.new("UIGradient", gl).Color = ColorSequence.new({ColorSequenceKeypoint.new(0, T.Accent), ColorSequenceKeypoint.new(1, Color3.fromRGB(100, 200, 50))})
+
+    local title = Instance.new("TextLabel", f)
+    title.Text, title.Size, title.Position = "hotkeys", UDim2.new(1, 0, 0, 20), UDim2.new(0, 0, 0, 3)
+    title.BackgroundTransparency, title.Font, title.TextSize, title.TextColor3 = 1, T.Font, 11, T.Dim
+
+    local cont = Instance.new("Frame", f)
+    cont.Name, cont.Size, cont.Position, cont.BackgroundTransparency = "C", UDim2.new(1, -8, 1, -24), UDim2.new(0, 4, 0, 22), 1
+
+    local list = Instance.new("UIListLayout", cont)
+    list.Padding = UDim.new(0, 2)
+    list:GetPropertyChangedSignal("AbsoluteContentSize"):Connect(function()
+        f.Size = UDim2.new(0, 160, 0, MAX(24, list.AbsoluteContentSize.Y + 26))
+    end)
+
+    R.hkFrame = f
+
+    local drag, dStart, dPos = false, nil, nil
+    f.InputBegan:Connect(function(i) if i.UserInputType == Enum.UserInputType.MouseButton1 then drag, dStart, dPos = true, i.Position, f.Position end end)
+    f.InputChanged:Connect(function(i) if i.UserInputType == Enum.UserInputType.MouseMovement and drag then local d = i.Position - dStart f.Position = UDim2.new(dPos.X.Scale, dPos.X.Offset + d.X, dPos.Y.Scale, dPos.Y.Offset + d.Y) end end)
+    INSERT(R.conns, UIS.InputEnded:Connect(function(i) if i.UserInputType == Enum.UserInputType.MouseButton1 then drag = false end end))
+end
+
+local function CreateWM()
+    if R.wmFrame then R.wmFrame:Destroy() end
+
+    local f = Instance.new("Frame", R.gui)
+    f.Size, f.Position = UDim2.new(0, 200, 0, 22), UDim2.new(0, 10, 0, 10)
+    f.BackgroundColor3, f.BackgroundTransparency, f.BorderSizePixel = T.Main, 0.1, 0
+
+    Instance.new("UIStroke", f).Color = T.Stroke
+
+    local gl = Instance.new("Frame", f)
+    gl.Size, gl.BorderSizePixel = UDim2.new(1, 0, 0, 2), 0
+    Instance.new("UIGradient", gl).Color = ColorSequence.new({ColorSequenceKeypoint.new(0, T.Accent), ColorSequenceKeypoint.new(1, Color3.fromRGB(100, 200, 50))})
+
+    local txt = Instance.new("TextLabel", f)
+    txt.Name, txt.Size, txt.Position = "T", UDim2.new(1, -10, 1, -2), UDim2.new(0, 5, 0, 2)
+    txt.BackgroundTransparency, txt.Font, txt.TextSize, txt.TextColor3, txt.TextXAlignment = 1, T.Font, 11, T.Text, Enum.TextXAlignment.Left
+    txt.Text = "Crack By Lvzz | loading..."
+
+    R.wmFrame = f
+
+    task.spawn(function()
+        local lastTime, frameCount, fps = TICK(), 0, 60
+        local fpsConn = RS.RenderStepped:Connect(function() frameCount = frameCount + 1 end)
+        
+        while R.running and f and f.Parent do
+            local elapsed = TICK() - lastTime
+            if elapsed >= 1 then fps, frameCount, lastTime = FLOOR(frameCount / elapsed), 0, TICK() end
+            local ping = FLOOR(LP:GetNetworkPing() * 1000)
+            txt.Text = "Crack By Lvzz | fps: " .. fps .. " | ping: " .. ping .. "ms"
+            f.Size = UDim2.new(0, TS:GetTextSize(txt.Text, 11, T.Font, V3(1000, 22)).X + 20, 0, 22)
+            task.wait(0.1)
+        end
+        if fpsConn then fpsConn:Disconnect() end
+    end)
+end
+
+local function CreateTimeDisplay()
+    if R.timeFrame then R.timeFrame:Destroy() end
+
+    local f = Instance.new("Frame", R.gui)
+    f.Size, f.Position = UDim2.new(0, 80, 0, 22), UDim2.new(1, -90, 0, 10)
+    f.BackgroundColor3, f.BackgroundTransparency, f.BorderSizePixel, f.Active = T.Main, 0.1, 0, true
+
+    Instance.new("UIStroke", f).Color = T.Stroke
+
+    local gl = Instance.new("Frame", f)
+    gl.Size, gl.BorderSizePixel = UDim2.new(1, 0, 0, 2), 0
+    Instance.new("UIGradient", gl).Color = ColorSequence.new({ColorSequenceKeypoint.new(0, T.Accent), ColorSequenceKeypoint.new(1, Color3.fromRGB(100, 200, 50))})
+
+    local txt = Instance.new("TextLabel", f)
+    txt.Name, txt.Size, txt.Position = "T", UDim2.new(1, -10, 1, -2), UDim2.new(0, 5, 0, 2)
+    txt.BackgroundTransparency, txt.Font, txt.TextSize, txt.TextColor3, txt.TextXAlignment = 1, T.Font, 11, T.Text, Enum.TextXAlignment.Center
+    txt.Text = "--:--:--"
+
+    R.timeFrame = f
+
+    local drag, dStart, dPos = false, nil, nil
+    f.InputBegan:Connect(function(i) if i.UserInputType == Enum.UserInputType.MouseButton1 then drag, dStart, dPos = true, i.Position, f.Position end end)
+    f.InputChanged:Connect(function(i) if i.UserInputType == Enum.UserInputType.MouseMovement and drag then local d = i.Position - dStart f.Position = UDim2.new(dPos.X.Scale, dPos.X.Offset + d.X, dPos.Y.Scale, dPos.Y.Offset + d.Y) end end)
+    INSERT(R.conns, UIS.InputEnded:Connect(function(i) if i.UserInputType == Enum.UserInputType.MouseButton1 then drag = false end end))
+
+    task.spawn(function()
+        while R.running and f and f.Parent do
+            local bt = GetBerlinTime()
+            txt.Text = FORMAT("%02d:%02d:%02d", bt.hour, bt.min, bt.sec)
+            task.wait(1)
+        end
+    end)
+end
+
+
+-- ========== SCOPE CROSSHAIR (HvH Style) ==========
+local scopeFrame = nil
+local scopeParts = {}
+
+local function CreateScope()
+    if scopeFrame then scopeFrame:Destroy() end
+    scopeParts = {}
+    if not R.gui or not S.scopeEnabled then return end
+    
+    scopeFrame = Instance.new("Frame", R.gui)
+    scopeFrame.Name = "ScopeCrosshair"
+    scopeFrame.Size = UDim2.new(0, 0, 0, 0)
+    local yOffset = S.scopeOffsetY or -36
+    scopeFrame.Position = UDim2.new(0.5, 0, 0.5, yOffset)
+    scopeFrame.AnchorPoint = Vector2.new(0.5, 0.5)
+    scopeFrame.BackgroundTransparency = 1
+    scopeFrame.ZIndex = 100
+    
+    local color = S.scopeColor or Color3.fromRGB(255, 50, 50)
+    local size = S.scopeSize or 20
+    local gap = S.scopeGap or 8
+    local thickness = S.scopeThickness or 1
+    
+    local function CreateLine(x, y, w, h)
+        local outline = Instance.new("Frame", scopeFrame)
+        outline.Size = UDim2.new(0, w + 2, 0, h + 2)
+        outline.Position = UDim2.new(0, x - (w + 2)/2, 0, y - (h + 2)/2)
+        outline.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+        outline.BackgroundTransparency = 0.3
+        outline.BorderSizePixel = 0
+        outline.ZIndex = 101
+        INSERT(scopeParts, outline)
+        
+        local line = Instance.new("Frame", scopeFrame)
+        line.Size = UDim2.new(0, w, 0, h)
+        line.Position = UDim2.new(0, x - w/2, 0, y - h/2)
+        line.BackgroundColor3 = color
+        line.BackgroundTransparency = 0
+        line.BorderSizePixel = 0
+        line.ZIndex = 102
+        INSERT(scopeParts, line)
+        
+        return line
+    end
+    
+    CreateLine(0, -(gap + size/2), thickness, size)
+    CreateLine(0, gap + size/2, thickness, size)
+    CreateLine(-(gap + size/2), 0, size, thickness)
+    CreateLine(gap + size/2, 0, size, thickness)
+end
+
+local function DestroyScope()
+    if scopeFrame then scopeFrame:Destroy() scopeFrame = nil end
+    scopeParts = {}
+end
+
+local function UpdateScopeColor()
+    if not scopeFrame then return end
+    local color = S.scopeColor or Color3.fromRGB(255, 50, 50)
+    for _, part in ipairs(scopeParts) do
+        if part and part.Parent and part.ZIndex == 102 then
+            part.BackgroundColor3 = color
+        end
+    end
+end
+
+local function ToggleScope(enabled)
+    if enabled then CreateScope() else DestroyScope() end
+end
+
+
+-- ========== KILL EFFECTS (Multi-Type) ==========
+
+local killScreenColors = {
+    Red = Color3.fromRGB(255, 50, 50),
+    Blue = Color3.fromRGB(50, 100, 255),
+    Green = Color3.fromRGB(50, 255, 100),
+    Purple = Color3.fromRGB(180, 50, 255),
+    Cyan = Color3.fromRGB(50, 255, 255),
+    Yellow = Color3.fromRGB(255, 255, 50),
+    White = Color3.fromRGB(255, 255, 255),
+    Pink = Color3.fromRGB(255, 100, 200)
+}
+
+local function CreateKillScreenEffect()
+    if not R.gui or not S.killEffects then return end
+    
+    local screenType = S.killScreenType or "CS:GO"
+    local duration = S.killScreenDuration or 0.25
+    local color = killScreenColors[S.killScreenColor] or killScreenColors.Red
+    
+    if screenType == "CS:GO" then
+        local flash = Instance.new("Frame", R.gui)
+        flash.Name = "KillFlash"
+        flash.Size = UDim2.new(1, 0, 1, 0)
+        flash.Position = UDim2.new(0, 0, 0, 0)
+        flash.BackgroundColor3 = color
+        flash.BackgroundTransparency = 0.4
+        flash.BorderSizePixel = 0
+        flash.ZIndex = 100
+        
+        local killIcon = Instance.new("TextLabel", flash)
+        killIcon.Size = UDim2.new(0, 80, 0, 80)
+        killIcon.Position = UDim2.new(0.5, -40, 0.4, -40)
+        killIcon.BackgroundTransparency = 1
+        killIcon.Text = "✕"
+        killIcon.TextColor3 = Color3.fromRGB(255, 255, 255)
+        killIcon.TextSize = 72
+        killIcon.Font = Enum.Font.GothamBold
+        killIcon.TextTransparency = 0
+        killIcon.TextStrokeTransparency = 0.5
+        killIcon.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+        killIcon.ZIndex = 101
+        
+        local fadeInfo = TweenInfo.new(duration, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+        TweenS:Create(flash, fadeInfo, {BackgroundTransparency = 1}):Play()
+        TweenS:Create(killIcon, fadeInfo, {TextTransparency = 1, TextStrokeTransparency = 1}):Play()
+        
+        task.delay(duration + 0.1, function()
+            if flash and flash.Parent then flash:Destroy() end
+        end)
+        
+    elseif screenType == "Flash" then
+        local flash = Instance.new("Frame", R.gui)
+        flash.Name = "KillFlash"
+        flash.Size = UDim2.new(1, 0, 1, 0)
+        flash.BackgroundColor3 = color
+        flash.BackgroundTransparency = 0.3
+        flash.BorderSizePixel = 0
+        flash.ZIndex = 100
+        
+        local fadeInfo = TweenInfo.new(duration, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+        TweenS:Create(flash, fadeInfo, {BackgroundTransparency = 1}):Play()
+        
+        task.delay(duration + 0.1, function()
+            if flash and flash.Parent then flash:Destroy() end
+        end)
+        
+    elseif screenType == "Vignette" then
+        local vignette = Instance.new("Frame", R.gui)
+        vignette.Name = "KillVignette"
+        vignette.Size = UDim2.new(1, 0, 1, 0)
+        vignette.BackgroundColor3 = color
+        vignette.BackgroundTransparency = 0.6
+        vignette.BorderSizePixel = 0
+        vignette.ZIndex = 100
+        
+        local gradient = Instance.new("UIGradient", vignette)
+        gradient.Transparency = NumberSequence.new({
+            NumberSequenceKeypoint.new(0, 0),
+            NumberSequenceKeypoint.new(0.4, 0.8),
+            NumberSequenceKeypoint.new(1, 1)
+        })
+        gradient.Rotation = 90
+        
+        local fadeInfo = TweenInfo.new(duration * 1.5, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+        TweenS:Create(vignette, fadeInfo, {BackgroundTransparency = 1}):Play()
+        
+        task.delay(duration * 1.5 + 0.1, function()
+            if vignette and vignette.Parent then vignette:Destroy() end
+        end)
+        
+    elseif screenType == "Skull" then
+        local flash = Instance.new("Frame", R.gui)
+        flash.Name = "KillFlash"
+        flash.Size = UDim2.new(1, 0, 1, 0)
+        flash.BackgroundColor3 = color
+        flash.BackgroundTransparency = 0.5
+        flash.BorderSizePixel = 0
+        flash.ZIndex = 100
+        
+        local skull = Instance.new("TextLabel", flash)
+        skull.Size = UDim2.new(0, 100, 0, 100)
+        skull.Position = UDim2.new(0.5, -50, 0.4, -50)
+        skull.BackgroundTransparency = 1
+        skull.Text = "💀"
+        skull.TextSize = 80
+        skull.TextTransparency = 0
+        skull.ZIndex = 101
+        
+        local fadeInfo = TweenInfo.new(duration, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+        TweenS:Create(flash, fadeInfo, {BackgroundTransparency = 1}):Play()
+        TweenS:Create(skull, fadeInfo, {TextTransparency = 1}):Play()
+        
+        task.delay(duration + 0.1, function()
+            if flash and flash.Parent then flash:Destroy() end
+        end)
+        
+    elseif screenType == "HvH" then
+        local flash = Instance.new("Frame", R.gui)
+        flash.Name = "KillFlash"
+        flash.Size = UDim2.new(1, 0, 1, 0)
+        flash.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+        flash.BackgroundTransparency = 0.2
+        flash.BorderSizePixel = 0
+        flash.ZIndex = 100
+        
+        local killText = Instance.new("TextLabel", flash)
+        killText.Size = UDim2.new(0, 200, 0, 50)
+        killText.Position = UDim2.new(0.5, -100, 0.4, -25)
+        killText.BackgroundTransparency = 1
+        killText.Text = "KILL"
+        killText.TextColor3 = color
+        killText.TextSize = 48
+        killText.Font = Enum.Font.GothamBlack
+        killText.TextTransparency = 0
+        killText.TextStrokeTransparency = 0
+        killText.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+        killText.ZIndex = 101
+        
+        local quickFade = TweenInfo.new(0.08, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+        TweenS:Create(flash, quickFade, {BackgroundTransparency = 1}):Play()
+        
+        local textFade = TweenInfo.new(duration, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+        TweenS:Create(killText, textFade, {TextTransparency = 1, TextStrokeTransparency = 1}):Play()
+        
+        task.delay(duration + 0.1, function()
+            if flash and flash.Parent then flash:Destroy() end
+        end)
+        
+    elseif screenType == "None" then
+        return
+    end
+end
+
+
+-- Оптимизированные партиклы при смерти (без фризов)
+local function CreateDeathParticles(enemyChar)
+    if not enemyChar or not S.killEffects then return end
+    
+    local hrp = enemyChar:FindFirstChild("HumanoidRootPart")
+    local head = enemyChar:FindFirstChild("Head")
+    local targetPart = head or hrp
+    if not targetPart then return end
+    
+    local att = Instance.new("Attachment", targetPart)
+    att.Name = "KillParticleAtt"
+    
+    local particleType = S.killParticleType or "Binary"
+    
+    local digitalChars = {
+        Binary = {"0", "1", "00", "11", "01", "10"},
+        Matrix = {"ア", "イ", "ウ", "カ", "キ", "0", "1"},
+        Hex = {"0x", "FF", "00", "A1", "B2", "C3"},
+        Code = {"</>", "{}", "[]", "();", "++", "=="},
+        Glitch = {"█", "▓", "▒", "░", "■", "□"},
+        Numbers = {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9"}
+    }
+    
+    local chars = digitalChars[particleType] or digitalChars.Binary
+    local particleCount = 15  -- Оптимизировано
+    
+    local typeColors = {
+        Binary = {main = Color3.fromRGB(0, 255, 100), stroke = Color3.fromRGB(0, 50, 20)},
+        Matrix = {main = Color3.fromRGB(0, 255, 70), stroke = Color3.fromRGB(0, 80, 30)},
+        Hex = {main = Color3.fromRGB(255, 100, 50), stroke = Color3.fromRGB(100, 30, 0)},
+        Code = {main = Color3.fromRGB(100, 200, 255), stroke = Color3.fromRGB(0, 50, 100)},
+        Glitch = {main = Color3.fromRGB(255, 100, 255), stroke = Color3.fromRGB(50, 0, 50)},
+        Numbers = {main = Color3.fromRGB(255, 255, 255), stroke = Color3.fromRGB(50, 50, 50)}
+    }
+    
+    local colors = typeColors[particleType] or typeColors.Binary
+    
+    for i = 1, particleCount do
+        local particle = Instance.new("BillboardGui", att)
+        particle.Size = UDim2.new(0, 25, 0, 25)
+        particle.StudsOffset = V3(RANDOM(-3, 3), RANDOM(-1, 3), RANDOM(-3, 3))
+        particle.AlwaysOnTop = true
+        
+        local txt = Instance.new("TextLabel", particle)
+        txt.Size = UDim2.new(1, 0, 1, 0)
+        txt.BackgroundTransparency = 1
+        txt.Text = chars[RANDOM(1, #chars)]
+        txt.TextColor3 = colors.main
+        txt.TextSize = RANDOM(14, 24)
+        txt.Font = Enum.Font.Code
+        txt.TextStrokeTransparency = 0.3
+        txt.TextStrokeColor3 = colors.stroke
+        
+        local startOffset = particle.StudsOffset
+        local endOffset = startOffset + V3(RANDOM(-3, 3), RANDOM(4, 10), RANDOM(-3, 3))
+        
+        if particleType == "Matrix" then
+            endOffset = startOffset + V3(RANDOM(-1, 1), RANDOM(-8, -4), RANDOM(-1, 1))
+        end
+        
+        -- Используем Heartbeat вместо task.wait - без фризов!
+        task.spawn(function()
+            local startTime = TICK()
+            local duration = 1.2
+            
+            while particle.Parent do
+                local elapsed = TICK() - startTime
+                local t = MIN(elapsed / duration, 1)
+                
+                particle.StudsOffset = startOffset:Lerp(endOffset, t)
+                txt.TextTransparency = t * 0.95
+                txt.TextStrokeTransparency = 0.3 + t * 0.7
+                
+                if FLOOR(elapsed * 7) ~= FLOOR((elapsed - 0.016) * 7) then
+                    txt.Text = chars[RANDOM(1, #chars)]
+                    if particleType == "Glitch" then
+                        txt.TextColor3 = Color3.fromRGB(RANDOM(150, 255), RANDOM(50, 255), RANDOM(150, 255))
+                    end
+                end
+                
+                if t >= 1 then break end
+                RS.Heartbeat:Wait()
+            end
+            
+            if particle.Parent then particle:Destroy() end
+        end)
+    end
+    
+    task.delay(2, function()
+        if att and att.Parent then att:Destroy() end
+    end)
+end
+
+-- ========== GHOST EFFECT (HvH Style) - Оптимизировано ==========
+local function CreateGhostEffect(enemyChar)
+    if not enemyChar or not S.killEffects or not S.ghostEffectEnabled then return end
+    
+    local originalTransparencies = {}
+    local parts = {}
+    
+    for _, part in ipairs(enemyChar:GetDescendants()) do
+        if part:IsA("BasePart") and part.Transparency < 1 then
+            originalTransparencies[part] = part.Transparency
+            INSERT(parts, part)
+        end
+    end
+    
+    if #parts == 0 then return end
+    
+    local ghostColor = S.ghostColor or Color3.fromRGB(100, 200, 255)
+    
+    local highlight = Instance.new("Highlight")
+    highlight.Name = "GhostHighlight"
+    highlight.Adornee = enemyChar
+    highlight.FillColor = ghostColor
+    highlight.OutlineColor = ghostColor
+    highlight.FillTransparency = 0.5
+    highlight.OutlineTransparency = 0
+    highlight.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
+    highlight.Parent = enemyChar
+    
+    -- Оптимизированная анимация через Heartbeat (без task.wait)
+    task.spawn(function()
+        local duration = 0.8
+        local startTime = TICK()
+        
+        while true do
+            local elapsed = TICK() - startTime
+            local t = MIN(elapsed / duration, 1)
+            local eased = t * t
+            
+            for i = 1, #parts do
+                local part = parts[i]
+                if part and part.Parent then
+                    local origTrans = originalTransparencies[part] or 0
+                    part.Transparency = origTrans + (1 - origTrans) * eased
+                end
+            end
+            
+            if highlight and highlight.Parent then
+                highlight.FillTransparency = 0.5 + eased * 0.5
+                highlight.OutlineTransparency = eased
+            end
+            
+            if t >= 1 then break end
+            RS.Heartbeat:Wait()
+        end
+        
+        if highlight and highlight.Parent then highlight:Destroy() end
+        
+        task.delay(0.3, function()
+            for part, origTrans in pairs(originalTransparencies) do
+                if part and part.Parent then
+                    part.Transparency = origTrans
+                end
+            end
+        end)
+    end)
+end
+
+local function PlayKillEffects(playerName, enemyChar)
+    if not S.killEffects then return end
+    
+    CreateKillScreenEffect()
+    CreateDeathParticles(enemyChar)
+    CreateGhostEffect(enemyChar)
+end
+
+
+-- ========== HIT LOGGER (Console Style) ==========
+local hlLogIndex = 0
+
+local function CreateHitLogger()
+    if R.hlFrame then R.hlFrame:Destroy() end
+    
+    local f = Instance.new("Frame", R.gui)
+    f.Name = "HitLogger"
+    f.Size = UDim2.new(0, 550, 0, 200)
+    f.Position = UDim2.new(0.5, -275, 0.58, 0)
+    f.BackgroundTransparency = 1
+    f.BorderSizePixel = 0
+    
+    R.hlFrame = f
+end
+
+AddHitLog = function(logType, playerName, hitbox, damage)
+    if not S.hlEnabled or not R.hlFrame then return end
+    
+    if logType == "kill" then
+        local enemyChar = nil
+        for _, p in IPAIRS(Plrs:GetPlayers()) do
+            if p.Name == playerName then
+                enemyChar = p.Character
+                break
+            end
+        end
+        PlayKillEffects(playerName, enemyChar)
+    end
+    
+    local dmg = logType == "kill" and 100 or (damage or 0)
+    local remaining = logType == "kill" and 0 or (logType == "miss" and 100 or (100 - dmg))
+    if remaining < 0 then remaining = 0 end
+    
+    hlLogIndex = hlLogIndex + 1
+    local myIndex = hlLogIndex
+    
+    for _, child in ipairs(R.hlFrame:GetChildren()) do
+        if child:IsA("Frame") and child.Name:match("^Log_") then
+            local currentY = child.Position.Y.Offset
+            game:GetService("TweenService"):Create(child, TweenInfo.new(0.15, Enum.EasingStyle.Quad), {
+                Position = UDim2.new(0.5, 0, 0, currentY + 22)
+            }):Play()
+        end
+    end
+    
+    local actionText = logType == "kill" and "Killed" or (logType == "miss" and "Missed" or "Hurt")
+    local hitboxLower = (hitbox or "head"):lower()
+    local fullText
+    if logType == "miss" then
+        fullText = FORMAT("✕ Missed %s (shot at %s).", playerName or "Unknown", hitboxLower)
+    else
+        fullText = FORMAT("%s %s in the %s for %d hp (%d remaining).", actionText, playerName or "Unknown", hitboxLower, dmg, remaining)
+    end
+    
+    local bar = Instance.new("Frame", R.hlFrame)
+    bar.Name = "Log_" .. myIndex
+    bar.Size = UDim2.new(0, 460, 0, 20)
+    bar.Position = UDim2.new(0.5, 0, 0, 0)
+    bar.AnchorPoint = Vector2.new(0.5, 0)
+    bar.BackgroundColor3 = Color3.fromRGB(25, 30, 35)
+    bar.BackgroundTransparency = 0.45
+    bar.BorderSizePixel = 0
+    bar.ZIndex = 100
+    
+    Instance.new("UICorner", bar).CornerRadius = UDim.new(0, 4)
+    
+    local iconLabel = Instance.new("TextLabel", bar)
+    iconLabel.Size = UDim2.new(0, 22, 1, 0)
+    iconLabel.Position = UDim2.new(0, 6, 0, 0)
+    iconLabel.BackgroundTransparency = 1
+    iconLabel.Text = logType == "miss" and "✕" or "⊙"
+    iconLabel.Font = Enum.Font.GothamBold
+    iconLabel.TextSize = 13
+    iconLabel.TextColor3 = logType == "kill" and Color3.fromRGB(255, 100, 100) or (logType == "miss" and Color3.fromRGB(255, 180, 80) or Color3.fromRGB(180, 200, 220))
+    iconLabel.ZIndex = 102
+    
+    local textLabel = Instance.new("TextLabel", bar)
+    textLabel.Size = UDim2.new(1, -32, 1, 0)
+    textLabel.Position = UDim2.new(0, 26, 0, 0)
+    textLabel.BackgroundTransparency = 1
+    textLabel.Text = fullText
+    textLabel.Font = Enum.Font.Code
+    textLabel.TextSize = 13
+    textLabel.TextColor3 = Color3.fromRGB(195, 200, 210)
+    textLabel.TextXAlignment = Enum.TextXAlignment.Left
+    textLabel.TextTruncate = Enum.TextTruncate.AtEnd
+    textLabel.ZIndex = 101
+    
+    local accentLine = Instance.new("Frame", bar)
+    accentLine.Size = UDim2.new(0, 2, 1, -4)
+    accentLine.Position = UDim2.new(0, 2, 0, 2)
+    accentLine.BackgroundColor3 = logType == "kill" and Color3.fromRGB(255, 80, 80) or (logType == "miss" and Color3.fromRGB(255, 160, 60) or Color3.fromRGB(100, 180, 255))
+    accentLine.BackgroundTransparency = 0.3
+    accentLine.BorderSizePixel = 0
+    accentLine.ZIndex = 102
+    Instance.new("UICorner", accentLine).CornerRadius = UDim.new(0, 1)
+    
+    bar.Position = UDim2.new(0.5, 0, 0, -15)
+    bar.BackgroundTransparency = 1
+    textLabel.TextTransparency = 1
+    iconLabel.TextTransparency = 1
+    accentLine.BackgroundTransparency = 1
+    
+    local slideInfo = TweenInfo.new(0.2, Enum.EasingStyle.Quint, Enum.EasingDirection.Out)
+    local fadeInfo = TweenInfo.new(0.15)
+    
+    game:GetService("TweenService"):Create(bar, slideInfo, {Position = UDim2.new(0.5, 0, 0, 0)}):Play()
+    game:GetService("TweenService"):Create(bar, fadeInfo, {BackgroundTransparency = 0.45}):Play()
+    game:GetService("TweenService"):Create(textLabel, fadeInfo, {TextTransparency = 0}):Play()
+    game:GetService("TweenService"):Create(iconLabel, fadeInfo, {TextTransparency = 0}):Play()
+    game:GetService("TweenService"):Create(accentLine, fadeInfo, {BackgroundTransparency = 0.3}):Play()
+    
+    local logs = {}
+    for _, child in ipairs(R.hlFrame:GetChildren()) do
+        if child:IsA("Frame") and child.Name:match("^Log_") then
+            INSERT(logs, child)
+        end
+    end
+    
+    table.sort(logs, function(a, b)
+        local numA = tonumber(a.Name:match("Log_(%d+)")) or 0
+        local numB = tonumber(b.Name:match("Log_(%d+)")) or 0
+        return numA < numB
+    end)
+    
+    while #logs > S.hlMaxLogs do
+        local oldest = logs[1]
+        if oldest then
+            oldest:Destroy()
+            table.remove(logs, 1)
+        end
+    end
+    
+    task.delay(5, function()
+        if bar and bar.Parent then
+            local fadeOut = TweenInfo.new(0.3, Enum.EasingStyle.Quad)
+            
+            TweenS:Create(bar, fadeOut, {BackgroundTransparency = 1}):Play()
+            TweenS:Create(textLabel, fadeOut, {TextTransparency = 1}):Play()
+            TweenS:Create(iconLabel, fadeOut, {TextTransparency = 1}):Play()
+            TweenS:Create(accentLine, fadeOut, {BackgroundTransparency = 1}):Play()
+            
+            task.delay(0.35, function()
+                if bar and bar.Parent then bar:Destroy() end
+            end)
+        end
+    end)
+end
+
+
+-- ========== KILL TRACKING ==========
+local trackedEnemies = {}
+local lastShotTarget = nil
+local lastShotHitbox = nil
+local lastShotTime = 0
+local lastKillTime = 0
+local lastHitTime = 0
+local lastMissTime = 0
+local pendingShots = {}
+local lastShotByTarget = {}
+
+TrackShot = function(playerName, hitbox)
+    lastShotTarget = playerName
+    lastShotHitbox = hitbox or "Head"
+    lastShotTime = TICK()
+    
+    if lastShotByTarget[playerName] then
+        pendingShots[lastShotByTarget[playerName]] = nil
+    end
+    
+    local shotId = TICK() .. "_" .. RANDOM(1000, 9999)
+    pendingShots[shotId] = {target = playerName, hitbox = hitbox or "Head", time = TICK()}
+    lastShotByTarget[playerName] = shotId
+    
+    task.delay(0.8, function()
+        if pendingShots[shotId] then
+            local now = TICK()
+            if now - lastMissTime > 0.3 and now - lastHitTime > 0.3 and now - lastKillTime > 0.3 then
+                lastMissTime = now
+                AddHitLog("miss", playerName, hitbox or "Head", 0)
+            end
+            pendingShots[shotId] = nil
+            if lastShotByTarget[playerName] == shotId then
+                lastShotByTarget[playerName] = nil
+            end
+        end
+    end)
+end
+
+local function ResolveShots(playerName)
+    for id, shot in pairs(pendingShots) do
+        if shot.target == playerName then
+            pendingShots[id] = nil
+        end
+    end
+    lastShotByTarget[playerName] = nil
+end
+
+SetupKillTracking = function()
+    for _, player in IPAIRS(Plrs:GetPlayers()) do
+        if player ~= LP and not trackedEnemies[player.UserId] then
+            trackedEnemies[player.UserId] = true
+            
+            local function onCharacter(char)
+                if not char then return end
+                local hum = char:WaitForChild("Humanoid", 5)
+                if not hum then return end
+                
+                local lastHealth = hum.Health
+                
+                hum.HealthChanged:Connect(function(newHealth)
+                    local now = TICK()
+                    local damage = FLOOR(lastHealth - newHealth)
+                    
+                    if lastShotTarget == player.Name and now - lastShotTime < 1.5 then
+                        ResolveShots(player.Name)
+                        
+                        if newHealth <= 0 and lastHealth > 0 then
+                            if now - lastKillTime > 0.5 then
+                                lastKillTime = now
+                                AddHitLog("kill", player.Name, lastShotHitbox or "Head", FLOOR(lastHealth))
+                            end
+                        elseif damage > 0 and now - lastHitTime > 0.25 then
+                            lastHitTime = now
+                            AddHitLog("hit", player.Name, lastShotHitbox or "Head", damage)
+                        end
+                    end
+                    
+                    lastHealth = newHealth
+                end)
+                
+                hum.Died:Connect(function()
+                    task.wait(0.5)
+                    lastHealth = 100
+                end)
+            end
+            
+            if player.Character then onCharacter(player.Character) end
+            player.CharacterAdded:Connect(onCharacter)
+        end
+    end
+end
+
+Plrs.PlayerAdded:Connect(function(player)
+    if player ~= LP then
+        task.delay(1, SetupKillTracking)
+    end
+end)
+
+
+function Lib:Create(title)
+    if R.gui then R.gui:Destroy() end
+
+    R.gui = Instance.new("ScreenGui")
+    R.gui.Name, R.gui.ResetOnSpawn = "Arc", false
+    R.gui.Parent = game:GetService("CoreGui")
+
+    CreateHK()
+    CreateWM()
+    CreateTimeDisplay()
+    CreateHitLogger()
+
+    local W = Instance.new("Frame", R.gui)
+    W.Name, W.Size, W.Position = "M", UDim2.new(0, 620, 0, 450), UDim2.new(0.5, -310, 0.5, -225)
+    W.BackgroundColor3, W.BorderSizePixel = T.Main, 0
+
+    Instance.new("UIStroke", W).Color = T.Border
+    R.main = W
+
+    local gl = Instance.new("Frame", W)
+    gl.Size, gl.BorderSizePixel = UDim2.new(1, 0, 0, 2), 0
+    Instance.new("UIGradient", gl).Color = ColorSequence.new({
+        ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 0, 0)), ColorSequenceKeypoint.new(0.2, Color3.fromRGB(255, 255, 0)),
+        ColorSequenceKeypoint.new(0.4, Color3.fromRGB(0, 255, 0)), ColorSequenceKeypoint.new(0.6, Color3.fromRGB(0, 255, 255)),
+        ColorSequenceKeypoint.new(0.8, Color3.fromRGB(0, 0, 255)), ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 0, 255))
+    })
+
+    local tl = Instance.new("TextLabel", W)
+    tl.Text, tl.Size, tl.Position = title, UDim2.new(1, 0, 0, 20), UDim2.new(0, 0, 0, 4)
+    tl.BackgroundTransparency, tl.Font, tl.TextSize, tl.TextColor3 = 1, T.Font, 13, T.Text
+
+    local tc = Instance.new("Frame", W)
+    tc.Size, tc.Position = UDim2.new(1, -20, 0, 40), UDim2.new(0, 10, 0, 30)
+    tc.BackgroundColor3, tc.BorderColor3 = T.Group, T.Stroke
+
+    local tlay = Instance.new("UIListLayout", tc)
+    tlay.FillDirection, tlay.HorizontalAlignment, tlay.Padding = Enum.FillDirection.Horizontal, Enum.HorizontalAlignment.Center, UDim.new(0, 15)
+
+    local pc = Instance.new("Frame", W)
+    pc.Size, pc.Position, pc.BackgroundTransparency = UDim2.new(1, -20, 1, -85), UDim2.new(0, 10, 0, 75), 1
+
+    W.InputBegan:Connect(function(i) if i.UserInputType == Enum.UserInputType.MouseButton1 and i.Position.Y < W.AbsolutePosition.Y + 30 then R.drag, R.dragStart, R.startPos = true, i.Position, W.Position end end)
+    W.InputChanged:Connect(function(i) if i.UserInputType == Enum.UserInputType.MouseMovement and R.drag then local d = i.Position - R.dragStart W.Position = UDim2.new(R.startPos.X.Scale, R.startPos.X.Offset + d.X, R.startPos.Y.Scale, R.startPos.Y.Offset + d.Y) end end)
+
+    INSERT(R.conns, UIS.InputChanged:Connect(function(i)
+        if R.sliderDrag and i.UserInputType == Enum.UserInputType.MouseMovement then
+            local d = R.sliderDrag
+            local rel = CLAMP((i.Position.X - d.bg.AbsolutePosition.X) / d.bg.AbsoluteSize.X, 0, 1)
+            d.val = FLOOR(d.min + (d.max - d.min) * rel + 0.5)
+            d.fill.Size = UDim2.new(rel, 0, 1, 0)
+            d.lbl.Text = d.text .. ": " .. d.val
+            if d.cb then d.cb(d.val) end
+        end
+    end))
+
+    INSERT(R.conns, UIS.InputEnded:Connect(function(i) if i.UserInputType == Enum.UserInputType.MouseButton1 then R.drag, R.sliderDrag = false, nil end end))
+
+    local Tabs = {}
+
+    function Tabs:NewTab(name)
+        local btn = Instance.new("TextButton", tc)
+        btn.Text, btn.Size, btn.BackgroundTransparency = name, UDim2.new(0, 70, 1, 0), 1
+        btn.Font, btn.TextSize, btn.TextColor3 = T.Font, 13, T.Dim
+        
+        local page = Instance.new("ScrollingFrame", pc)
+        page.Size, page.BackgroundTransparency, page.Visible, page.BorderSizePixel = UDim2.new(1, 0, 1, 0), 1, false, 0
+        page.ScrollBarThickness, page.ScrollBarImageColor3, page.AutomaticCanvasSize = 4, T.Accent, Enum.AutomaticSize.Y
+        
+        local lc = Instance.new("Frame", page)
+        lc.Size, lc.BackgroundTransparency, lc.AutomaticSize = UDim2.new(0.48, 0, 0, 0), 1, Enum.AutomaticSize.Y
+        Instance.new("UIListLayout", lc).Padding = UDim.new(0, 12)
+        
+        local rc = Instance.new("Frame", page)
+        rc.Size, rc.Position, rc.BackgroundTransparency, rc.AutomaticSize = UDim2.new(0.48, 0, 0, 0), UDim2.new(0.52, 0, 0, 0), 1, Enum.AutomaticSize.Y
+        Instance.new("UIListLayout", rc).Padding = UDim.new(0, 12)
+        
+        btn.MouseButton1Click:Connect(function()
+            for _, p in IPAIRS(pc:GetChildren()) do p.Visible = false end
+            for _, t in IPAIRS(tc:GetChildren()) do if t:IsA("TextButton") then t.TextColor3 = T.Dim end end
+            page.Visible, btn.TextColor3 = true, T.Accent
+        end)
+        
+        if #tc:GetChildren() == 2 then page.Visible, btn.TextColor3 = true, T.Accent end
+        
+        local TL = {}
+        
+        function TL:NewGroupbox(side, gtitle)
+            local grp = Instance.new("Frame", side == "Right" and rc or lc)
+            grp.Size, grp.BackgroundTransparency, grp.AutomaticSize = UDim2.new(1, 0, 0, 0), 1, Enum.AutomaticSize.Y
+            
+            local brd = Instance.new("Frame", grp)
+            brd.Size, brd.Position = UDim2.new(1, 0, 0, 0), UDim2.new(0, 0, 0, 8)
+            brd.BackgroundColor3, brd.BorderColor3, brd.AutomaticSize = T.Main, T.Stroke, Enum.AutomaticSize.Y
+            
+            local ttl = Instance.new("TextLabel", grp)
+            ttl.Text, ttl.Position, ttl.AutomaticSize = gtitle, UDim2.new(0, 12, 0, 14), Enum.AutomaticSize.X
+            ttl.BackgroundColor3, ttl.TextColor3, ttl.Font, ttl.TextSize, ttl.ZIndex = T.Main, T.Text, T.Font, 12, 2
+            
+            local cnt = Instance.new("Frame", brd)
+            cnt.Size, cnt.Position, cnt.BackgroundTransparency, cnt.AutomaticSize = UDim2.new(1, -16, 0, 0), UDim2.new(0, 8, 0, 22), 1, Enum.AutomaticSize.Y
+            Instance.new("UIListLayout", cnt).Padding = UDim.new(0, 8)
+            Instance.new("UIPadding", brd).PaddingBottom = UDim.new(0, 8)
+            
+            local G = {}
+            
+            function G:Toggle(text, def, cb)
+                local f = Instance.new("Frame", cnt)
+                f.Size, f.BackgroundTransparency = UDim2.new(1, 0, 0, 20), 1
+                
+                local box = Instance.new("Frame", f)
+                box.Size, box.Position = UDim2.new(0, 16, 0, 16), UDim2.new(0, 0, 0, 2)
+                Instance.new("UIStroke", box).Color = T.Stroke
+                
+                local lbl = Instance.new("TextLabel", f)
+                lbl.Text, lbl.Size, lbl.Position = text, UDim2.new(1, -25, 1, 0), UDim2.new(0, 25, 0, 0)
+                lbl.BackgroundTransparency, lbl.TextXAlignment, lbl.Font, lbl.TextSize = 1, Enum.TextXAlignment.Left, T.Font, 13
+                
+                local en = def
+                local function upd() box.BackgroundColor3 = en and T.Accent or T.Dark lbl.TextColor3 = en and T.Text or T.Dim if cb then cb(en) end end
+                
+                local hitbox = Instance.new("TextButton", f)
+                hitbox.Size, hitbox.BackgroundTransparency, hitbox.Text = UDim2.new(1, 0, 1, 0), 1, ""
+                hitbox.MouseButton1Click:Connect(function() en = not en upd() end)
+                upd()
+                return G
+            end
+            
+            function G:Slider(text, min, max, def, cb)
+                local f = Instance.new("Frame", cnt)
+                f.Size, f.BackgroundTransparency = UDim2.new(1, 0, 0, 35), 1
+                
+                local lbl = Instance.new("TextLabel", f)
+                lbl.Text, lbl.Size, lbl.BackgroundTransparency = text .. ": " .. def, UDim2.new(1, 0, 0, 15), 1
+                lbl.TextXAlignment, lbl.TextColor3, lbl.Font, lbl.TextSize = Enum.TextXAlignment.Left, T.Dim, T.Font, 13
+                
+                local bg = Instance.new("Frame", f)
+                bg.Size, bg.Position, bg.BackgroundColor3, bg.BorderColor3 = UDim2.new(1, 0, 0, 12), UDim2.new(0, 0, 0, 18), T.Dark, T.Stroke
+                
+                local fill = Instance.new("Frame", bg)
+                fill.Size, fill.BackgroundColor3, fill.BorderSizePixel = UDim2.new((def - min) / (max - min), 0, 1, 0), T.Accent, 0
+                
+                bg.InputBegan:Connect(function(i) if i.UserInputType == Enum.UserInputType.MouseButton1 then R.sliderDrag = {bg = bg, fill = fill, lbl = lbl, text = text, min = min, max = max, val = def, cb = cb} end end)
+                return G
+            end
+            
+            function G:Dropdown(text, opts, def, cb)
+                local f = Instance.new("Frame", cnt)
+                f.Size, f.BackgroundTransparency, f.ClipsDescendants, f.ZIndex = UDim2.new(1, 0, 0, 40), 1, false, 10
+                
+                local lbl = Instance.new("TextLabel", f)
+                lbl.Text, lbl.Size, lbl.BackgroundTransparency = text, UDim2.new(1, 0, 0, 15), 1
+                lbl.TextXAlignment, lbl.TextColor3, lbl.Font, lbl.TextSize = Enum.TextXAlignment.Left, T.Dim, T.Font, 13
+                
+                local box = Instance.new("TextButton", f)
+                box.Size, box.Position = UDim2.new(1, 0, 0, 20), UDim2.new(0, 0, 0, 18)
+                box.BackgroundColor3, box.BorderColor3, box.Text = T.Dark, T.Stroke, def .. " ▼"
+                box.TextColor3, box.Font, box.TextSize = T.Text, T.Font, 13
+                
+                local ol = Instance.new("Frame", f)
+                ol.Size, ol.Position = UDim2.new(1, 0, 0, #opts * 20), UDim2.new(0, 0, 0, 38)
+                ol.BackgroundColor3, ol.BorderColor3, ol.Visible, ol.ZIndex = T.Darker, T.Stroke, false, 100
+                Instance.new("UIListLayout", ol)
+                
+                local cur, open = def, false
+                
+                for _, opt in IPAIRS(opts) do
+                    local ob = Instance.new("TextButton", ol)
+                    ob.Size, ob.BackgroundColor3, ob.BorderSizePixel = UDim2.new(1, 0, 0, 20), T.Dark, 0
+                    ob.Text, ob.Font, ob.TextSize, ob.ZIndex = opt, T.Font, 12, 101
+                    ob.TextColor3 = opt == cur and T.Accent or T.Dim
+                    
+                    ob.MouseButton1Click:Connect(function()
+                        cur, box.Text, ol.Visible, open = opt, opt .. " ▼", false, false
+                        f.Size = UDim2.new(1, 0, 0, 40)
+                        for _, b in IPAIRS(ol:GetChildren()) do if b:IsA("TextButton") then b.TextColor3 = b.Text == cur and T.Accent or T.Dim end end
+                        if cb then cb(cur) end
+                    end)
+                end
+                
+                box.MouseButton1Click:Connect(function() open = not open ol.Visible = open f.Size = open and UDim2.new(1, 0, 0, 40 + #opts * 20) or UDim2.new(1, 0, 0, 40) end)
+                return G
+            end
+            
+            function G:Button(text, cb)
+                local b = Instance.new("TextButton", cnt)
+                b.Size, b.BackgroundColor3, b.BorderColor3 = UDim2.new(1, 0, 0, 22), T.Dark, T.Stroke
+                b.Text, b.TextColor3, b.Font, b.TextSize = text, T.Text, T.Font, 13
+                b.MouseButton1Click:Connect(cb)
+                return G
+            end
+            
+            function G:Keybind(text, def, cb)
+                local f = Instance.new("Frame", cnt)
+                f.Size, f.BackgroundTransparency = UDim2.new(1, 0, 0, 20), 1
+                
+                local lbl = Instance.new("TextLabel", f)
+                lbl.Text, lbl.Size, lbl.BackgroundTransparency = text, UDim2.new(0.6, 0, 1, 0), 1
+                lbl.TextXAlignment, lbl.TextColor3, lbl.Font, lbl.TextSize = Enum.TextXAlignment.Left, T.Dim, T.Font, 13
+                
+                local b = Instance.new("TextButton", f)
+                b.Size, b.Position = UDim2.new(0.3, 0, 1, 0), UDim2.new(0.7, 0, 0, 0)
+                b.BackgroundColor3, b.BorderColor3 = Color3.fromRGB(22, 22, 22), T.Stroke
+                b.Text, b.TextColor3, b.Font, b.TextSize = "[" .. def.Name .. "]", T.Dim, T.Font, 11
+                
+                local waiting = false
+                b.MouseButton1Click:Connect(function() waiting, b.Text, b.TextColor3 = true, "[...]", T.Accent end)
+                INSERT(R.conns, UIS.InputBegan:Connect(function(i)
+                    if waiting and i.UserInputType == Enum.UserInputType.Keyboard then
+                        waiting, b.Text, b.TextColor3 = false, "[" .. i.KeyCode.Name .. "]", T.Dim
+                        if cb then cb(i.KeyCode) end
+                    end
+                end))
+                return G
+            end
+            
+            function G:TextBox(text, def, cb)
+                local f = Instance.new("Frame", cnt)
+                f.Size, f.BackgroundTransparency = UDim2.new(1, 0, 0, 40), 1
+                
+                local lbl = Instance.new("TextLabel", f)
+                lbl.Text, lbl.Size, lbl.BackgroundTransparency = text, UDim2.new(1, 0, 0, 15), 1
+                lbl.TextXAlignment, lbl.TextColor3, lbl.Font, lbl.TextSize = Enum.TextXAlignment.Left, T.Dim, T.Font, 13
+                
+                local tb = Instance.new("TextBox", f)
+                tb.Size, tb.Position = UDim2.new(1, 0, 0, 20), UDim2.new(0, 0, 0, 18)
+                tb.BackgroundColor3, tb.BorderColor3, tb.Text, tb.PlaceholderText = T.Dark, T.Stroke, def or "", "Enter..."
+                tb.TextColor3, tb.Font, tb.TextSize = T.Text, T.Font, 12
+                tb.FocusLost:Connect(function() if cb then cb(tb.Text) end end)
+                return G
+            end
+            
+            function G:ConfigDropdown(text)
+                local f = Instance.new("Frame", cnt)
+                f.Size, f.BackgroundTransparency, f.ClipsDescendants, f.ZIndex = UDim2.new(1, 0, 0, 40), 1, false, 10
+                
+                local lbl = Instance.new("TextLabel", f)
+                lbl.Text, lbl.Size, lbl.BackgroundTransparency = text, UDim2.new(1, 0, 0, 15), 1
+                lbl.TextXAlignment, lbl.TextColor3, lbl.Font, lbl.TextSize = Enum.TextXAlignment.Left, T.Dim, T.Font, 13
+                
+                local box = Instance.new("TextButton", f)
+                box.Size, box.Position = UDim2.new(1, 0, 0, 20), UDim2.new(0, 0, 0, 18)
+                box.BackgroundColor3, box.BorderColor3 = T.Dark, T.Stroke
+                box.Text, box.TextColor3, box.Font, box.TextSize = (Cfg.Selected ~= "" and Cfg.Selected or "Select...") .. " ▼", T.Text, T.Font, 13
+                R.cfgDropdown = box
+                
+                local ol = Instance.new("Frame", f)
+                ol.Size, ol.Position = UDim2.new(1, 0, 0, 20), UDim2.new(0, 0, 0, 38)
+                ol.BackgroundColor3, ol.BorderColor3, ol.Visible, ol.ZIndex = T.Darker, T.Stroke, false, 100
+                Instance.new("UIListLayout", ol)
+                R.cfgDropdownList = ol
+                
+                local open = false
+                box.MouseButton1Click:Connect(function()
+                    open = not open ol.Visible = open
+                    if open then UpdateCfgDropdown() f.Size = UDim2.new(1, 0, 0, 40 + MAX(20, #Cfg.List * 20)) else f.Size = UDim2.new(1, 0, 0, 40) end
+                end)
+                UpdateCfgDropdown()
+                return G
+            end
+            
+            function G:Label(text)
+                local lbl = Instance.new("TextLabel", cnt)
+                lbl.Size, lbl.BackgroundTransparency = UDim2.new(1, 0, 0, 16), 1
+                lbl.Text, lbl.TextXAlignment = text, Enum.TextXAlignment.Left
+                lbl.TextColor3, lbl.Font, lbl.TextSize = T.Accent, T.Font, 11
+                return G, lbl
+            end
+            
+            return G
+        end
+        
+        return TL
+    end
+
+    return Tabs
+end
+
+
+-- ========== BUILD UI ==========
+local Win = Lib:Create("Crack By Lvzz")
+
+-- RAGE TAB
+do
+    local Tab = Win:NewTab("Rage")
+
+    local rb = Tab:NewGroupbox("Left", "Ragebot")
+    rb:Toggle("Enable", S.rbEnabled, function(v) S.rbEnabled = v ApplySettings() end)
+    rb:Toggle("Resolver", S.rbResolver, function(v) S.rbResolver = v end)
+    rb:Toggle("Prediction", S.rbPrediction, function(v) S.rbPrediction = v end)
+    rb:Toggle("Auto Fire", S.rbAutoFire, function(v) S.rbAutoFire = v end)
+    rb:Toggle("Team Check", S.rbTeamCheck, function(v) S.rbTeamCheck = v end)
+    rb:Dropdown("Hitbox", {"Head", "Torso"}, S.rbHitbox, function(v) S.rbHitbox = v end)
+    rb:Toggle("Wall Check", S.rbWallCheck, function(v) S.rbWallCheck = v end)
+    rb:Toggle("No Air Shot", S.rbNoAir, function(v) S.rbNoAir = v end)
+    rb:Toggle("Smart Aim", S.rbSmartAim, function(v) S.rbSmartAim = v end)
+    rb:Slider("Max Distance", 100, 1000, S.rbMaxDist, function(v) S.rbMaxDist = v end)
+    rb:Slider("Fire Rate", 1, 20, S.rbFireRate * 100, function(v) S.rbFireRate = v / 100 end)
+    rb:Slider("Prediction Multi", 50, 200, S.rbPredMulti * 100, function(v) S.rbPredMulti = v / 100 end)
+
+    local as = Tab:NewGroupbox("Left", "Air Shoot")
+    as:Toggle("Enable", S.rbAirShoot, function(v) S.rbAirShoot = v if not v then AS_RemovePart() end ApplySettings() end)
+    as:Keybind("Toggle Key", S.rbAirShootKey, function(k) S.rbAirShootKey = k end)
+    as:Toggle("AimView Line", S.avEnabled, function(v) S.avEnabled = v if not v then AV_RemoveLine() end end)
+
+    local dt = Tab:NewGroupbox("Right", "Double Tap")
+    dt:Toggle("Enable", S.dtEnabled, function(v) S.dtEnabled = v ApplySettings() end)
+    dt:Keybind("Key", S.dtKey, function(k) S.dtKey = k end)
+    dt:Slider("TP Distance", 3, 10, S.dtDist, function(v) S.dtDist = v end)
+    dt:Dropdown("Mode", {"Defensive", "Offensive", "Off"}, S.dtMode, function(v) S.dtMode = v end)
+
+    local ap = Tab:NewGroupbox("Right", "AI Peek v6")
+    ap:Toggle("Enable", S.apEnabled, function(v) 
+        S.apEnabled = v 
+        if not v and R.apActive then AP_Disable() end 
+    end)
+    ap:Keybind("Key", S.apKey, function(k) S.apKey = k end)
+    ap:Dropdown("Mode", {"Hold", "Toggle"}, S.apMode, function(v) S.apMode = v end)
+    ap:Toggle("Show Points", S.apShowPoints, function(v) 
+        S.apShowPoints = v 
+        if R.apActive then AP_RemovePoints() AP_CreatePoints() end 
+    end)
+    ap:Toggle("ESP Outline", S.apESP, function(v) 
+        S.apESP = v 
+        if R.apActive then AP_UpdateESP() end 
+    end)
+    ap:Toggle("Team Check", S.apTeamCheck, function(v) S.apTeamCheck = v end)
+    ap:Slider("Range", 10, 200, S.apRange, function(v) S.apRange = v end)
+    ap:Slider("Peek Distance", 2, 25, S.apPeekDist, function(v) 
+        S.apPeekDist = v 
+        if R.apActive then AP_RemovePoints() AP_CreatePoints() end 
+    end)
+    ap:Slider("Max Height", 1, 10, S.apHeight, function(v) S.apHeight = v end)
+    
+    local _, apCooldownLabel = ap:Label("Cooldown: " .. AP_GetCooldownMs() .. "ms (" .. AP_GetSpeedMode() .. ")")
+    ap:Slider("Speed", 0, 1000, S.apSpeed, function(v) 
+        S.apSpeed = v 
+        if apCooldownLabel then
+            apCooldownLabel.Text = "Cooldown: " .. AP_GetCooldownMs() .. "ms (" .. AP_GetSpeedMode() .. ")"
+        end
+    end)
+    
+    ap:Slider("Rings", 1, 5, S.apRings, function(v) 
+        S.apRings = v 
+        if R.apActive then AP_RemovePoints() AP_CreatePoints() end 
+    end)
+    ap:Slider("Points/Ring", 4, 16, S.apPointsPerRing, function(v) 
+        S.apPointsPerRing = v 
+        if R.apActive then AP_RemovePoints() AP_CreatePoints() end 
+    end)
+end
+
+-- AA TAB
+do
+    local Tab = Win:NewTab("AA")
+
+    local fd = Tab:NewGroupbox("Left", "Fakeduck")
+    fd:Toggle("Enable", S.fdEnabled, function(v) if v ~= S.fdEnabled then ToggleFakeduck() end end)
+    fd:Toggle("Team Check", S.fdTeamCheck, function(v) S.fdTeamCheck = v end)
+    fd:Keybind("Toggle Key", S.fdKey, function(k) S.fdKey = k end)
+    fd:Keybind("Lock Key", S.fdLockKey, function(k) S.fdLockKey = k end)
+
+    local info = Tab:NewGroupbox("Right", "Info")
+    info:Button("Fakeduck Info", function() print("[Crack By Lvzz] Fakeduck automatically crouches when no enemy is visible") end)
+end
+
+
+-- VISUALS TAB
+do
+    local Tab = Win:NewTab("Visuals")
+
+    local wm = Tab:NewGroupbox("Left", "Watermark")
+    wm:Toggle("Show Watermark", true, function(v) S.wmVisible = v if R.wmFrame then R.wmFrame.Visible = v end end)
+
+    local hk = Tab:NewGroupbox("Left", "Hotkey List")
+    hk:Toggle("Show Hotkeys", true, function(v) S.hkVisible = v if R.hkFrame then R.hkFrame.Visible = v end end)
+
+    local tm = Tab:NewGroupbox("Left", "Time Display")
+    tm:Toggle("Show Time", true, function(v) S.timeVisible = v if R.timeFrame then R.timeFrame.Visible = v end end)
+
+    local hl = Tab:NewGroupbox("Left", "Hit Logger")
+    hl:Toggle("Enable", S.hlEnabled, function(v) S.hlEnabled = v if R.hlFrame then R.hlFrame.Visible = v end end)
+    hl:Slider("Max Logs", 4, 15, S.hlMaxLogs, function(v) S.hlMaxLogs = v end)
+
+    local ke = Tab:NewGroupbox("Left", "Kill Effects")
+    ke:Toggle("Enable", S.killEffects, function(v) S.killEffects = v end)
+    ke:Dropdown("Screen Type", {"CS:GO", "Flash", "Vignette", "Skull", "HvH", "None"}, S.killScreenType or "CS:GO", function(v) S.killScreenType = v end)
+    ke:Dropdown("Screen Color", {"Red", "Blue", "Green", "Purple", "Cyan", "Yellow", "White", "Pink"}, S.killScreenColor or "Red", function(v) S.killScreenColor = v end)
+    ke:Slider("Duration (ms)", 50, 5000, FLOOR((S.killScreenDuration or 0.5) * 1000), function(v) S.killScreenDuration = v / 1000 end)
+    ke:Dropdown("Particles", {"Binary", "Matrix", "Hex", "Code", "Glitch", "Numbers"}, S.killParticleType, function(v) S.killParticleType = v end)
+    ke:Toggle("Ghost Effect", S.ghostEffectEnabled, function(v) S.ghostEffectEnabled = v end)
+    ke:Dropdown("Ghost Color", {"Cyan", "Red", "Green", "Purple", "White", "Pink"}, "Cyan", function(v)
+        local colors = {
+            Cyan = Color3.fromRGB(100, 200, 255),
+            Red = Color3.fromRGB(255, 100, 100),
+            Green = Color3.fromRGB(100, 255, 100),
+            Purple = Color3.fromRGB(200, 100, 255),
+            White = Color3.fromRGB(255, 255, 255),
+            Pink = Color3.fromRGB(255, 150, 200)
+        }
+        S.ghostColor = colors[v] or Color3.fromRGB(100, 200, 255)
+    end)
+
+    local sc = Tab:NewGroupbox("Left", "Scope Crosshair")
+    sc:Toggle("Enable", S.scopeEnabled, function(v) S.scopeEnabled = v ToggleScope(v) end)
+    sc:Slider("Size", 5, 500, S.scopeSize, function(v) S.scopeSize = v if S.scopeEnabled then CreateScope() end end)
+    sc:Slider("Gap", 0, 200, S.scopeGap, function(v) S.scopeGap = v if S.scopeEnabled then CreateScope() end end)
+    sc:Slider("Thickness", 1, 5, S.scopeThickness, function(v) S.scopeThickness = v if S.scopeEnabled then CreateScope() end end)
+    sc:Slider("Y Offset", -200, 200, S.scopeOffsetY, function(v) S.scopeOffsetY = v if S.scopeEnabled then CreateScope() end end)
+    sc:Dropdown("Color", {"Red", "Cyan", "Green", "Yellow", "Purple", "White", "Pink"}, "Red", function(v)
+        local colors = {
+            Red = Color3.fromRGB(255, 50, 50),
+            Cyan = Color3.fromRGB(50, 255, 255),
+            Green = Color3.fromRGB(50, 255, 50),
+            Yellow = Color3.fromRGB(255, 255, 50),
+            Purple = Color3.fromRGB(200, 50, 255),
+            White = Color3.fromRGB(255, 255, 255),
+            Pink = Color3.fromRGB(255, 100, 200)
+        }
+        S.scopeColor = colors[v] or Color3.fromRGB(255, 50, 50)
+        UpdateScopeColor()
+    end)
+
+    local vfx = Tab:NewGroupbox("Right", "Effects")
+    vfx:Toggle("Bloom", false, function(v) S.bloomEnabled = v ApplyBloom() end)
+    vfx:Slider("Bloom Intensity", 0, 50, 15, function(v) S.bloomIntensity = v / 10 ApplyBloom() end)
+    vfx:Slider("Bloom Size", 0, 100, 40, function(v) S.bloomSize = v ApplyBloom() end)
+    vfx:Toggle("Blur", false, function(v) S.blurEnabled = v ApplyBlur() end)
+    vfx:Slider("Blur Size", 0, 24, 10, function(v) S.blurSize = v ApplyBlur() end)
+    vfx:Toggle("Color Correction", false, function(v) S.colorEnabled = v ApplyColorCorrection() end)
+    vfx:Toggle("Sun Rays", false, function(v) S.sunRaysEnabled = v ApplySunRays() end)
+    vfx:Toggle("Fog", false, function(v) S.fogEnabled = v ApplyFog() end)
+    vfx:Slider("Fog End", 100, 5000, 500, function(v) S.fogEnd = v ApplyFog() end)
+
+    local mdl = Tab:NewGroupbox("Right", "Custom Model")
+    mdl:Dropdown("Select Model", ModelList, "None", function(v) S.selectedModel = v end)
+    mdl:Button("Apply Model", function() if S.selectedModel and S.selectedModel ~= "None" then ApplyModel(S.selectedModel) end end)
+    mdl:Button("Remove Model", function() if getgenv().modelConn then getgenv().modelConn:Disconnect() getgenv().modelConn = nil end S.selectedModel = "None" if LP.Character then LP:LoadCharacter() end end)
+end
+
+-- EXPLOITS TAB
+do
+    local Tab = Win:NewTab("Exploits")
+
+    local ep = Tab:NewGroupbox("Left", "Exploit Position")
+    ep:Toggle("Enable", S.epEnabled, function(v) S.epEnabled = v if not v and R.epActive then EP_DestroyDecoy() end end)
+    ep:Keybind("Key", S.epKey, function(k) S.epKey = k end)
+    ep:Slider("Distance", 1, 10, S.epDist, function(v) S.epDist = v end)
+
+    local ij = Tab:NewGroupbox("Left", "Infinity Jump")
+    ij:Toggle("Enable", S.ijEnabled, function(v) S.ijEnabled = v if not v then IJ_RemovePart() end ApplySettings() end)
+    ij:Keybind("Key", S.ijKey, function(k) S.ijKey = k end)
+
+    local be = Tab:NewGroupbox("Right", "Barrel Extend")
+    be:Toggle("Enable", S.beEnabled, function(v) S.beEnabled = v if not v and R.beActive then BE_Disable() end ApplySettings() end)
+    be:Keybind("Key", S.beKey, function(k) S.beKey = k end)
+    be:Dropdown("Mode", {"Hold", "Toggle"}, S.beMode, function(v) S.beMode = v end)
+    be:Slider("Distance", 1, 10, S.beDist, function(v) S.beDist = v end)
+end
+
+-- MISC TAB
+do
+    local Tab = Win:NewTab("Misc")
+
+    local bh = Tab:NewGroupbox("Left", "BunnyHop")
+    bh:Toggle("Enable", S.bhEnabled, function(v)
+        S.bhEnabled = v
+        if v then
+            R.bhOrigSpeed = R.myHum and R.myHum.WalkSpeed or 16
+            R.bhInAir, R.bhLastReset, R.bhResetting = false, 0, false
+            R.bhLastPos, R.bhPosCheckTime, R.bhCircling = nil, 0, false
+            if R.myHum then R.myHum.WalkSpeed = S.bhGroundSpeed end
+        elseif R.myHum then R.myHum.WalkSpeed = R.bhOrigSpeed end
+        ApplySettings()
+    end)
+    bh:Keybind("Toggle Key", S.bhKey, function(k) S.bhKey = k end)
+    bh:Slider("Ground Speed", 20, 50, S.bhGroundSpeed, function(v) S.bhGroundSpeed = v if S.bhEnabled and R.myHum and not R.bhInAir then R.myHum.WalkSpeed = v end end)
+    bh:Slider("Air Speed", 20, 50, S.bhAirSpeed, function(v) S.bhAirSpeed = v if S.bhEnabled and R.myHum and R.bhInAir then R.myHum.WalkSpeed = v end end)
+
+    local wp = Tab:NewGroupbox("Right", "Wallbang Helper")
+    wp:Toggle("Enable", S.wbEnabled, function(v) S.wbEnabled = v if v then enableWallbangHelper() else disableWallbangHelper() end ApplySettings() end)
+    wp:Button("Refresh Walls", function() if S.wbEnabled then disableWallbangHelper() task.wait(0.1) enableWallbangHelper() end end)
+
+    local wm = Tab:NewGroupbox("Right", "Wallbang Map")
+    wm:Toggle("Enable", S.wmEnabled, function(v) S.wmEnabled = v if v then enableWallbangMap() else disableWallbangMap() end R.hotkeys["WB Map"] = v and {active = true, key = "ON"} or nil UpdateHotkeyList() end)
+
+    local rc = Tab:NewGroupbox("Right", "Remove Collision")
+    rc:Toggle("Enable", S.rcEnabled, function(v) S.rcEnabled = v if v then enableRemoveCollision() else disableRemoveCollision() end ApplySettings() end)
+
+    local tp = Tab:NewGroupbox("Left", "Teleport")
+    tp:Toggle("Enable", S.tpEnabled, function(v) S.tpEnabled = v R.hotkeys["Teleport"] = v and {active = true, key = "ON"} or nil UpdateHotkeyList() end)
+    tp:Keybind("CT Spawn", S.tpCTKey, function(k) S.tpCTKey = k end)
+    tp:Keybind("T Spawn", S.tpTKey, function(k) S.tpTKey = k end)
+end
+
+
+-- SETTINGS TAB
+do
+    local Tab = Win:NewTab("Settings")
+
+    local mn = Tab:NewGroupbox("Left", "Menu")
+    mn:Keybind("Menu Key", S.menuKey, function(k) S.menuKey = k end)
+    mn:Button("Unload Script", function()
+        R.running = false
+        StopMainLoop()
+        if R.apActive then AP_Disable() end
+        EP_Free()
+        if R.beActive then BE_Disable() end
+        AS_RemovePart()
+        IJ_RemovePart()
+        AV_RemoveLine()
+        if S.bhEnabled and R.myHum then R.myHum.WalkSpeed = R.bhOrigSpeed or 16 end
+        if S.wbEnabled then disableWallbangHelper() end
+        if S.rcEnabled then disableRemoveCollision() end
+        if S.wmEnabled then disableWallbangMap() end
+        if R.bloomEffect then pcall(function() R.bloomEffect:Destroy() end) end
+        if R.blurEffect then pcall(function() R.blurEffect:Destroy() end) end
+        if R.colorEffect then pcall(function() R.colorEffect:Destroy() end) end
+        if R.sunRaysEffect then pcall(function() R.sunRaysEffect:Destroy() end) end
+        Light.FogStart, Light.FogEnd = 0, 100000
+        for _, c in IPAIRS(R.conns) do pcall(function() c:Disconnect() end) end
+        for _, e in IPAIRS(R.fx) do pcall(function() e:Destroy() end) end
+        if R.gui then R.gui:Destroy() end
+        if getgenv().modelConn then getgenv().modelConn:Disconnect() getgenv().modelConn = nil end
+        print("[Crack By Lvzz] Script unloaded!")
+    end)
+
+    local cf = Tab:NewGroupbox("Right", "Configs")
+    cf:ConfigDropdown("Select Config")
+    local cfgInput = ""
+    cf:TextBox("New Config Name", "", function(t) cfgInput = t end)
+    cf:Button("Create & Save", function() if cfgInput ~= "" then SaveCfg(cfgInput) Cfg.Selected = cfgInput if R.cfgDropdown then R.cfgDropdown.Text = cfgInput .. " ▼" end UpdateCfgDropdown() end end)
+    cf:Button("Save Current", function() if Cfg.Selected ~= "" then SaveCfg(Cfg.Selected) end end)
+    cf:Button("Load Selected", function() if Cfg.Selected ~= "" then LoadCfg(Cfg.Selected) end end)
+    cf:Button("Delete Selected", function() if Cfg.Selected ~= "" then DeleteCfg(Cfg.Selected) Cfg.Selected = "" if R.cfgDropdown then R.cfgDropdown.Text = "Select... ▼" end UpdateCfgDropdown() end end)
+    cf:Button("Refresh List", function() UpdateCfgDropdown() end)
+
+    local cr = Tab:NewGroupbox("Left", "Credits")
+    cr:Button("Crack By Lvzz v6.1", function() end)
+    cr:Button("Expires: 20.01.2027", function() end)
+end
+
+-- ========== TELEPORT FUNCTIONS ==========
+function teleportTo(spawnName, childIndex)
+    if not S.tpEnabled or not R.myHRP then return end
+    pcall(function()
+        local spawnPoint = WS:FindFirstChild(spawnName)
+        if spawnPoint then
+            local children = spawnPoint:GetChildren()
+            if children[childIndex] then
+                local target = children[childIndex]
+                local targetCF = target:IsA("BasePart") and target.CFrame or (target.PrimaryPart and target.PrimaryPart.CFrame)
+                if targetCF then R.myHRP.CFrame = targetCF + V3(0, 3, 0) end
+            end
+        end
+    end)
+end
+
+-- ========== INPUT HANDLER ==========
+local dtKeyHeld = false
+local DT_DIR_KEYS = {[Enum.KeyCode.Up] = "Forward", [Enum.KeyCode.Down] = "Back", [Enum.KeyCode.Left] = "Left", [Enum.KeyCode.Right] = "Right"}
+
+INSERT(R.conns, UIS.InputBegan:Connect(function(i, gpe)
+    if gpe then return end
+    local key = i.KeyCode
+
+    if key == S.menuKey then
+        R.visible = not R.visible
+        if R.main then R.main.Visible = R.visible end
+        for _, e in IPAIRS(R.fx) do pcall(function() e:Destroy() end) end
+        R.fx = {}
+        if R.visible then
+            local blur = Instance.new("DepthOfFieldEffect")
+            blur.FarIntensity, blur.FocusDistance, blur.InFocusRadius, blur.NearIntensity = 0.6, 50, 50, 0.6
+            blur.Parent = Light
+            R.fx[1] = blur
+        end
+        return
+    end
+
+    if S.dtEnabled and key == S.dtKey then
+        if S.dtMode == "Offensive" then dtKeyHeld = true else DT_Peek(nil) end
+        return
+    end
+
+    if S.dtEnabled and S.dtMode == "Offensive" and dtKeyHeld and DT_DIR_KEYS[key] then
+        DT_Peek(DT_DIR_KEYS[key])
+        return
+    end
+
+    if S.apEnabled and key == S.apKey then
+        if S.apMode == "Hold" then 
+            if not R.apActive then AP_Enable() end
+        else
+            if R.apActive then AP_Disable() else AP_Enable() end
+        end
+        return
+    end
+
+    if S.epEnabled and key == S.epKey then
+        if R.epActive then EP_DestroyDecoy() else EP_SpawnDecoy() end
+        return
+    end
+
+    if S.beEnabled and key == S.beKey then
+        if S.beMode == "Hold" then if not R.beActive then BE_Enable() end
+        elseif R.beActive then BE_Disable() else BE_Enable() end
+        return
+    end
+
+    if S.ijEnabled and key == S.ijKey and R.ijCanJump and R.myHum then
+        R.myHum:ChangeState(Enum.HumanoidStateType.Jumping)
+        return
+    end
+
+    if key == S.rbAirShootKey then
+        S.rbAirShoot = not S.rbAirShoot
+        if not S.rbAirShoot then AS_RemovePart() end
+        ApplySettings()
+        return
+    end
+
+    if key == S.fdKey then ToggleFakeduck() return end
+    if key == S.fdLockKey then R.fdLock = true return end
+
+    if key == S.bhKey then
+        S.bhEnabled = not S.bhEnabled
+        if S.bhEnabled then
+            R.bhOrigSpeed = R.myHum and R.myHum.WalkSpeed or 16
+            R.bhInAir, R.bhLastReset, R.bhResetting = false, 0, false
+            R.bhLastPos, R.bhPosCheckTime, R.bhCircling = nil, 0, false
+            if R.myHum then R.myHum.WalkSpeed = S.bhGroundSpeed end
+        elseif R.myHum then R.myHum.WalkSpeed = R.bhOrigSpeed end
+        ApplySettings()
+        return
+    end
+
+    if S.tpEnabled then
+        if key == S.tpCTKey then teleportTo("CTSpawn", 4) return end
+        if key == S.tpTKey then teleportTo("TSpawn", 5) return end
+    end
+end))
+
+INSERT(R.conns, UIS.InputEnded:Connect(function(i, gpe)
+    if gpe then return end
+    local key = i.KeyCode
+
+    if key == S.dtKey then dtKeyHeld = false return end
+    if S.apEnabled and key == S.apKey and S.apMode == "Hold" then AP_Disable() return end
+    if S.beEnabled and key == S.beKey and S.beMode == "Hold" then BE_Disable() return end
+    if key == S.fdLockKey then R.fdLock = false return end
+end))
+
+
+-- ========== CHARACTER RESPAWN HANDLER ==========
+INSERT(R.conns, LP.CharacterAdded:Connect(function()
+    R.myChar, R.myHRP, R.myHead, R.myHum = nil, nil, nil, nil
+    R.fireShot, R.playerData = nil, {}
+    R.playerDataTime, R.fireShotTime = 0, 0
+    R.bhInAir, R.bhLastReset, R.bhResetting = false, 0, false
+    R.bhLastPos, R.bhPosCheckTime, R.bhCircling = nil, 0, false
+
+    if R.apActive then AP_Disable() end
+    R.apTeleporting = false
+    EP_Free()
+    AS_RemovePart()
+    if R.beActive then BE_Disable() end
+    IJ_RemovePart()
+    AV_RemoveLine()
+
+    task.wait(0.5)
+    CacheChar()
+
+    if S.bhEnabled and R.myHum then 
+        R.bhOrigSpeed = R.myHum.WalkSpeed or 16 
+        R.myHum.WalkSpeed = S.bhGroundSpeed 
+    end
+    if S.fdEnabled then 
+        S.fdEnabled = false 
+        R.fdIdleAnim, R.fdWalkAnim = nil, nil 
+        task.wait(0.5) 
+        ToggleFakeduck() 
+    end
+    if S.wbEnabled then task.delay(1, enableWallbangHelper) end
+    if S.rcEnabled then task.delay(1, enableRemoveCollision) end
+    if S.wmEnabled then task.delay(1, enableWallbangMap) end
+end))
+
+-- ========== INIT ==========
+CacheChar()
+EnsureCfgFolder()
+RefreshCfg()
+
+if #Cfg.List > 0 then
+    Cfg.Selected = Cfg.List[1]
+    if R.cfgDropdown then R.cfgDropdown.Text = Cfg.Selected .. " ▼" end
+end
+
+local blur = Instance.new("DepthOfFieldEffect")
+blur.FarIntensity, blur.FocusDistance, blur.InFocusRadius, blur.NearIntensity = 0.6, 50, 50, 0.6
+blur.Parent = Light
+R.fx[1] = blur
+
+task.spawn(SetupKillTracking)
+
+print("[Crack By Lvzz] Script loaded successfully! (AI Peek v6)")
+print("[Crack By Lvzz] Press " .. S.menuKey.Name .. " to toggle menu")
